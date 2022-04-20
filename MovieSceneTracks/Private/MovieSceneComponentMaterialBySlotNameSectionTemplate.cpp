@@ -1,0 +1,5 @@
+#include "MovieSceneComponentMaterialBySlotNameSectionTemplate.h"
+
+FMovieSceneComponentMaterialBySlotNameSectionTemplate::FMovieSceneComponentMaterialBySlotNameSectionTemplate() {
+}
+

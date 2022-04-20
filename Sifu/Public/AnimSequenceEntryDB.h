@@ -1,0 +1,22 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "Templates/SubclassOf.h"
+#include "AnimSequenceDBEntry.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+#include "AnimSequenceEntryDB.generated.h"
+
+class ABaseWeapon;
+
+UCLASS(BlueprintType)
+class SIFU_API UAnimSequenceEntryDB : public UDataAsset {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadOnly, EditAnywhere)
+    TSubclassOf<ABaseWeapon> m_WeaponClass;
+    
+    UPROPERTY(BlueprintReadOnly, EditAnywhere)
+    TArray<FAnimSequenceDBEntry> m_AnimSequences;
+    
+    UAnimSequenceEntryDB();
+};
+

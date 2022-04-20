@@ -1,0 +1,37 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "RemappingSectionStruct.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+//CROSS-MODULE INCLUDE V2: -ModuleName=InputCore -ObjectName=Key -FallbackName=Key
+#include "MappableInputsDB.generated.h"
+
+class UTexture2D;
+
+UCLASS()
+class SIFU_API UMappableInputsDB : public UDataAsset {
+    GENERATED_BODY()
+public:
+    UPROPERTY(EditAnywhere)
+    FText m_RemappingNotificationMessages[3];
+    
+    UPROPERTY(EditAnywhere)
+    bool m_bKeysInSelectionAreForbidden;
+    
+    UPROPERTY(EditAnywhere)
+    TSoftObjectPtr<UTexture2D> m_NoMappingIcon;
+    
+    UPROPERTY(EditAnywhere)
+    TArray<FKey> m_KeysSelectionForRemapping;
+    
+    UPROPERTY(EditAnywhere)
+    TArray<FKey> m_KeysIgnoredForRemapping;
+    
+    UPROPERTY(EditAnywhere)
+    TArray<FKey> m_CancelRemappingKeys;
+    
+    UPROPERTY(EditAnywhere)
+    TArray<FRemappingSectionStruct> m_MappableInputsSection;
+    
+    UMappableInputsDB();
+};
+
