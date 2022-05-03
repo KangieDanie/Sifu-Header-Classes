@@ -6,8 +6,8 @@
 #include "AISituationNamedActor.h"
 #include "PhaseTransitionNodeHandler.generated.h"
 
-class UAIPhaseTransition;
 class USynchronizedAttackHitActionLauncher;
+class UAIPhaseTransition;
 class ULevelSequence;
 
 USTRUCT(BlueprintType)

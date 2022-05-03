@@ -2,8 +2,8 @@
 #include "Templates/SubclassOf.h"
 
 class UGameplayAbility;
-class UAbilityTask_WaitTargetData;
 class AGameplayAbilityTargetActor;
+class UAbilityTask_WaitTargetData;
 
 UAbilityTask_WaitTargetData* UAbilityTask_WaitTargetData::WaitTargetDataUsingActor(UGameplayAbility* OwningAbility, FName TaskInstanceName, TEnumAsByte<EGameplayTargetingConfirmation::Type> ConfirmationType, AGameplayAbilityTargetActor* NewTargetActor) {
     return NULL;

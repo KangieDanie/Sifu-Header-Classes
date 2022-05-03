@@ -48,6 +48,9 @@ enum class EMenuEnum : uint8 {
     DisplayOptionsMenu,
     LanguageOptionsMenu,
     InvestigationBoard,
+    CheatMenu,
+    ReplayManagementMenu,
+    Outfit,
     Count,
     None,
 };

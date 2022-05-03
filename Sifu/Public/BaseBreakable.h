@@ -1,16 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCollisionResponsePreset -FallbackName=SCCollisionResponsePreset
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCollisionResponsePreset -FallbackName=SCCollisionResponsePreset
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "BaseBreakable.generated.h"
 
-class UPhysicalActorDependencyComponent;
+class UAkAudioEvent;
 class UBoxComponent;
 class UReplayableDestructibleComponent;
 class USCStreamingActorComponent;
-class UAkAudioEvent;
+class UPhysicalActorDependencyComponent;
+class UReplayablePhysObjectComponent;
 class UPrimitiveComponent;
 
 UCLASS(Abstract)
@@ -23,6 +24,9 @@ protected:
     
     UPROPERTY(BlueprintReadOnly, Export, VisibleAnywhere)
     UReplayableDestructibleComponent* m_ReplayableDestructibleComponent;
+    
+    UPROPERTY(Export, Transient)
+    UReplayablePhysObjectComponent* m_ReplayablePhysObjectComponent;
     
     UPROPERTY(BlueprintReadOnly, Export, VisibleAnywhere)
     UPhysicalActorDependencyComponent* m_PhysicalActorDependencyComponent;

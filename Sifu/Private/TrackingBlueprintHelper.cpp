@@ -3,6 +3,9 @@
 void UTrackingBlueprintHelper::BPF_SendTrackingEvent_UnlockAllSkillsPermanently(int64 _iTimePlayed) {
 }
 
+void UTrackingBlueprintHelper::BPF_SendTrackingEvent_HideoutStarted(const FString& _mapName) {
+}
+
 void UTrackingBlueprintHelper::BPF_SendTrackingEvent_HideoutCompleted(const FString& _mapName) {
 }
 

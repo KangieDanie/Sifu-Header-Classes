@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ConditionOnTargetWeightEvaluation.h"
 #include "BaseTargetWeightEvaluation.h"
 #include "EWeightBinaryOperator.h"
+#include "ConditionOnTargetWeightEvaluation.h"
 #include "ConditionTargetWeightEvaluation.generated.h"
 
 UCLASS(EditInlineNew)

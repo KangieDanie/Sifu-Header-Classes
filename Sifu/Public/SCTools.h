@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EQuadrantTypes.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCoreTools -FallbackName=SCCoreTools
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EPlatform -FallbackName=EPlatform
+#include "EQuadrantTypes.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=LatentActionInfo -FallbackName=LatentActionInfo
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EPlatform -FallbackName=EPlatform
 #include "SCTools.generated.h"
 
-class UObject;
-class UGameInstance;
 class UWorld;
+class UGameInstance;
+class UObject;
 
 UCLASS(BlueprintType)
 class SIFU_API USCTools : public USCCoreTools {
@@ -23,6 +23,9 @@ public:
     
     UFUNCTION(BlueprintPure)
     static bool BPF_IsDesktopPlatform();
+    
+    UFUNCTION(BlueprintPure)
+    static bool BPF_HasEntitlement(const UObject* _worldContextObject, const FName& _entitlement);
     
     UFUNCTION(BlueprintPure)
     static FString BPF_GetMapPath(TSoftObjectPtr<UWorld> _map);

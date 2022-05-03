@@ -5,12 +5,12 @@
 
 class UPrimitiveComponent;
 
-UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UReplayableStaticObjectComponent : public UActorComponent {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadOnly, Export, VisibleAnywhere)
+    UPROPERTY(Export, Transient)
     UPrimitiveComponent* m_RootPrimComp;
     
 public:

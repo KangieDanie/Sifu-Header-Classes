@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ARSessionPayload.h"
-#include "EARAltitudeSource.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+#include "EARAltitudeSource.h"
 #include "ARGeoAnchorUpdatePayload.generated.h"
 
 USTRUCT(BlueprintType)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCUserWidget.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCType -FallbackName=ESCType
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "BlendableWidget.generated.h"
 
 class UMaterialParameterCollection;

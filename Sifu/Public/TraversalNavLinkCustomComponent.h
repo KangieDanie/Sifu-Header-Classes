@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ELinkWithExternalBehavior.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=NavLinkCustomComponent -FallbackName=NavLinkCustomComponent
 #include "TraversalInfo.h"
+#include "ELinkWithExternalBehavior.h"
 #include "TraversalNavLinkCustomComponent.generated.h"
 
 class AActor;

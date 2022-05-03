@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "AnimationSharingStateProcessor.generated.h"
 
-class AActor;
 class UEnum;
+class AActor;
 
 UCLASS(Blueprintable)
 class ANIMATIONSHARING_API UAnimationSharingStateProcessor : public UObject {

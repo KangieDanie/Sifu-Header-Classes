@@ -2,16 +2,16 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Character -FallbackName=Character
-#include "SCPoolableActor.h"
 #include "SCDebugNamedOject.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ETextGender -FallbackName=ETextGender
+#include "SCPoolableActor.h"
 #include "ECharacterGender.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ETextGender -FallbackName=ETextGender
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAttachmentRule -FallbackName=EAttachmentRule
 #include "SCCharacter.generated.h"
 
-class USCCharacterPoseData;
-class ASCCharacterImpostor;
 class UAnimSequence;
+class ASCCharacterImpostor;
+class USCCharacterPoseData;
 class USkeletalMesh;
 class AActor;
 
@@ -69,6 +69,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void BPF_SetMesh(USkeletalMesh* _newMesh, bool _bSwapOnlyRendering);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_SetGender(ECharacterGender _eGender);
     
     UFUNCTION(BlueprintCallable)
     void BPF_SetCollisionEnabled(bool _bEnabled, bool _bKeepStaticMeshCollisions);

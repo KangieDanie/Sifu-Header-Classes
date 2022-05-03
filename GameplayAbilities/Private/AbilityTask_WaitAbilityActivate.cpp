@@ -1,7 +1,7 @@
 #include "AbilityTask_WaitAbilityActivate.h"
 
-class UGameplayAbility;
 class UAbilityTask_WaitAbilityActivate;
+class UGameplayAbility;
 
 UAbilityTask_WaitAbilityActivate* UAbilityTask_WaitAbilityActivate::WaitForAbilityActivateWithTagRequirements(UGameplayAbility* OwningAbility, FGameplayTagRequirements TagRequirements, bool IncludeTriggeredAbilities, bool TriggerOnce) {
     return NULL;

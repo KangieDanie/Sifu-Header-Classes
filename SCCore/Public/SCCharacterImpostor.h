@@ -4,11 +4,11 @@
 #include "EImposterSpawnTransformType.h"
 #include "SCCharacterImpostor.generated.h"
 
-class USkeletalMeshComponentBudgeted;
 class UAnimInstance;
-class USCStreamingActorComponent;
+class USkeletalMeshComponentBudgeted;
 class USCRagdollConfigDB;
 class ASCCharacter;
+class USCStreamingActorComponent;
 
 UCLASS()
 class SCCORE_API ASCCharacterImpostor : public ASCActor {

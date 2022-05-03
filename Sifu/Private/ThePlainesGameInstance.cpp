@@ -1,12 +1,12 @@
 #include "ThePlainesGameInstance.h"
 #include "PredictionManager.h"
 
-class UWGGameFlow;
 class USCLocalPlayer;
-class ASCPlayerStart;
 class ALevelSequenceActor;
-class UReplaySystem;
+class ASCPlayerStart;
 class ULocalPlayer;
+class UReplaySystem;
+class UWGGameFlow;
 
 void UThePlainesGameInstance::TriggerTakeKinectResources(bool _bTake) {
 }
@@ -137,7 +137,6 @@ UThePlainesGameInstance::UThePlainesGameInstance() {
     this->m_ItemsDB = NULL;
     this->m_InputManager = NULL;
     this->m_FactionsManager = NULL;
-    this->m_SCCheatManager = NULL;
     this->m_PredictionManagerClass = UPredictionManager::StaticClass();
     this->m_CinematicManager = NULL;
     this->m_MessageManager = NULL;

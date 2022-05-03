@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HitActionLauncher.h"
 #include "HitBox.h"
+#include "HitActionLauncher.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "FallHitActionLauncher.generated.h"
 

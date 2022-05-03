@@ -2,8 +2,8 @@
 
 class UGameplayAbility;
 class UAbilityTask_WaitOverlap;
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 
 UAbilityTask_WaitOverlap* UAbilityTask_WaitOverlap::WaitForOverlap(UGameplayAbility* OwningAbility) {
     return NULL;

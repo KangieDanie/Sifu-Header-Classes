@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EControllerIconStyles.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Interface -FallbackName=Interface
 #include "InputAction.h"
-#include "EControllerIconStyles.h"
-#include "EControllerIconAxisTypes.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
+#include "EControllerIconAxisTypes.h"
 #include "ControllerButtonInterface.generated.h"
 
 class UWidget;

@@ -3,8 +3,8 @@
 #include "DatasmithObjectTemplate.h"
 #include "DatasmithCameraFilmbackSettingsTemplate.h"
 #include "DatasmithCameraLensSettingsTemplate.h"
-#include "DatasmithPostProcessSettingsTemplate.h"
 #include "DatasmithCameraFocusSettingsTemplate.h"
+#include "DatasmithPostProcessSettingsTemplate.h"
 #include "DatasmithCineCameraComponentTemplate.generated.h"
 
 UCLASS()

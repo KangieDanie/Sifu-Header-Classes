@@ -4,8 +4,8 @@
 #include "SCUserWidget.h"
 #include "ReplaySubMenuWidget.generated.h"
 
-class UCustomWidgetNavigation;
 class UReplayMenuWidget;
+class UCustomWidgetNavigation;
 class UReplaySubMenuWidget;
 
 UCLASS(EditInlineNew)

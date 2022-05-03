@@ -4,8 +4,8 @@
 #include "ActorLayer.h"
 #include "LayersBlueprintLibrary.generated.h"
 
-class UObject;
 class AActor;
+class UObject;
 
 UCLASS(BlueprintType)
 class ULayersBlueprintLibrary : public UBlueprintFunctionLibrary {

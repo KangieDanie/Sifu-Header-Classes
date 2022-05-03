@@ -1,23 +1,23 @@
 #include "SCGameplayStatics.h"
 
-class UObject;
 class UParticleSystem;
+class UObject;
+class APlayerCameraManager;
 class USceneComponent;
+class AActor;
 class UParticleSystemComponent;
 class UPrimitiveComponent;
 class APlayerController;
-class AActor;
-class APlayerCameraManager;
 class APawn;
 
 void USCGameplayStatics::BPF_UnloadLevels(const UObject* _context, const TArray<FName>& _levels, bool _bSynchronous) {
 }
 
-UParticleSystemComponent* USCGameplayStatics::BPF_SpawnEmitterAttachedFromPool(UParticleSystem* EmitterTemplate, USceneComponent* AttachToComponent, FName PoolType, FName AttachPointName, FVector Location, FRotator Rotation, FVector Scale, TEnumAsByte<EAttachLocation::Type> LocationType) {
+UParticleSystemComponent* USCGameplayStatics::BPF_SpawnEmitterAttachedFromPool(UParticleSystem* EmitterTemplate, USceneComponent* AttachToComponent, FName PoolType, FName AttachPointName, FVector Location, FRotator Rotation, FVector Scale, TEnumAsByte<EAttachLocation::Type> LocationType, bool bReplicates) {
     return NULL;
 }
 
-UParticleSystemComponent* USCGameplayStatics::BPF_SpawnEmitterAtLocationFromPool(const UObject* WorldContextObject, UParticleSystem* EmitterTemplate, FName PoolType, FVector Location, FRotator Rotation, FVector Scale) {
+UParticleSystemComponent* USCGameplayStatics::BPF_SpawnEmitterAtLocationFromPool(const UObject* WorldContextObject, UParticleSystem* EmitterTemplate, FName PoolType, FVector Location, FRotator Rotation, FVector Scale, bool bReplicates) {
     return NULL;
 }
 

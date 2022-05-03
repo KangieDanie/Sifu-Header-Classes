@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RigBoneHierarchy.h"
-#include "RigControlHierarchy.h"
 #include "RigSpaceHierarchy.h"
+#include "RigControlHierarchy.h"
 #include "RigCurveContainer.h"
 #include "RigHierarchyContainer.generated.h"
 

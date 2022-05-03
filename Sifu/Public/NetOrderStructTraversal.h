@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "NetOrderStruct.h"
-#include "TraversalInfo.h"
 #include "HitBox.h"
+#include "TraversalInfo.h"
 #include "NetOrderStructTraversal.generated.h"
 
 USTRUCT(BlueprintType)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCUserWidget.h"
-#include "EMenuEnum.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
+#include "EMenuEnum.h"
 #include "HUDUserWidget.generated.h"
 
 class UWidget;

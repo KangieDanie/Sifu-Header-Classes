@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "OnlineBeaconClient.h"
 #include "PartyReservation.h"
-#include "EPartyReservationResult.h"
 #include "EClientRequestType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=UniqueNetIdRepl -FallbackName=UniqueNetIdRepl
+#include "EPartyReservationResult.h"
 #include "PartyBeaconClient.generated.h"
 
 UCLASS(NonTransient)

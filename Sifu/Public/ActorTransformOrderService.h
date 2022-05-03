@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OrderService.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "OrderService.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "ActorTransformOrderService.generated.h"
 

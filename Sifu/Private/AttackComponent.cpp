@@ -1,11 +1,11 @@
 #include "AttackComponent.h"
 #include "Net/UnrealNetwork.h"
 
-class AInteractiveMovable;
-class UCombo;
 class AActor;
 class AVitalPointActor;
 class UTargetDB;
+class UCombo;
+class AInteractiveMovable;
 class UFocusDB;
 class AThrowableActor;
 class APushableActor;

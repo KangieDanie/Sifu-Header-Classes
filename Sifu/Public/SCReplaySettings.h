@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=DeveloperSettings -ObjectName=DeveloperSettings -FallbackName=DeveloperSettings
 #include "ReplayKeyDataCameraSettings.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=DeveloperSettings -ObjectName=DeveloperSettings -FallbackName=DeveloperSettings
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "SCReplaySettings.generated.h"
 
 class ABaseReplayController;
@@ -29,13 +30,25 @@ protected:
     UPROPERTY(Config, EditAnywhere)
     bool m_bPhotomodeBuildEnabled;
     
+    UPROPERTY(Config, EditAnywhere)
+    TMap<FString, FText> m_LocalizedMapName;
+    
+    UPROPERTY(Config, EditAnywhere)
+    FFloatRange m_ReplayRecordingTimeRange;
+    
 public:
     USCReplaySettings();
+    UFUNCTION(BlueprintCallable)
+    static bool BPF_LocalizeMapName(UPARAM(Ref) FString& _inOutMapName);
+    
     UFUNCTION(BlueprintPure)
     static bool BPF_IsReplayEditorEnabled();
     
     UFUNCTION(BlueprintPure)
     static bool BPF_IsPhotomodeEnabled();
+    
+    UFUNCTION(BlueprintPure)
+    static FFloatRange BPF_GetReplayRecordingTimeRangeMS();
     
     UFUNCTION(BlueprintPure)
     static FReplayKeyDataCameraSettings BPF_GetDefaultCameraSettings();

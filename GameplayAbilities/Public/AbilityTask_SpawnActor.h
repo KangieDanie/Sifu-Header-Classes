@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "GameplayAbilityTargetDataHandle.h"
 #include "AbilityTask.h"
 #include "SpawnActorDelegateDelegate.h"
-#include "GameplayAbilityTargetDataHandle.h"
 #include "AbilityTask_SpawnActor.generated.h"
 
 class UAbilityTask_SpawnActor;

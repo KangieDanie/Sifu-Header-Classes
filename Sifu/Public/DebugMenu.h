@@ -4,10 +4,10 @@
 #include "SCUserWidget.h"
 #include "DebugMenu.generated.h"
 
-class UPanelWidget;
-class UCharacterBuildDB;
-class UCharacterBuildListDB;
 class ULoadSlot;
+class UCharacterBuildListDB;
+class UCharacterBuildDB;
+class UPanelWidget;
 
 UCLASS(EditInlineNew)
 class SIFU_API UDebugMenu : public USCUserWidget {

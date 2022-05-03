@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=DeveloperSettings -ObjectName=DeveloperSettings -FallbackName=DeveloperSettings
 //CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkChannelConfiguration -FallbackName=AkChannelConfiguration
+#include "AudioOutput.h"
 #include "SoundSettings.generated.h"
 
 UCLASS(DefaultConfig, Config=Game)
@@ -46,6 +47,12 @@ public:
     
     UPROPERTY(Config, EditAnywhere)
     AkChannelConfiguration m_eDefaultChannelConfig;
+    
+    UPROPERTY(Config, EditAnywhere)
+    FAudioOutput m_AudioOutputList[4];
+    
+    UPROPERTY(Config, EditAnywhere)
+    FName m_Audio3DRTPC;
     
     UPROPERTY(Config, EditAnywhere)
     TArray<FString> m_HandlingMonoBusList;

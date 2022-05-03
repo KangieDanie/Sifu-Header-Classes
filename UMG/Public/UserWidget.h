@@ -1,44 +1,44 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnInputActionDelegate.h"
-#include "Widget.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=PointerEvent -FallbackName=PointerEvent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EInputEvent -FallbackName=EInputEvent
-#include "Widget.h"
 #include "Widget.h"
 #include "NamedSlotInterface.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
 #include "OnVisibilityChangedEventDelegate.h"
-#include "EventReply.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=KeyEvent -FallbackName=KeyEvent
-#include "NamedSlotBinding.h"
-#include "EWidgetTickFrequency.h"
-#include "AnimationEventBinding.h"
-#include "WidgetAnimationDynamicEventDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Geometry -FallbackName=Geometry
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=FocusEvent -FallbackName=FocusEvent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=Anchors -FallbackName=Anchors
+#include "Widget.h"
+#include "EWidgetAnimationEvent.h"
+#include "EWidgetTickFrequency.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
+#include "Widget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EInputEvent -FallbackName=EInputEvent
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=PointerEvent -FallbackName=PointerEvent
 #include "EUMGSequencePlayMode.h"
+#include "AnimationEventBinding.h"
+#include "NamedSlotBinding.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=KeyEvent -FallbackName=KeyEvent
 #include "PaintContext.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=Anchors -FallbackName=Anchors
+#include "WidgetAnimationDynamicEventDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+#include "EventReply.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=FocusEvent -FallbackName=FocusEvent
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=MotionEvent -FallbackName=MotionEvent
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=CharacterEvent -FallbackName=CharacterEvent
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=AnalogInputEvent -FallbackName=AnalogInputEvent
-#include "EWidgetAnimationEvent.h"
+#include "OnInputActionDelegate.h"
 #include "UserWidget.generated.h"
 
-class USoundBase;
-class UWidgetTree;
+class APawn;
 class UUMGSequencePlayer;
 class UUMGSequenceTickManager;
-class APlayerCameraManager;
+class UWidgetTree;
+class UDragDropOperation;
 class UInputComponent;
 class UWidgetAnimation;
 class APlayerController;
-class UDragDropOperation;
-class APawn;
+class USoundBase;
+class APlayerCameraManager;
 
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UMG_API UUserWidget : public UWidget, public INamedSlotInterface {

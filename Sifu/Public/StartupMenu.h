@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "MenuWidget.h"
 #include "EStartupMenuState.h"
-#include "EPlayerScreenSide.h"
 #include "EMenuEnum.h"
+#include "EPlayerScreenSide.h"
 #include "StartupMenu.generated.h"
 
 class AActor;

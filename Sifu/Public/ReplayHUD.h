@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ScreenTextureData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HUD -FallbackName=HUD
+#include "ScreenTextureData.h"
 #include "EScreenLocation.h"
 #include "ReplayHUD.generated.h"
 
-class UTexture2D;
 class UObject;
+class UTexture2D;
 
 UCLASS(NonTransient)
 class SIFU_API AReplayHUD : public AHUD {

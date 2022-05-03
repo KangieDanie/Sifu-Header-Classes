@@ -1,11 +1,19 @@
 #include "SCReplaySettings.h"
 
+bool USCReplaySettings::BPF_LocalizeMapName(FString& _inOutMapName) {
+    return false;
+}
+
 bool USCReplaySettings::BPF_IsReplayEditorEnabled() {
     return false;
 }
 
 bool USCReplaySettings::BPF_IsPhotomodeEnabled() {
     return false;
+}
+
+FFloatRange USCReplaySettings::BPF_GetReplayRecordingTimeRangeMS() {
+    return FFloatRange{};
 }
 
 FReplayKeyDataCameraSettings USCReplaySettings::BPF_GetDefaultCameraSettings() {

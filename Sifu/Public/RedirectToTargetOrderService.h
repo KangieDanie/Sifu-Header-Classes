@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCRotationWay -FallbackName=ESCRotationWay
-#include "OrderService.h"
-#include "ERedirectToTargetOrigin.h"
-#include "EOrientationApplyMethod.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "OrderService.h"
 #include "BPOrderServiceInstance.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCRotationWay -FallbackName=ESCRotationWay
+#include "EOrientationApplyMethod.h"
+#include "ERedirectToTargetOrigin.h"
 #include "RedirectToTargetOrderService.generated.h"
 
 UCLASS(EditInlineNew)

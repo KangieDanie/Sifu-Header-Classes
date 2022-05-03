@@ -5,8 +5,8 @@
 #include "DestroySessionCallbackProxy.generated.h"
 
 class UObject;
-class UDestroySessionCallbackProxy;
 class APlayerController;
+class UDestroySessionCallbackProxy;
 
 UCLASS(MinimalAPI)
 class UDestroySessionCallbackProxy : public UOnlineBlueprintCallProxyBase {

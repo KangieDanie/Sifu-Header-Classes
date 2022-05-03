@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIInfluenceTest.h"
 #include "ETraversalEntryType.h"
+#include "AIInfluenceTest.h"
 #include "TraversalEvasionInfluenceTest.generated.h"
 
 UCLASS()

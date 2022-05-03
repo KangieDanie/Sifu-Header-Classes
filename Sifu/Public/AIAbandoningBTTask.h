@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIBTTaskNode.h"
 #include "EOrderType.h"
+#include "AIBTTaskNode.h"
 #include "AIAbandoningBTTask.generated.h"
 
 UCLASS()

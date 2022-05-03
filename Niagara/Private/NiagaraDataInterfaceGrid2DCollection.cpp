@@ -1,7 +1,7 @@
 #include "NiagaraDataInterfaceGrid2DCollection.h"
 
-class UNiagaraComponent;
 class UTextureRenderTarget2D;
+class UNiagaraComponent;
 
 void UNiagaraDataInterfaceGrid2DCollection::GetTextureSize(const UNiagaraComponent* Component, int32& SizeX, int32& SizeY) {
 }

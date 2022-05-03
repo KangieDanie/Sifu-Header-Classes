@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCMathTools -FallbackName=SCMathTools
 #include "EQuadrantTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCMathTools -FallbackName=SCMathTools
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCRotationWay -FallbackName=ESCRotationWay
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "GameMathTools.generated.h"
 
-class AFightingCharacter;
 class AActor;
+class AFightingCharacter;
 
 UCLASS()
 class SIFU_API UGameMathTools : public USCMathTools {

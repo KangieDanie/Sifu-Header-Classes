@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "GameplayAbilityTargetDataHandle.h"
 #include "AbilityTask.h"
 #include "WaitTargetDataDelegateDelegate.h"
 #include "EGameplayTargetingConfirmation.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-#include "GameplayAbilityTargetDataHandle.h"
 #include "AbilityTask_WaitTargetData.generated.h"
 
-class AGameplayAbilityTargetActor;
 class UAbilityTask_WaitTargetData;
+class AGameplayAbilityTargetActor;
 class UGameplayAbility;
 
 UCLASS(NotPlaceable)

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "EParryHeight.h"
 #include "EParrySide.h"
 #include "EAttackOrigin.h"
 #include "EAttackTarget.h"
-#include "EParryHeight.h"
 #include "ParryMatch.generated.h"
 
 UCLASS(Abstract, Blueprintable)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EditableOrderType.h"
 #include "BaseActorCondition.h"
+#include "EditableOrderType.h"
 #include "EOrderAccessMode.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "OrderTimeCondition.generated.h"

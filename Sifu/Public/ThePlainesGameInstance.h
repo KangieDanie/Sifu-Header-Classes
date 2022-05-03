@@ -2,29 +2,28 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGameInstance -FallbackName=SCGameInstance
+#include "EFactionsEnums.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCError -FallbackName=SCError
 //CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkExternalSourceInfo -FallbackName=AkExternalSourceInfo
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCError -FallbackName=SCError
-#include "EFactionsEnums.h"
 #include "ThePlainesGameInstance.generated.h"
 
-class ULocalPlayer;
-class UPredictionManager;
-class UReplaySystem;
-class UUserWidget;
-class UAkAudioEvent;
-class UWGGameFlow;
 class UItemsDB;
+class UWGGameFlow;
+class UUserWidget;
+class UReplaySystem;
+class UAkAudioEvent;
 class UInputManager;
+class USessionTimeManager;
 class UFactionsManager;
-class USCCheatManager;
+class UPredictionManager;
+class ALevelSequenceActor;
 class UCinematicManager;
 class UMessageManager;
 class USCSessionManager;
-class USessionTimeManager;
 class USCLocalPlayer;
-class ALevelSequenceActor;
 class ASCPlayerStart;
+class ULocalPlayer;
 
 UCLASS(NonTransient)
 class SIFU_API UThePlainesGameInstance : public USCGameInstance {
@@ -77,9 +76,6 @@ private:
     
     UPROPERTY()
     UFactionsManager* m_FactionsManager;
-    
-    UPROPERTY()
-    USCCheatManager* m_SCCheatManager;
     
     UPROPERTY(EditDefaultsOnly)
     TSubclassOf<UPredictionManager> m_PredictionManagerClass;

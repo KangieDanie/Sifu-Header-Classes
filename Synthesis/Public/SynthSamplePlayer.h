@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnSamplePlaybackProgressDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AudioMixer -ObjectName=SynthComponent -FallbackName=SynthComponent
+#include "OnSamplePlaybackProgressDelegate.h"
 #include "OnSampleLoadedDelegate.h"
 #include "ESamplePlayerSeekType.h"
 #include "SynthSamplePlayer.generated.h"

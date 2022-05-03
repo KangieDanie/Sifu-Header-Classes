@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 //CROSS-MODULE INCLUDE V2: -ModuleName=AudioMixer -ObjectName=SynthComponent -FallbackName=SynthComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundAttenuationSettings -FallbackName=SoundAttenuationSettings
 #include "EMediaSoundChannels.h"
-#include "MediaSoundComponentSpectralData.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "EMediaSoundComponentFFTSize.h"
+#include "MediaSoundComponentSpectralData.h"
 #include "MediaSoundComponent.generated.h"
 
 class UMediaPlayer;

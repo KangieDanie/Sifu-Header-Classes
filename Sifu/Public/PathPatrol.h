@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EPatrolType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "PatrolControlPoint.h"
-#include "EPatrolType.h"
 #include "PathPatrol.generated.h"
 
 UCLASS()

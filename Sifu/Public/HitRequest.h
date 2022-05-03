@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AttackRequest.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
-#include "HitBox.h"
+#include "AttackRequest.h"
 #include "ELimbs.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EInstigatorType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "HitBox.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 #include "HitRequest.generated.h"
 
-class AActor;
 class AUsableItem;
+class AActor;
 
 USTRUCT(BlueprintType)
 struct SIFU_API FHitRequest {
@@ -46,7 +46,7 @@ public:
     UPROPERTY(Transient)
     uint8 m_uiDamageID;
     
-    UPROPERTY(Transient)
+    UPROPERTY(BlueprintReadOnly, Transient)
     uint8 m_uiAttackOrderID;
     
     UPROPERTY(BlueprintReadOnly, Transient)

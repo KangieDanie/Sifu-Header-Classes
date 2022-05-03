@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCAITicketEnum.h"
 #include "AIConditionClassInstance.h"
+#include "SCAITicketEnum.h"
 #include "AIAttackReaction.generated.h"
 
 class UComboTransitionCondition;

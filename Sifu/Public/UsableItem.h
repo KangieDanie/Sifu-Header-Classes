@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-#include "EItemUseState.h"
-#include "ItemEffects.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
+#include "ItemEffects.h"
+#include "EItemUseState.h"
 #include "UsableItem.generated.h"
 
 class UShapeComponent;

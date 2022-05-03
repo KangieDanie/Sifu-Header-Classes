@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "MenuItem.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
+#include "MenuItem.h"
 #include "LoadChoices.generated.h"
 
-class UWidget;
 class UPanelWidget;
 class ULoadSlot;
+class UWidget;
 
 UCLASS(EditInlineNew)
 class SIFU_API ULoadChoices : public UMenuItem {

@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "VariantDependency.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "Variant.generated.h"
 
-class AActor;
 class UVariantObjectBinding;
-class UVariant;
 class UTexture2D;
+class UVariant;
 class UVariantSet;
 class ULevelVariantSets;
+class AActor;
 
 UCLASS(BlueprintType)
 class VARIANTMANAGERCONTENT_API UVariant : public UObject {

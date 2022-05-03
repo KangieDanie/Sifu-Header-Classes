@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OrderService.h"
 #include "PelvisDirectionComputationParams.h"
+#include "OrderService.h"
 #include "PelvisDirectionComputationParamsOrderService.generated.h"
 
 UCLASS(EditInlineNew)

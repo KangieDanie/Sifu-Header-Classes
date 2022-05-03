@@ -28,6 +28,7 @@ UReplayableDestructibleComponent::UReplayableDestructibleComponent() {
     this->m_bCreatePhysicsStateAtStart = true;
     this->m_fDelayNotifyHitEvent = 0.00f;
     this->m_bOnFirstDestructionEnableChunksCollision = true;
+    this->m_ReplayableStaticObjectComponent = NULL;
     this->m_bCreatePhysicsState = true;
 }
 

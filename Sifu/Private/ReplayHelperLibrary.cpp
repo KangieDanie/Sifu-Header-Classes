@@ -1,6 +1,5 @@
 #include "ReplayHelperLibrary.h"
 
-class ASCPlayerController;
 class ABaseReplayController;
 class ABaseWeapon;
 
@@ -15,10 +14,6 @@ FFilterProperties UReplayHelperLibrary::BPF_LoadFilterPreset(int32 _iSlot, bool&
 }
 
 bool UReplayHelperLibrary::BPF_IsAvailabilityLayerPushed(const FAvailabilityLayerCache& _inALCache) {
-    return false;
-}
-
-bool UReplayHelperLibrary::BPF_HasEntitlement(const ASCPlayerController* _controller, const FName& _entitlement) {
     return false;
 }
 

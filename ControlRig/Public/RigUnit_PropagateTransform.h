@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CachedRigElement.h"
 #include "RigElementKey.h"
 #include "RigUnitMutable.h"
+#include "CachedRigElement.h"
 #include "RigUnit_PropagateTransform.generated.h"
 
 USTRUCT()

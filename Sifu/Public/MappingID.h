@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "InputPresetsEnumHandler.h"
 #include "InputAction.h"
+#include "InputPresetsEnumHandler.h"
 #include "InputContext.h"
 #include "MappingID.generated.h"
 

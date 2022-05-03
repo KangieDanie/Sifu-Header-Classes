@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "FunctionCaller.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftObjectPath -FallbackName=SoftObjectPath
-#include "FunctionCaller.h"
 #include "VariantObjectBinding.generated.h"
 
 class UPropertyValue;

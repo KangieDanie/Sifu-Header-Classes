@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HitBoxCondition.h"
 #include "BaseActorTargetConditionInstance.h"
+#include "HitBoxCondition.h"
 #include "HitBoxGenericCondition.generated.h"
 
 UCLASS()

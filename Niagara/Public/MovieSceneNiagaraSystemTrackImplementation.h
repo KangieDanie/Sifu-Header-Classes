@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ENiagaraAgeUpdateMode.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneTrackImplementation -FallbackName=MovieSceneTrackImplementation
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FrameNumber -FallbackName=FrameNumber
+//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneTrackImplementation -FallbackName=MovieSceneTrackImplementation
 #include "ENiagaraSystemSpawnSectionEndBehavior.h"
 #include "ENiagaraSystemSpawnSectionEvaluateBehavior.h"
 #include "ENiagaraSystemSpawnSectionStartBehavior.h"
+#include "ENiagaraAgeUpdateMode.h"
 #include "MovieSceneNiagaraSystemTrackImplementation.generated.h"
 
 USTRUCT()

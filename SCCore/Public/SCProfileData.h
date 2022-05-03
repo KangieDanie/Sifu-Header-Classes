@@ -1,8 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=DateTime -FallbackName=DateTime
-#include "CharacterSaveDescription.h"
 #include "MappingSave.h"
+#include "CharacterSaveDescription.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "SCProfileData.generated.h"
 
 USTRUCT(BlueprintType)
@@ -26,6 +28,12 @@ public:
     
     UPROPERTY(BlueprintReadWrite, SaveGame, VisibleAnywhere)
     FString m_TextCulture;
+    
+    UPROPERTY(BlueprintReadWrite, SaveGame, VisibleAnywhere)
+    FGameplayTagContainer m_UnlockedAchievements;
+    
+    UPROPERTY(BlueprintReadWrite, SaveGame, VisibleAnywhere)
+    TMap<FGameplayTag, FGameplayTagContainer> m_NewlyUnlockedAchievements;
     
     SCCORE_API FSCProfileData();
 };

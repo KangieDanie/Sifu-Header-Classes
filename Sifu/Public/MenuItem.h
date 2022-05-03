@@ -3,8 +3,8 @@
 #include "SCUserWidget.h"
 #include "MenuItem.generated.h"
 
-class UMenuItem;
 class UWidget;
+class UMenuItem;
 
 UCLASS(EditInlineNew)
 class SIFU_API UMenuItem : public USCUserWidget {

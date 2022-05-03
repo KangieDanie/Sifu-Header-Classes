@@ -4,8 +4,8 @@
 #include "OnSpawnedDelegate.h"
 #include "AsyncTaskWaitForAISituationSpawnedFromSave.generated.h"
 
-class AAISituationActor;
 class UAsyncTaskWaitForAISituationSpawnedFromSave;
+class AAISituationActor;
 
 UCLASS()
 class SIFU_API UAsyncTaskWaitForAISituationSpawnedFromSave : public UBlueprintAsyncActionBase {

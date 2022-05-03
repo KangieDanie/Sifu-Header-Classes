@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "DynamicTextureMaskDB.generated.h"
 
-class ASCPositionBakeSceneCapture;
 class UTextureRenderTarget2D;
+class ASCPositionBakeSceneCapture;
 class UMaterialInterface;
 
 UCLASS(BlueprintType)

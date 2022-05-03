@@ -1,9 +1,9 @@
 #include "Variant.h"
 
-class UVariant;
 class UTexture2D;
-class AActor;
 class UObject;
+class AActor;
+class UVariant;
 class UVariantSet;
 class ULevelVariantSets;
 

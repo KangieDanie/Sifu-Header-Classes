@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCLevelSequenceDirectorData -FallbackName=SCLevelSequenceDirectorData
 #include "EPlayerCameraForcedSide.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCLevelSequenceDirectorData -FallbackName=SCLevelSequenceDirectorData
 #include "InputContext.h"
 #include "WGLevelSequenceDirectorData.generated.h"
 

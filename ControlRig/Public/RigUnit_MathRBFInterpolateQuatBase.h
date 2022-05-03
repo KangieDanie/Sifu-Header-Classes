@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RigUnit_MathRBFInterpolateQuatWorkData.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
-#include "RigUnit_MathRBFInterpolateBase.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "ERBFQuatDistanceType.h"
 #include "ERBFKernelType.h"
+#include "RigUnit_MathRBFInterpolateBase.h"
+#include "ERBFQuatDistanceType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "RigUnit_MathRBFInterpolateQuatWorkData.h"
 #include "RigUnit_MathRBFInterpolateQuatBase.generated.h"
 
 USTRUCT()

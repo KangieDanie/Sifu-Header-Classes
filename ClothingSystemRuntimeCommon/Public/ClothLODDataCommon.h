@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ClothPhysicalMeshData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=ClothingSystemRuntimeInterface -ObjectName=ClothCollisionData -FallbackName=ClothCollisionData
+#include "ClothPhysicalMeshData.h"
 #include "ClothLODDataCommon.generated.h"
 
 USTRUCT(BlueprintType)

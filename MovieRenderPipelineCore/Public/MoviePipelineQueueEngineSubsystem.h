@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EngineSubsystem -FallbackName=EngineSubsystem
 #include "MoviePipelineQueueEngineSubsystem.generated.h"
 
-class UMoviePipelineExecutorBase;
 class UMoviePipelineQueue;
+class UMoviePipelineExecutorBase;
 
 UCLASS(BlueprintType)
 class MOVIERENDERPIPELINECORE_API UMoviePipelineQueueEngineSubsystem : public UEngineSubsystem {

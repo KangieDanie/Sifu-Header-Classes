@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=VerticalBox -FallbackName=VerticalBox
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EUINavigation -FallbackName=EUINavigation
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EFocusCause -FallbackName=EFocusCause
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=SlateChildSize -FallbackName=SlateChildSize
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EVerticalAlignment -FallbackName=EVerticalAlignment
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EHorizontalAlignment -FallbackName=EHorizontalAlignment
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=SlateChildSize -FallbackName=SlateChildSize
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=VerticalBox -FallbackName=VerticalBox
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EUINavigation -FallbackName=EUINavigation
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EFocusCause -FallbackName=EFocusCause
+#include "ButtonUserWidget.h"
+#include "ButtonUserWidget.h"
 #include "ECycleDirection.h"
-#include "ButtonUserWidget.h"
-#include "ButtonUserWidget.h"
 #include "TableWidget.generated.h"
 
-class UButtonUserWidget;
 class UHorizontalBox;
-class UWidget;
+class UButtonUserWidget;
 class UUserWidget;
+class UWidget;
 
 UCLASS()
 class UTableWidget : public UVerticalBox {

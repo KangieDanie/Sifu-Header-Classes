@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "LevelSequenceDirector.generated.h"
 
-class ULevelSequence;
 class ULevelSequencePlayer;
+class ULevelSequence;
 
 UCLASS(Blueprintable)
 class LEVELSEQUENCE_API ULevelSequenceDirector : public UObject {

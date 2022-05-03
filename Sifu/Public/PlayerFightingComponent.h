@@ -2,20 +2,22 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=CrowdAgentInterface -FallbackName=CrowdAgentInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ECharacterGender -FallbackName=ECharacterGender
 #include "PlayerGenderSpecificData.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ECharacterGender -FallbackName=ECharacterGender
+#include "OutfitData.h"
 #include "PlayerFightingComponent.generated.h"
 
 class USkeletalMesh;
+class UMaterialInterface;
+class AActor;
 class UEquipmentSelectionData;
 class UBaseMovementDB;
-class AActor;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UPlayerFightingComponent : public UActorComponent, public ICrowdAgentInterface {
     GENERATED_BODY()
 public:
-    DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGenderChanged, ECharacterGender, _eNewGender);
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMeshChanged, ECharacterGender, _eNewGender);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FDialogStatusChanged);
     
     UPROPERTY(BlueprintReadWrite, Transient, ReplicatedUsing=OnRep_Dialog)
@@ -25,7 +27,7 @@ public:
     FDialogStatusChanged OnDialogStatusChanged;
     
     UPROPERTY(BlueprintAssignable)
-    FOnGenderChanged OnGenderChanged;
+    FOnMeshChanged OnMeshChanged;
     
 private:
     UPROPERTY(EditAnywhere)
@@ -64,6 +66,10 @@ private:
     UPROPERTY(EditDefaultsOnly)
     FName m_PlayerPositionMPCParameterName;
     
+protected:
+    UPROPERTY(BlueprintReadOnly)
+    int32 m_iOutfitIndex;
+    
 public:
     UPlayerFightingComponent();
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
@@ -83,10 +89,19 @@ private:
     
 public:
     UFUNCTION(BlueprintCallable)
+    void BPF_SwapOutfit(int32 _iNewOutfitIndex, UMaterialInterface* _forcedMaterial);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_SwapMesh(const FOutfitData& _outfitData, UMaterialInterface* _forcedMaterial);
+    
+    UFUNCTION(BlueprintCallable)
     void BPF_SetIsInEndOfMovesetTutorial(bool _bActivate);
     
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void BPF_ServerSetIsInDialog(bool _bInDialog);
+    
+    UFUNCTION(BlueprintPure)
+    FPlayerGenderSpecificData BPF_GetCurrentGenderData() const;
     
     
     // Fix for true pure virtual functions not being implemented

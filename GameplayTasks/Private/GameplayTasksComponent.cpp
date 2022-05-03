@@ -2,10 +2,10 @@
 #include "Net/UnrealNetwork.h"
 #include "Templates/SubclassOf.h"
 
-class UGameplayTask;
 class UGameplayTaskOwnerInterface;
 class IGameplayTaskOwnerInterface;
 class UGameplayTaskResource;
+class UGameplayTask;
 
 void UGameplayTasksComponent::OnRep_SimulatedTasks() {
 }

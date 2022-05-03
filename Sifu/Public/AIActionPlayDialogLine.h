@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "AIActionPlayDialogLine.generated.h"
 
-class UAnimSequence;
 class AActor;
+class UAnimSequence;
 
 UCLASS()
 class SIFU_API UAIActionPlayDialogLine : public UWGAiAction {

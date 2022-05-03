@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
 #include "AkGameObject.h"
 #include "AkExternalSourceInfo.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=LatentActionInfo -FallbackName=LatentActionInfo
 #include "ERTPCValueType.h"
 #include "AkComponent.generated.h"
 
-class UAkComponent;
-class UAkSwitchValue;
-class UAkAuxBus;
-class UAkRtpc;
 class UAkTrigger;
+class UAkComponent;
+class UAkRtpc;
+class UAkAuxBus;
+class UAkSwitchValue;
 class UAkAudioEvent;
 class AActor;
 

@@ -4,8 +4,8 @@
 #include "EQuadrantTypes.h"
 #include "AttackRequest.generated.h"
 
-class UCombo;
 class UAttackDB;
+class UCombo;
 
 USTRUCT(BlueprintType)
 struct FAttackRequest {

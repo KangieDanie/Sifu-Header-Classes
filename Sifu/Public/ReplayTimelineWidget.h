@@ -3,16 +3,16 @@
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=UserWidget -FallbackName=UserWidget
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
-#include "EReplayKeyIndexUpdateReason.h"
 #include "ReplayKeyData.h"
+#include "EReplayKeyIndexUpdateReason.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=PaintContext -FallbackName=PaintContext
 #include "EReplayTimelineDebugType.h"
 #include "ReplayTimelineWidget.generated.h"
 
-class UReplayKeyWidget;
-class UCanvasPanel;
 class AReplayController;
+class UCanvasPanel;
+class UReplayKeyWidget;
 class UReplayKey;
 
 UCLASS(EditInlineNew)

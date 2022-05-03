@@ -5,8 +5,8 @@
 #include "SCVolume.generated.h"
 
 class ASCVolume;
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 
 UCLASS()
 class SCCORE_API ASCVolume : public AVolume {

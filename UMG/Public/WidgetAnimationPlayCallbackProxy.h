@@ -5,10 +5,10 @@
 #include "EUMGSequencePlayMode.h"
 #include "WidgetAnimationPlayCallbackProxy.generated.h"
 
-class UWidgetAnimation;
-class UUMGSequencePlayer;
 class UWidgetAnimationPlayCallbackProxy;
+class UWidgetAnimation;
 class UUserWidget;
+class UUMGSequencePlayer;
 
 UCLASS(BlueprintType, MinimalAPI)
 class UWidgetAnimationPlayCallbackProxy : public UObject {

@@ -1,7 +1,7 @@
 #include "HorizontalBox.h"
 
-class UWidget;
 class UHorizontalBoxSlot;
+class UWidget;
 
 UHorizontalBoxSlot* UHorizontalBox::AddChildToHorizontalBox(UWidget* Content) {
     return NULL;

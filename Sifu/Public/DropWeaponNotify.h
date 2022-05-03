@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCAnimNotify.h"
+#include "EDropNotifyApplyMode.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ECoordinateSystem.h"
-#include "EDropNotifyApplyMode.h"
 #include "EDropReason.h"
 #include "DropWeaponNotify.generated.h"
 

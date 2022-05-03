@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ButtonUserWidget.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
-#include "MappingID.h"
-#include "InputContext.h"
 #include "EControllerIconAxisTypes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "EControllerIconStyles.h"
+#include "InputContext.h"
+#include "MappingID.h"
 #include "InputAction.h"
 #include "InputMappingNode.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=InputCore -ObjectName=Key -FallbackName=Key

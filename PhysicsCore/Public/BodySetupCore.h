@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EPhysicsType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "ECollisionTraceFlag.h"
+#include "EPhysicsType.h"
 #include "EBodyCollisionResponse.h"
+#include "ECollisionTraceFlag.h"
 #include "BodySetupCore.generated.h"
 
 UCLASS(CollapseCategories)

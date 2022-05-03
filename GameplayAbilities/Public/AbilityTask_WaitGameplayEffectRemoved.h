@@ -6,8 +6,8 @@
 #include "GameplayEffectRemovalInfo.h"
 #include "AbilityTask_WaitGameplayEffectRemoved.generated.h"
 
-class UAbilityTask_WaitGameplayEffectRemoved;
 class UGameplayAbility;
+class UAbilityTask_WaitGameplayEffectRemoved;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitGameplayEffectRemoved : public UAbilityTask {

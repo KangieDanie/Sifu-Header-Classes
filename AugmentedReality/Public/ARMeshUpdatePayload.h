@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EARObjectClassification.h"
 #include "ARSessionPayload.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
-#include "EARObjectClassification.h"
 #include "ARMeshUpdatePayload.generated.h"
 
 USTRUCT(BlueprintType)

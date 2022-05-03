@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EInputMappingCompatibilityRuleType.h"
 #include "InputAction.h"
+#include "EInputMappingCompatibilityRuleType.h"
 #include "ActionMappingCompatibilityRule.generated.h"
 
 USTRUCT(BlueprintType)

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "RigUnit_AimConstraint_WorkData.h"
 #include "RigUnitMutable.h"
 #include "EAimMode.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "AimTarget.h"
-#include "RigUnit_AimConstraint_WorkData.h"
 #include "RigUnit_AimConstraint.generated.h"
 
 USTRUCT()

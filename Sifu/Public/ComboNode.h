@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-#include "AvailabilityLayerContainer.h"
-#include "AIActionAttackClassInstance.h"
-#include "ComboTransitions.h"
-#include "EComboTransition.h"
 #include "ChargedBuildUpStructByQuadrant.h"
+#include "AIActionAttackClassInstance.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "ComboTransitions.h"
 #include "ChargedAttackNameByQuadrants.h"
+#include "AvailabilityLayerContainer.h"
+#include "EComboTransition.h"
 #include "ComboNode.generated.h"
 
 class UComboEvent;

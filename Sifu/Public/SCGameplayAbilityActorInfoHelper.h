@@ -4,9 +4,9 @@
 #include "SCGameplayAbilityActorInfo.h"
 #include "SCGameplayAbilityActorInfoHelper.generated.h"
 
-class AFightingCharacter;
 class USCAbilitySystemComponent;
 class AFightingPlayerController;
+class AFightingCharacter;
 
 UCLASS(BlueprintType)
 class USCGameplayAbilityActorInfoHelper : public UBlueprintFunctionLibrary {

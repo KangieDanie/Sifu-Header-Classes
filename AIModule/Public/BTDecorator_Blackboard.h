@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EBTBlackboardRestart.h"
 #include "BTDecorator_BlackboardBase.h"
+#include "EBTBlackboardRestart.h"
 #include "BTDecorator_Blackboard.generated.h"
 
 UCLASS()

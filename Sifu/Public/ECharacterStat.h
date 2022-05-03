@@ -19,6 +19,9 @@ enum class ECharacterStat : uint8 {
     DeathCounter,
     XPMultiplier,
     Score,
+    DeathCounterMax,
+    GameDifficulty,
     Count,
+    None,
 };
 

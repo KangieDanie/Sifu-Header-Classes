@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "AutoCompleteCommand.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Color -FallbackName=Color
+#include "AutoCompleteCommand.h"
 #include "ConsoleSettings.generated.h"
 
 UCLASS(DefaultConfig, Config=Input)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "HitDefenseResult.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "EAvoidType.h"
-#include "HitDefenseResult.h"
 #include "HitDefenseResultHelpers.generated.h"
 
 class UAvoidPropertyDB;

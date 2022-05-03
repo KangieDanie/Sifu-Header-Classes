@@ -1,13 +1,13 @@
 #include "ThrowableActor.h"
 #include "Templates/SubclassOf.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=PhysicalActorDependencyComponent -FallbackName=PhysicalActorDependencyComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=PhysicalActorDependencyComponent -FallbackName=PhysicalActorDependencyComponent
+#include "HitBoxComponent.h"
 #include "ThrowableObjMovementComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIPerceptionStimuliSourceComponent -FallbackName=AIPerceptionStimuliSourceComponent
 #include "ReplayablePhysObjectComponent.h"
-#include "HitBoxComponent.h"
 #include "ReplayableDestructionComponent.h"
 
 class AFightingCharacter;

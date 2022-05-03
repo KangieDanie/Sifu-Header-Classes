@@ -4,11 +4,11 @@
 #include "AISense.h"
 #include "AISense_Blueprint.generated.h"
 
-class AActor;
-class UAIPerceptionComponent;
-class UUserDefinedStruct;
-class UAISenseEvent;
 class APawn;
+class UUserDefinedStruct;
+class UAIPerceptionComponent;
+class AActor;
+class UAISenseEvent;
 
 UCLASS(Abstract, Blueprintable, HideDropdown)
 class AIMODULE_API UAISense_Blueprint : public UAISense {

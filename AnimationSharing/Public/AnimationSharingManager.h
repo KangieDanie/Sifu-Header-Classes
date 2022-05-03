@@ -3,11 +3,11 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "AnimationSharingManager.generated.h"
 
-class AActor;
-class UAnimationSharingSetup;
 class USkeleton;
 class UAnimSharingInstance;
+class AActor;
 class UAnimationSharingManager;
+class UAnimationSharingSetup;
 
 UCLASS(BlueprintType, DefaultConfig)
 class ANIMATIONSHARING_API UAnimationSharingManager : public UObject {

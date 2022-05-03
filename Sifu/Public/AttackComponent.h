@@ -1,44 +1,44 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
-#include "EActionType.h"
 #include "BaseComponent.h"
-#include "AttackHitRequest.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+#include "EHitDismissReason.h"
+#include "EActionType.h"
+#include "ComboAttack.h"
+#include "AvoidWindow.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCPoolableActorComponent -FallbackName=SCPoolableActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
 #include "EMovableType.h"
+#include "AttackHitRequest.h"
 #include "EDangerStates.h"
 #include "ImpactResult.h"
-#include "EHitDismissReason.h"
-#include "EAttackStates.h"
 #include "EChargeCapEndReason.h"
-#include "InputAction.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
+#include "EAttackStates.h"
 #include "AnimSyncContainer.h"
 #include "AttackIKLimbProfiles.h"
-#include "HitBox.h"
-#include "ELimbs.h"
 #include "AbsorbWindow.h"
-#include "AvoidWindow.h"
-#include "ComboAttack.h"
+#include "InputAction.h"
+#include "ELimbs.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
+#include "HitBox.h"
 #include "AttackComponent.generated.h"
 
-class AThrowableActor;
-class AVitalPointActor;
-class URushAttackDB;
 class AActor;
+class UTargetDB;
+class AVitalPointActor;
 class UCurveFloat;
 class UAnimSequence;
-class UEnvironmentalAttackDetectionDB;
-class UComboManager;
-class UPushObjectAnimRequest;
 class UCombo;
 class UIdleDB;
-class UFocusDB;
-class UTargetDB;
-class AInteractiveMovable;
 class APushableActor;
+class UPushObjectAnimRequest;
+class UComboManager;
+class UEnvironmentalAttackDetectionDB;
+class URushAttackDB;
+class UFocusDB;
+class AInteractiveMovable;
+class AThrowableActor;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UAttackComponent : public UActorComponent, public IBaseComponent, public ISCPoolableActorComponent {

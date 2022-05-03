@@ -4,8 +4,8 @@
 #include "GameplayAbility.h"
 #include "GameplayAbility_Montage.generated.h"
 
-class UAnimMontage;
 class UGameplayEffect;
+class UAnimMontage;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UGameplayAbility_Montage : public UGameplayAbility {

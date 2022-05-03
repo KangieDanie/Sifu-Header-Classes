@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryTest -FallbackName=EnvQueryTest
-#include "EGetActorsRelativeSideToBox.h"
 #include "ETestAxis2D.h"
+#include "EGetActorsRelativeSideToBox.h"
 #include "EnvQueryTest_ActorsRelativeSideToBox.generated.h"
 
 class UEnvQueryContext;

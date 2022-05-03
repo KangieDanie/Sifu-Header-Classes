@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "ECharacterProgressionRewardTypes.h"
 #include "CharacterProgressionReward.h"
-#include "ProgressionRewardArray.h"
-#include "ProgressionDoorStruct.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "RetrieveLostItemStruct.h"
+#include "ProgressionDoorStruct.h"
+#include "ECharacterProgressionRewardTypes.h"
+#include "ProgressionRewardArray.h"
 #include "ECharacterProgressionRewardConditions.h"
 #include "CharacterProgressionDB.generated.h"
 

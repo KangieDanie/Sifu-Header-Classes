@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RigElementKey.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EControlRigVectorKind.h"
+#include "RigElementKey.h"
 #include "RigUnit_AimItem_Target.generated.h"
 
 USTRUCT(BlueprintType)

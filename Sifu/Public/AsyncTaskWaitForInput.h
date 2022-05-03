@@ -2,14 +2,14 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintAsyncActionBase -FallbackName=BlueprintAsyncActionBase
+#include "InputAction.h"
 #include "OnInputWaitDelegate.h"
 #include "TestInputAdditionalValidationDelegateDelegate.h"
-#include "InputAction.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCBlendType -FallbackName=ESCBlendType
 #include "AsyncTaskWaitForInput.generated.h"
 
-class UObject;
 class UAsyncTaskWaitForInput;
+class UObject;
 class USCGameplayAbility;
 class UCurveFloat;
 

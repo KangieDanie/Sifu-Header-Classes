@@ -77,6 +77,7 @@ UCameraDB::UCameraDB() {
     this->m_fMirrorFarExtraDistanceInPushedState = 500.00f;
     this->m_fMirrorFarExtraDistanceInDownState = 175.00f;
     this->m_fMeleeAngleToUseCamForwardDirToTargetToChangeMirror = 20.00f;
+    this->m_AnimDrivenRotationWeightByMixerWeight = NULL;
     this->m_AnimDrivenWeightForCollisionDistance = NULL;
     this->m_AnimDrivenWeightFactorForAnimRatio = NULL;
     this->m_AnimDrivenWeightByAngularDistance = NULL;

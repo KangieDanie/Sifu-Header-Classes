@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ThePlainesLevel.h"
 #include "WeaponSituationDescription.h"
+#include "ThePlainesLevel.h"
 #include "ArchetypeSituationDescription.h"
 #include "ThePlainesLDLevel.generated.h"
 
-class UDataTable;
 class UArchetypeSituationDB;
+class UDataTable;
 
 UCLASS()
 class SIFU_API AThePlainesLDLevel : public AThePlainesLevel {

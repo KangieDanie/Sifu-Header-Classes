@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "CheckPoint.generated.h"
 
-class AActor;
 class UBoxComponent;
+class AActor;
 class UPrimitiveComponent;
 
 UCLASS()

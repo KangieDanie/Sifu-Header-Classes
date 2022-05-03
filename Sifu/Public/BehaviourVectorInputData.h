@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VectorInputData.h"
 #include "InputBehaviourStruct.h"
+#include "VectorInputData.h"
 #include "BehaviourVectorInputData.generated.h"
 
 UCLASS()

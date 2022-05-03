@@ -1,6 +1,7 @@
 #include "TicketSettings.h"
 
 UTicketSettings::UTicketSettings() {
+    this->m_iSerializeVersion = 1;
     this->m_bActivateWeaponTicketManager = true;
     this->m_fDefaultWeaponTicketCooldown = 15.00f;
     this->m_fWeaponTicketCooldownIncreaseValue = 0.00f;

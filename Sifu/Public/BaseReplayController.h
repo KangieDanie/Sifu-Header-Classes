@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "SCPlayerController.h"
-#include "AvailabilityLayerCache.h"
 #include "InputAvailability.h"
 #include "InputContext.h"
+#include "AvailabilityLayerCache.h"
 #include "AvailabilityLayerCaches.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESaveResult -FallbackName=ESaveResult
 #include "EMessageReason.h"
@@ -14,8 +14,8 @@
 class UAvailabilityLayerData;
 class UHUDUserWidget;
 class ASpectatorPawn;
-class AReplayHUD;
 class UReplayMenuWidget;
+class AReplayHUD;
 class UAngleFeedbackUserWidget;
 class URangeFeedbackUserWidget;
 class UMessageFeedbackUserWidget;

@@ -4,8 +4,8 @@
 #include "BaseActorConditionInstance.h"
 #include "BaseActorConditionHelpers.generated.h"
 
-class AActor;
 class UObject;
+class AActor;
 
 UCLASS(BlueprintType)
 class SIFU_API UBaseActorConditionHelpers : public UBlueprintFunctionLibrary {

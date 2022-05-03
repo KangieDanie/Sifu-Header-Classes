@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SafeZoneOrderService.h"
 #include "SafeZoneBonePair.h"
+#include "SafeZoneOrderService.h"
 #include "BoneToBoneSafeZoneOrderService.generated.h"
 
 UCLASS(Abstract, EditInlineNew)

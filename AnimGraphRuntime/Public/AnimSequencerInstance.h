@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SequencerAnimationSupport.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimInstance -FallbackName=AnimInstance
+#include "SequencerAnimationSupport.h"
 #include "AnimSequencerInstance.generated.h"
 
 UCLASS(NonTransient)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AIComboCondition.h"
-#include "EComboAIConditionGroupOperator.h"
 #include "AIConditionClassInstance.h"
+#include "EComboAIConditionGroupOperator.h"
 #include "ComboAIConditionGroup.generated.h"
 
 UCLASS(EditInlineNew)

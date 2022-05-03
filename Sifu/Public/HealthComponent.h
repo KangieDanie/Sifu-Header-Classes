@@ -50,6 +50,9 @@ public:
     UFUNCTION(BlueprintCallable)
     void BPF_SetCanBeDamaged(bool _bValue);
     
+    UFUNCTION(BlueprintCallable)
+    void BPF_SetCanAddHealth(bool _bValue);
+    
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void BPF_ServerSetHealth(float _fHealth);
     

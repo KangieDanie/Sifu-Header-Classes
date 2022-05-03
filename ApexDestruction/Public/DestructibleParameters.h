@@ -2,9 +2,9 @@
 #include "CoreMinimal.h"
 #include "DestructibleDamageParameters.h"
 #include "DestructibleDebrisParameters.h"
-#include "DestructibleSpecialHierarchyDepths.h"
 #include "DestructibleAdvancedParameters.h"
 #include "DestructibleDepthParameters.h"
+#include "DestructibleSpecialHierarchyDepths.h"
 #include "DestructibleParametersFlag.h"
 #include "DestructibleParameters.generated.h"
 

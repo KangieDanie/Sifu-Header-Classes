@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EMoveTransitionType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCAnimInstance -FallbackName=SCAnimInstance
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
-#include "AnimInfo.h"
 #include "BlendSpaceDirectionContainer.h"
+#include "AnimInfo.h"
 #include "AnimStructMoveTransition.h"
-#include "EMoveTransitionType.h"
 #include "AnimInstanceWithDependancy.generated.h"
 
 UCLASS(NonTransient)

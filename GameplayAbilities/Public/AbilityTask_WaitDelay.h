@@ -4,8 +4,8 @@
 #include "WaitDelayDelegateDelegate.h"
 #include "AbilityTask_WaitDelay.generated.h"
 
-class UGameplayAbility;
 class UAbilityTask_WaitDelay;
+class UGameplayAbility;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitDelay : public UAbilityTask {

@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "MovieSceneEvaluationFieldEntityTree.h"
 #include "MovieSceneEvaluationFieldEntity.h"
-#include "MovieSceneEvaluationFieldEntityMetaData.h"
 #include "MovieSceneEvaluationFieldSharedEntityMetaData.h"
+#include "MovieSceneEvaluationFieldEntityMetaData.h"
 #include "MovieSceneEntityComponentField.generated.h"
 
 USTRUCT(BlueprintType)

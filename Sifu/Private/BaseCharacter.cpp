@@ -1,10 +1,10 @@
 #include "BaseCharacter.h"
-#include "CharacterTextLipSync.h"
 #include "SocialComponent.h"
 #include "OrderComponent.h"
+#include "CharacterTextLipSync.h"
 
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 class UMaterialInstanceDynamic;
 
 void ABaseCharacter::OnLandedRaw(const FHitResult& _Impact) {

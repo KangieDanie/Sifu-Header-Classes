@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "TargetableWidgetUpdaterComponent.generated.h"
 
-class UTargetableWidget;
 class AActor;
+class UTargetableWidget;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UTargetableWidgetUpdaterComponent : public UActorComponent {

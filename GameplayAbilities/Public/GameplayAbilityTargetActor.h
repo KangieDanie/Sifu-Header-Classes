@@ -3,14 +3,14 @@
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "GameplayAbilityTargetingLocationInfo.h"
-#include "WorldReticleParameters.h"
 #include "GameplayTargetDataFilterHandle.h"
+#include "WorldReticleParameters.h"
 #include "GameplayAbilityTargetActor.generated.h"
 
+class UAbilitySystemComponent;
 class APlayerController;
 class UGameplayAbility;
 class AGameplayAbilityWorldReticle;
-class UAbilitySystemComponent;
 
 UCLASS(Abstract, NotPlaceable)
 class GAMEPLAYABILITIES_API AGameplayAbilityTargetActor : public AActor {

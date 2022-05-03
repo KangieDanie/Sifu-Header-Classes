@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BaseActorTargetConditionInstance.h"
 #include "BaseActorTargetCondition.h"
+#include "BaseActorTargetConditionInstance.h"
 #include "InverseActorTargetCondition.generated.h"
 
 UCLASS()

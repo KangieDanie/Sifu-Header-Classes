@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NetOrderStructPlayAnim.h"
 #include "TraversalInfo.h"
+#include "NetOrderStructPlayAnim.h"
 #include "NetOrderStructTraversalCine.generated.h"
 
 USTRUCT(BlueprintType)

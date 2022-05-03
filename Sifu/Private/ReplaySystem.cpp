@@ -1,25 +1,23 @@
 #include "ReplaySystem.h"
 
-class AFightingCharacter;
-class AActor;
-class UObject;
-class UReplaySystem;
-class AReplayController;
 class UDemoNetDriver;
+class AFightingCharacter;
+class UObject;
+class AReplayController;
+class UReplaySystem;
+class UReplayManagement;
+class AActor;
 
 void UReplaySystem::BPF_StopRecording() {
 }
 
-void UReplaySystem::BPF_StartReplay() {
+void UReplaySystem::BPF_StartReplay(const FString& _replayID) {
 }
 
 void UReplaySystem::BPF_StartRecording() {
 }
 
 void UReplaySystem::BPF_SetPlayingPlayerCharacter(AFightingCharacter* _character, const UObject* _worldContextObject) {
-}
-
-void UReplaySystem::BPF_SaveReplayToGameSlot() {
 }
 
 void UReplaySystem::BPF_ResumeRecording() {
@@ -34,7 +32,7 @@ void UReplaySystem::BPF_ReplayStartRecording(const UObject* _worldContextObject)
 void UReplaySystem::BPF_ReplayStartPlaying(const UObject* _worldContextObject) {
 }
 
-void UReplaySystem::BPF_ReadReplayFromGameSlot() {
+void UReplaySystem::BPF_PushPopDisableRecording(int32& _iInOutTag, const FString& _context, const bool _bPush, const UObject* _worldContextObject) {
 }
 
 void UReplaySystem::BPF_PauseRecording() {
@@ -61,6 +59,10 @@ float UReplaySystem::BPF_GetSnappedDemoTime(float _fDemoTimeS, bool _bCheckClose
 }
 
 UReplaySystem* UReplaySystem::BPF_GetReplaySystem(const UObject* _worldContextObject) {
+    return NULL;
+}
+
+UReplayManagement* UReplaySystem::BPF_GetReplayManagement(const UObject* _worldContextObject) {
     return NULL;
 }
 
@@ -102,6 +104,10 @@ float UReplaySystem::BPF_GetCurrentDemoTimeS(const UObject* _worldContextObject)
 
 float UReplaySystem::BPF_GetActorLastReplicationTime(AActor* _actor) {
     return 0.0f;
+}
+
+bool UReplaySystem::BPF_CanStartRecording(const UObject* _worldContextObject) {
+    return false;
 }
 
 UReplaySystem::UReplaySystem() {

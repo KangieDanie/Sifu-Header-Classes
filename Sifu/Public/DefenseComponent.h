@@ -2,27 +2,27 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCPoolableActorComponent -FallbackName=SCPoolableActorComponent
-#include "ActionConditions.h"
 #include "EOrderType.h"
 #include "EGuardType.h"
 #include "EFightingState.h"
 #include "GuardUpdateStruct.h"
-#include "FightingStateElement.h"
+#include "ActionConditions.h"
 #include "DefenseGauge.h"
 #include "HitDescription.h"
+#include "FightingStateElement.h"
 #include "DefenseComponent.generated.h"
 
-class UAbsorbDB;
-class UParryDB;
-class UVitalPointDB;
-class UGuardDB;
-class UAvoidDB;
-class UCurveFloat;
 class UAttackPropertiesResistanceDB;
+class UAvoidDB;
+class UParryDB;
+class UCurveFloat;
+class UGuardDB;
+class UAbsorbDB;
 class UFightingMovementComponent;
 class UEffectData;
 class UHealthComponent;
 class AFightingCharacter;
+class UVitalPointDB;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UDefenseComponent : public UActorComponent, public ISCPoolableActorComponent {
@@ -84,6 +84,9 @@ private:
     float m_fMaxGuard;
     
     UPROPERTY(EditAnywhere)
+    float m_MaxGuardMultiplier[3];
+    
+    UPROPERTY(EditAnywhere)
     float m_fGrabbableGuardRatio;
     
     UPROPERTY(EditAnywhere)
@@ -92,8 +95,11 @@ private:
     UPROPERTY(EditAnywhere)
     float m_fGuardRecoveryRate;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     UCurveFloat* m_GuardRecoveryRateByLife;
+    
+    UPROPERTY(EditAnywhere)
+    UCurveFloat* m_GuardRecoveryRateByLifePerDifficulty[3];
     
     UPROPERTY(EditAnywhere)
     float m_fGuardBrokenRecoveryRate;
@@ -146,8 +152,11 @@ private:
     UPROPERTY(EditAnywhere)
     float m_fSuperDizzyGaugeRatioAfterSuperDizzy;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     float m_fGuardGaugeRecoveryCooldown;
+    
+    UPROPERTY(EditAnywhere)
+    float m_GuardGaugeRecoveryCooldownPerDifficulty[3];
     
     UPROPERTY(EditAnywhere, Replicated)
     int32 m_iResilience;
@@ -219,6 +228,12 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void BPF_SetGuardType(EGuardType _eGuardType, bool _bInPrediction);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_SetDisableGuard(bool _bValue);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_SetBuildUpFramesMultiplicator(float _fMult);
     
     UFUNCTION(BlueprintCallable)
     void BPF_RestoreIncreaseGuardGauge();

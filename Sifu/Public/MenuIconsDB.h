@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EquipmentCategoryInfos.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "ControllerIcons.h"
+#include "EquipmentCategoryInfos.h"
 #include "MenuIconsDB.generated.h"
 
 class UTexture2D;

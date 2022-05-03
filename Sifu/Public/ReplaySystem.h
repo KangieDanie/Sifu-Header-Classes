@@ -1,15 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ReplayFeedbackEventSignatureDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "OnRecordingCompleteDelegate.h"
+#include "OnReplayRecordingChangedDelegate.h"
 #include "ReplaySystem.generated.h"
 
-class AActor;
+class UReplayManagement;
 class UThePlainesGameInstance;
 class AFightingCharacter;
 class UReplaySystem;
 class AReplayController;
 class UDemoNetDriver;
+class AActor;
 
 UCLASS(BlueprintType, Config=Replay)
 class SIFU_API UReplaySystem : public UObject {
@@ -19,14 +22,23 @@ protected:
     UPROPERTY(BlueprintAssignable)
     FOnRecordingComplete m_OnRecordingStreamingCompleted;
     
+    UPROPERTY(BlueprintAssignable)
+    FOnReplayRecordingChanged m_OnRecordingChanged;
+    
+    UPROPERTY(BlueprintAssignable)
+    FReplayFeedbackEventSignature m_OnReplayFeedbackEvent;
+    
     UPROPERTY(Config)
     bool m_bTimeDilationReplicated;
     
     UPROPERTY(Config)
     bool m_bPauserPlayerStateReplicated;
     
-    UPROPERTY()
+    UPROPERTY(Transient)
     UThePlainesGameInstance* m_GameInstance;
+    
+    UPROPERTY(Transient)
+    UReplayManagement* m_ReplayManagement;
     
     UPROPERTY(BlueprintReadOnly)
     float m_fReplayStartVislogTimeS;
@@ -37,16 +49,13 @@ public:
     void BPF_StopRecording();
     
     UFUNCTION(BlueprintCallable)
-    void BPF_StartReplay();
+    void BPF_StartReplay(const FString& _replayID);
     
     UFUNCTION(BlueprintCallable)
     void BPF_StartRecording();
     
     UFUNCTION(BlueprintCallable)
     static void BPF_SetPlayingPlayerCharacter(AFightingCharacter* _character, const UObject* _worldContextObject);
-    
-    UFUNCTION(BlueprintCallable)
-    void BPF_SaveReplayToGameSlot();
     
     UFUNCTION(BlueprintCallable)
     void BPF_ResumeRecording();
@@ -61,7 +70,7 @@ public:
     static void BPF_ReplayStartPlaying(const UObject* _worldContextObject);
     
     UFUNCTION(BlueprintCallable)
-    void BPF_ReadReplayFromGameSlot();
+    static void BPF_PushPopDisableRecording(UPARAM(Ref) int32& _iInOutTag, const FString& _context, const bool _bPush, const UObject* _worldContextObject);
     
     UFUNCTION(BlueprintCallable)
     void BPF_PauseRecording();
@@ -83,6 +92,9 @@ public:
     
     UFUNCTION(BlueprintPure)
     static UReplaySystem* BPF_GetReplaySystem(const UObject* _worldContextObject);
+    
+    UFUNCTION(BlueprintPure)
+    static UReplayManagement* BPF_GetReplayManagement(const UObject* _worldContextObject);
     
     UFUNCTION(BlueprintPure)
     static AReplayController* BPF_GetReplayController(const UObject* _worldContextObject);
@@ -113,6 +125,9 @@ public:
     
     UFUNCTION(BlueprintPure)
     static float BPF_GetActorLastReplicationTime(AActor* _actor);
+    
+    UFUNCTION(BlueprintPure)
+    static bool BPF_CanStartRecording(const UObject* _worldContextObject);
     
 };
 

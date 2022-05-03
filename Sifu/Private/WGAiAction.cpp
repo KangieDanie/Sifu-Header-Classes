@@ -1,11 +1,11 @@
 #include "WGAiAction.h"
 
-class UOrderParams;
-class AFightingAIController;
 class AFightingPlayerController;
-class USCCrowdFollowingComponent;
-class AFightingCharacter;
 class UAIFightingComponent;
+class AFightingCharacter;
+class AFightingAIController;
+class USCCrowdFollowingComponent;
+class UOrderParams;
 
 void UWGAiAction::OnGlobalBehaviorChanged(EGlobalBehaviors _eBehavior, const bool _bFromDialog) {
 }

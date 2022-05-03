@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ECameraTrackingMode.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector4 -FallbackName=Vector4
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "CameraNodeStruct.generated.h"
 
 class UCurveFloat;
@@ -49,6 +49,9 @@ public:
     
     UPROPERTY(EditAnywhere)
     bool m_bIsFovVertical;
+    
+    UPROPERTY(EditAnywhere)
+    bool m_bIsAnimDriven;
     
     UPROPERTY(EditAnywhere)
     bool m_bAllowAnimDrivenFov;

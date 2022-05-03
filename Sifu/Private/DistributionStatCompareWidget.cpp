@@ -1,7 +1,7 @@
 #include "DistributionStatCompareWidget.h"
 
-class UPreviewData;
 class UStatsComponent;
+class UPreviewData;
 
 UStatsComponent* UDistributionStatCompareWidget::BPF_GetStatsComponent() {
     return NULL;

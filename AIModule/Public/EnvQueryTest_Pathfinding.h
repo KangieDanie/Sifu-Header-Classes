@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EnvQueryTest.h"
 #include "EEnvTestPathfinding.h"
+#include "EnvQueryTest.h"
 #include "AIDataProviderBoolValue.h"
 #include "EnvQueryTest_Pathfinding.generated.h"
 

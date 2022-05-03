@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "HandledWeaponInfo.generated.h"
 
-class AActor;
 class UVisibleWeaponData;
+class AActor;
 
 USTRUCT(BlueprintType)
 struct SIFU_API FHandledWeaponInfo {

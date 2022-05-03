@@ -3,8 +3,8 @@
 #include "AkAssetBase.h"
 #include "AkAudioBank.generated.h"
 
-class UAkAudioEvent;
 class UAkAssetPlatformData;
+class UAkAudioEvent;
 
 UCLASS(BlueprintType)
 class AKAUDIO_API UAkAudioBank : public UAkAssetBase {

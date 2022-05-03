@@ -6,11 +6,11 @@
 #include "MoviePipeline.generated.h"
 
 class UTexture;
-class ALevelSequenceActor;
-class UMoviePipelineCustomTimeStep;
 class UEngineCustomTimeStep;
+class UMoviePipelineCustomTimeStep;
 class UMovieRenderDebugWidget;
 class ULevelSequence;
+class ALevelSequenceActor;
 class UMoviePipelineExecutorJob;
 class UMoviePipelineMasterConfig;
 

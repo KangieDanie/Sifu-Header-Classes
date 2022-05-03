@@ -2,11 +2,11 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
-#include "EGlobalBehaviors.h"
-#include "EJoinDialogActors.h"
 #include "SpawnerGroupLayer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
+#include "EJoinDialogActors.h"
 #include "EEnemyPresenceKnownType.h"
+#include "EGlobalBehaviors.h"
 #include "SpawnerGroup.generated.h"
 
 class ASpawnerGroup;

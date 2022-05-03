@@ -1,28 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTaskOwnerInterface -FallbackName=GameplayTaskOwnerInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Controller -FallbackName=Controller
-#include "AIPerceptionListenerInterface.h"
 #include "GenericTeamAgentInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Controller -FallbackName=Controller
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=VisualLoggerDebugSnapshotInterface -FallbackName=VisualLoggerDebugSnapshotInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayResourceSet -FallbackName=GameplayResourceSet
+#include "AIPerceptionListenerInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTaskOwnerInterface -FallbackName=GameplayTaskOwnerInterface
 #include "AIMoveCompletedSignatureDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayResourceSet -FallbackName=GameplayResourceSet
 #include "EPathFollowingStatus.h"
-#include "EPathFollowingRequestResult.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "EPathFollowingRequestResult.h"
 #include "AIController.generated.h"
 
-class UAIPerceptionComponent;
-class UBrainComponent;
 class UPathFollowingComponent;
+class UAIPerceptionComponent;
+class UBehaviorTree;
+class UBrainComponent;
 class UPawnActionsComponent;
-class UGameplayTaskResource;
 class UBlackboardComponent;
 class UGameplayTasksComponent;
 class UNavigationQueryFilter;
 class UBlackboardData;
-class UBehaviorTree;
+class UGameplayTaskResource;
 class AActor;
 
 UCLASS()

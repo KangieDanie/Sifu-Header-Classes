@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "HittedOrderServiceInfos.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCCardinalPoints -FallbackName=ESCCardinalPoints
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "EKnockbackReorientationBehaviour.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCCardinalPoints -FallbackName=ESCCardinalPoints
-#include "HittedOrderServiceInfos.h"
 #include "HittedAnimContainer.generated.h"
 
 USTRUCT(BlueprintType)

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RemappingSectionStruct.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 //CROSS-MODULE INCLUDE V2: -ModuleName=InputCore -ObjectName=Key -FallbackName=Key
+#include "RemappingSectionStruct.h"
 #include "MappableInputsDB.generated.h"
 
 class UTexture2D;

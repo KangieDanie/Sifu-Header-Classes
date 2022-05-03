@@ -1,7 +1,7 @@
 #include "SCAnimInstance.h"
 
-class UPoseAsset;
 class UCurveFloat;
+class UPoseAsset;
 
 FTransform USCAnimInstance::GetSavedTransform(FName _savedBone) const {
     return FTransform{};

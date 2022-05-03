@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=InheritedDataAsset -FallbackName=InheritedDataAsset
-#include "EditableOrderType.h"
 #include "OverridingHitBox.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=InheritedDataAsset -FallbackName=InheritedDataAsset
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
+#include "EditableOrderType.h"
 #include "AnimSyncContainer.h"
 #include "VitalPointData.generated.h"
 
+class AAimingBillboardActor;
 class UTexture;
 class UVitalPointEvents;
-class AAimingBillboardActor;
 class UVitalPointCheckCondition;
 
 UCLASS(BlueprintType)

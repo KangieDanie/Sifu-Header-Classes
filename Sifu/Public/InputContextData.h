@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "InputContext.h"
-#include "InputAction.h"
 #include "InputMappingGroup.h"
 #include "InputActionData.h"
+#include "InputContext.h"
+#include "InputAction.h"
 #include "InputContextData.generated.h"
 
 class UGenericInputData;

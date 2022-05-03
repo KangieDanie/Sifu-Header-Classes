@@ -2,9 +2,14 @@
 #include "Net/UnrealNetwork.h"
 
 class UPrimitiveComponent;
-class AActor;
 
-void UReplayablePhysObjectComponent::OnRep_IsSimulatingPhysics() {
+void UReplayablePhysObjectComponent::OnReplaySystemRecordingChanged(bool _bIsRecording) {
+}
+
+void UReplayablePhysObjectComponent::OnRep_IsReplicatingMovement() {
+}
+
+void UReplayablePhysObjectComponent::OnRep_AttachmentChanged() {
 }
 
 void UReplayablePhysObjectComponent::OnComponentWake(UPrimitiveComponent* _wakingComponent, FName _boneName) {
@@ -13,21 +18,17 @@ void UReplayablePhysObjectComponent::OnComponentWake(UPrimitiveComponent* _wakin
 void UReplayablePhysObjectComponent::OnComponentSleep(UPrimitiveComponent* _wakingComponent, FName _boneName) {
 }
 
-void UReplayablePhysObjectComponent::MulticastDetach_Implementation(bool _bReplaySimulatePhysics) {
-}
-
-void UReplayablePhysObjectComponent::MulticastAttachTo_Implementation(AActor* _skActor, FName _socketName, FVector _position, FRotator _rotation) {
-}
-
 void UReplayablePhysObjectComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
     
-    DOREPLIFETIME(UReplayablePhysObjectComponent, m_bIsReplaySimulatingPhysics);
+    DOREPLIFETIME(UReplayablePhysObjectComponent, m_bIsReplicatingMovement);
+    DOREPLIFETIME(UReplayablePhysObjectComponent, m_AttachedActor);
 }
 
 UReplayablePhysObjectComponent::UReplayablePhysObjectComponent() {
-    this->m_bIsReplaySimulatingPhysics = false;
+    this->m_bIsReplicatingMovement = false;
     this->m_bDebugDisabled = false;
     this->m_bForceNetUpdateOnBodyAwake = true;
+    this->m_AttachedActor = NULL;
 }
 

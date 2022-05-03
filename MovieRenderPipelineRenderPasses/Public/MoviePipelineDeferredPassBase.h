@@ -5,8 +5,8 @@
 #include "MoviePipelinePostProcessPass.h"
 #include "MoviePipelineDeferredPassBase.generated.h"
 
-class UTextureRenderTarget2D;
 class UMaterialInterface;
+class UTextureRenderTarget2D;
 
 UCLASS()
 class MOVIERENDERPIPELINERENDERPASSES_API UMoviePipelineDeferredPassBase : public UMoviePipelineImagePassBase {

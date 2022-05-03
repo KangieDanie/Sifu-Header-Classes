@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FXInfo.h"
 #include "HealthComponent.h"
 #include "DestructibleStateInfo.h"
+#include "FXInfo.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CollisionProfileName -FallbackName=CollisionProfileName
 #include "InteractiveDestructionComponent.generated.h"

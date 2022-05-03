@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "BaseActorCondition.h"
 #include "InputAction.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "EPlayerInputConditionTestMethod.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "PlayerInputCondition.generated.h"
 
 UCLASS()

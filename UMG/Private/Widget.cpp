@@ -1,8 +1,8 @@
 #include "Widget.h"
 
+class UPanelWidget;
 class APlayerController;
 class UWidget;
-class UPanelWidget;
 class ULocalPlayer;
 class UGameInstance;
 

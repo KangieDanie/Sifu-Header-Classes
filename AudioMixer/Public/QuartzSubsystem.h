@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=QuartzClockSettings -FallbackName=QuartzClockSettings
 #include "QuartzSubsystem.generated.h"
 
-class UQuartzClockHandle;
 class UObject;
+class UQuartzClockHandle;
 
 UCLASS(BlueprintType)
 class AUDIOMIXER_API UQuartzSubsystem : public UWorldSubsystem {

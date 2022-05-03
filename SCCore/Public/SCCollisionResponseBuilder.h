@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCChannelCollisionResponse.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionResponse -FallbackName=ECollisionResponse
+#include "SCChannelCollisionResponse.h"
 #include "SCCollisionResponseBuilder.generated.h"
 
 USTRUCT(BlueprintType)

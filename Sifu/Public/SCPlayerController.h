@@ -6,8 +6,8 @@
 
 class UUserWidget;
 class UInputContextData;
-class UGenericErrorPopupWidget;
 class AActor;
+class UGenericErrorPopupWidget;
 
 UCLASS()
 class SIFU_API ASCPlayerController : public ASCBasePlayerController {

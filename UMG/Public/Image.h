@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Widget.h"
-#include "Widget.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateBrush -FallbackName=SlateBrush
 #include "Widget.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "Widget.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
+#include "Widget.h"
 #include "Image.generated.h"
 
-class USlateBrushAsset;
-class UMaterialInterface;
 class UObject;
 class UTexture2DDynamic;
 class UTexture2D;
+class UMaterialInterface;
 class USlateTextureAtlasInterface;
 class ISlateTextureAtlasInterface;
+class USlateBrushAsset;
 class UMaterialInstanceDynamic;
 
 UCLASS()

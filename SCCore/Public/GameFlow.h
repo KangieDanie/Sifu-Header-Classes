@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagAssetInterface -FallbackName=GameplayTagAssetInterface
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagAssetInterface -FallbackName=GameplayTagAssetInterface
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 #include "GameFlow.generated.h"
 
 class UGameFlowNode;
+class UGameFlowController;
 
 UCLASS(BlueprintType)
 class SCCORE_API UGameFlow : public UObject, public IGameplayTagAssetInterface {
@@ -24,6 +25,14 @@ public:
     UPROPERTY(VisibleAnywhere)
     TMap<FName, UGameFlowNode*> m_MapNodes;
     
+private:
+    UPROPERTY(EditAnywhere)
+    TSoftClassPtr<UGameFlowController> m_Controller;
+    
+    UPROPERTY(Transient)
+    UClass* m_ControllerClass;
+    
+public:
     UGameFlow();
     UFUNCTION(BlueprintCallable)
     void BPF_ResetMapOption();

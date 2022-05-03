@@ -1,13 +1,13 @@
 #include "DefenseComponent.h"
 #include "Net/UnrealNetwork.h"
 
-class UEffectData;
-class UFightingMovementComponent;
 class UHealthComponent;
-class UAttackPropertiesResistanceDB;
+class UFightingMovementComponent;
+class UEffectData;
 class AFightingCharacter;
-class UGuardDB;
 class UVitalPointDB;
+class UAttackPropertiesResistanceDB;
+class UGuardDB;
 
 void UDefenseComponent::ServerSetGuardValue_Implementation(float _fGuard) {
 }
@@ -75,6 +75,12 @@ void UDefenseComponent::BPF_SetPermanentFightingState(EFightingState _ePermanent
 }
 
 void UDefenseComponent::BPF_SetGuardType(EGuardType _eGuardType, bool _bInPrediction) {
+}
+
+void UDefenseComponent::BPF_SetDisableGuard(bool _bValue) {
+}
+
+void UDefenseComponent::BPF_SetBuildUpFramesMultiplicator(float _fMult) {
 }
 
 void UDefenseComponent::BPF_RestoreIncreaseGuardGauge() {
@@ -182,10 +188,16 @@ UDefenseComponent::UDefenseComponent() {
     this->m_fCurrentGuard = 0.00f;
     this->m_DefaultGuardDB = NULL;
     this->m_fMaxGuard = 100.00f;
+    this->m_MaxGuardMultiplier[0] = 1.00f;
+    this->m_MaxGuardMultiplier[1] = 1.00f;
+    this->m_MaxGuardMultiplier[2] = 1.00f;
     this->m_fGrabbableGuardRatio = 0.50f;
     this->m_fGuardBrokenGaugeCoolDownBeforeRecovery = 0.50f;
     this->m_fGuardRecoveryRate = 24.00f;
     this->m_GuardRecoveryRateByLife = NULL;
+    this->m_GuardRecoveryRateByLifePerDifficulty[0] = NULL;
+    this->m_GuardRecoveryRateByLifePerDifficulty[1] = NULL;
+    this->m_GuardRecoveryRateByLifePerDifficulty[2] = NULL;
     this->m_fGuardBrokenRecoveryRate = 48.00f;
     this->m_GuardGaugeRecoveryRateOverWeightRatioCurve = NULL;
     this->m_fGuardRecoveryRateCoeffWhenGuarding = 0.50f;
@@ -202,7 +214,10 @@ UDefenseComponent::UDefenseComponent() {
     this->m_AbsorbDB = NULL;
     this->m_bCanBeSuperDizzy = true;
     this->m_fSuperDizzyGaugeRatioAfterSuperDizzy = 0.00f;
-    this->m_fGuardGaugeRecoveryCooldown = 1.00f;
+    this->m_fGuardGaugeRecoveryCooldown = -1.00f;
+    this->m_GuardGaugeRecoveryCooldownPerDifficulty[0] = 1.00f;
+    this->m_GuardGaugeRecoveryCooldownPerDifficulty[1] = 1.00f;
+    this->m_GuardGaugeRecoveryCooldownPerDifficulty[2] = 1.00f;
     this->m_iResilience = 0;
     this->m_iResilienceAttackBonus = 0;
     this->m_AttackPropertyResistanceDB = NULL;

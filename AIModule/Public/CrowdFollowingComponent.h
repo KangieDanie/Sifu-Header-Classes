@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PathFollowingComponent.h"
 #include "CrowdAgentInterface.h"
+#include "PathFollowingComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "CrowdFollowingComponent.generated.h"
 

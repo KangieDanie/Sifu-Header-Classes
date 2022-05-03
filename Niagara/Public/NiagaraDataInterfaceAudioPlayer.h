@@ -3,8 +3,8 @@
 #include "NiagaraDataInterface.h"
 #include "NiagaraDataInterfaceAudioPlayer.generated.h"
 
-class USoundAttenuation;
 class USoundBase;
+class USoundAttenuation;
 class USoundConcurrency;
 
 UCLASS(EditInlineNew)

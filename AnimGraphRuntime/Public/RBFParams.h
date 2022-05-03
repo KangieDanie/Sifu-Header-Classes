@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ERBFSolverType.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "ERBFDistanceMethod.h"
-#include "ERBFFunctionType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EBoneAxis -FallbackName=EBoneAxis
+#include "ERBFFunctionType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ERBFNormalizeMethod.h"
+#include "ERBFDistanceMethod.h"
 #include "RBFParams.generated.h"
 
 USTRUCT(BlueprintType)

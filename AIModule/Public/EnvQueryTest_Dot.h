@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EnvQueryTest.h"
 #include "EEnvTestDot.h"
+#include "EnvQueryTest.h"
 #include "EnvDirection.h"
 #include "EnvQueryTest_Dot.generated.h"
 

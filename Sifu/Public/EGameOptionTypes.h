@@ -41,7 +41,9 @@ enum class EGameOptionTypes : uint8 {
     HUDOffsetY,
     ShowSubtitles,
     DLSSEnabled,
+    BrokenUIDarkMode,
     UIDarkMode,
+    AudioOutput,
     Count,
     None,
 };

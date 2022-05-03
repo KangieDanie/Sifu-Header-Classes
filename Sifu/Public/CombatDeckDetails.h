@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EquipmentCategoryInfos.h"
 #include "CombatDeckStat.h"
 #include "AsyncTextureStruct.h"
+#include "EquipmentCategoryInfos.h"
 #include "CombatDeckDetails.generated.h"
 
 class UTexture2D;

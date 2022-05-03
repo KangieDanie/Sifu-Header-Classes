@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VertexAndAttributes.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MeshDescription -ObjectName=PolygonGroupID -FallbackName=PolygonGroupID
-//CROSS-MODULE INCLUDE V2: -ModuleName=MeshDescription -ObjectName=PolygonID -FallbackName=PolygonID
 #include "EPolygonEdgeHardness.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=MeshDescription -ObjectName=PolygonGroupID -FallbackName=PolygonGroupID
+#include "VertexAndAttributes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=MeshDescription -ObjectName=PolygonID -FallbackName=PolygonID
 #include "PolygonToCreate.generated.h"
 
 USTRUCT(BlueprintType)

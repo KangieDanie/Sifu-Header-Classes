@@ -2,18 +2,18 @@
 #include "CoreMinimal.h"
 #include "AbilityTask_ApplyRootMotion_Base.h"
 #include "ApplyRootMotionMoveToActorForceDelegateDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EMovementMode -FallbackName=EMovementMode
+#include "ERootMotionMoveToActorTargetOffsetType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "GameplayAbilityTargetDataHandle.h"
-#include "ERootMotionMoveToActorTargetOffsetType.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EMovementMode -FallbackName=EMovementMode
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ERootMotionFinishVelocityMode -FallbackName=ERootMotionFinishVelocityMode
 #include "AbilityTask_ApplyRootMotionMoveToActorForce.generated.h"
 
-class AActor;
 class UCurveVector;
-class UGameplayAbility;
 class UCurveFloat;
+class UGameplayAbility;
 class UAbilityTask_ApplyRootMotionMoveToActorForce;
+class AActor;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_ApplyRootMotionMoveToActorForce : public UAbilityTask_ApplyRootMotion_Base {

@@ -5,9 +5,9 @@
 #include "MoviePipelineMasterConfig.generated.h"
 
 class UMoviePipelineShotConfig;
+class ULevelSequence;
 class UMoviePipelineOutputSetting;
 class UMoviePipelineSetting;
-class ULevelSequence;
 
 UCLASS()
 class MOVIERENDERPIPELINECORE_API UMoviePipelineMasterConfig : public UMoviePipelineConfigBase {

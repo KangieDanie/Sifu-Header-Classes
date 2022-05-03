@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "AimOffsetStruct.h"
-#include "LookAtLocomotionLimits.h"
 #include "LookAtConfig.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ELookAtApplyMode -FallbackName=ELookAtApplyMode
 #include "ELookAtRefDirMode.h"
 #include "ELookAtTargetType.h"
+#include "AimOffsetStruct.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "LookAtModifierParams.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "LookAtLocomotionLimits.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ELookAtApplyMode -FallbackName=ELookAtApplyMode
 #include "LookAtLimits.h"
 #include "ETransitionGlobalType.h"
 #include "LookAtAnimHandler.generated.h"
@@ -22,10 +22,10 @@ struct SIFU_API FLookAtAnimHandler {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, NotReplicated)
     FAimOffsetStruct m_aimOffset0;
     
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, NotReplicated)
     FAimOffsetStruct m_aimOffset1;
     
     UPROPERTY(BlueprintReadOnly, Transient)
@@ -34,13 +34,13 @@ protected:
     UPROPERTY(BlueprintReadOnly, Transient)
     bool m_bLookAtEnabled;
     
-    UPROPERTY(BlueprintReadOnly, Transient)
+    UPROPERTY(BlueprintReadOnly, NotReplicated, Transient)
     FVector2D m_vRawBlendSpaceParams;
     
     UPROPERTY(BlueprintReadOnly, Transient)
     FVector2D m_vBlendSpaceParams;
     
-    UPROPERTY(BlueprintReadOnly, Transient)
+    UPROPERTY(BlueprintReadOnly, NotReplicated, Transient)
     FVector2D m_vEyeBlendSpaceParams;
     
     UPROPERTY(BlueprintReadOnly, Transient)
@@ -49,95 +49,95 @@ protected:
     UPROPERTY(BlueprintReadOnly, Transient)
     FRotator m_CompensationRot;
     
-    UPROPERTY(BlueprintReadOnly, Transient)
+    UPROPERTY(BlueprintReadOnly, NotReplicated, Transient)
     bool m_bIsTargetLocationValid;
     
-    UPROPERTY(BlueprintReadOnly, Transient)
+    UPROPERTY(BlueprintReadOnly, NotReplicated, Transient)
     FVector m_vTargetLocation;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     bool m_bEnableAnimationCompensation;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     float m_fMaxHeadDiffYaw;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     float m_fMaxHeadDiffPitch;
     
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, NotReplicated)
     FName m_headInWorldSpaceSaveBoneName;
     
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, NotReplicated)
     FName m_headComparaisonInWorldSpaceSaveBoneName;
     
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, NotReplicated)
     FName m_headInWorldSpacePostLookAtSaveBoneName;
     
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, NotReplicated)
     bool m_bEyesLookAtSpecificBone;
     
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, NotReplicated)
     FName m_EyesLookAtSpecificBoneName;
     
     UPROPERTY(BlueprintReadOnly)
     ELookAtApplyMode m_eApplyMode;
     
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(BlueprintReadOnly, NotReplicated)
     ELookAtRefDirMode m_eRefDirMode;
     
 private:
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     float m_fAngleThreshold;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     float m_fMaxFrontAngle;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     bool m_bLookInCameraDir;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     TSubclassOf<ULookAtAnimRequest2> m_animRequest;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FLookAtConfig m_lookAtConfigs[5];
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     TArray<ELookAtTargetType> m_targetPriorities;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FLookAtModifierParams m_defaultModifierParams;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FLookAtLimits m_boneModifierLimits;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     bool m_bInverseValuesOnBoneModifier;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FVector2D m_vBoneModifierOffset;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FVector2D m_vBoneModifierMultiplier;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FLookAtLimits m_defaultLimits;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     TArray<FLookAtLocomotionLimits> m_locomotionLimits;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     TMap<ETransitionGlobalType, FLookAtLimits> m_transitionLimits;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FLookAtModifierParams m_friendlyModifierParams;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     FLookAtModifierParams m_hostileInIdleModifierParams;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     uint32 m_uiFirstLocalPlayerAIBehavior;
     
-    UPROPERTY(EditDefaultsOnly)
+    UPROPERTY(EditDefaultsOnly, NotReplicated)
     float m_fMaxDistFromFirstLocalPlayer;
     
 public:

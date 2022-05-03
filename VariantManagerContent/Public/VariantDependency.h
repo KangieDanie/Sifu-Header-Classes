@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "VariantDependency.generated.h"
 
-class UVariantSet;
 class UVariant;
+class UVariantSet;
 
 USTRUCT(BlueprintType)
 struct VARIANTMANAGERCONTENT_API FVariantDependency {

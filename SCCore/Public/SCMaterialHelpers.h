@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCDynamicDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "SCDynamicDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "SCMaterialHelpers.generated.h"
 
-class UCurveBase;
 class UObject;
 class UMaterialParameterCollection;
 class UMeshComponent;
+class UCurveBase;
 class ACharacter;
 
 UCLASS(BlueprintType)

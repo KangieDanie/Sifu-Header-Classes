@@ -4,16 +4,16 @@
 #include "BaseComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CharacterMovementComponent -FallbackName=CharacterMovementComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCPoolableActorComponent -FallbackName=SCPoolableActorComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EMoveStatus.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ESpeedState.h"
 #include "EFallLevel.h"
 #include "ETraversalPhase.h"
 #include "FightingMovementComponent.generated.h"
 
-class UAnimSequence;
 class UBaseMovementDB;
 class UTraversalDB;
+class UAnimSequence;
 class UEffectData;
 class AActor;
 

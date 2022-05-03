@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavDataConfig -FallbackName=NavDataConfig
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavigationDataInterface -FallbackName=NavigationDataInterface
-#include "ERuntimeGenerationType.h"
 #include "SupportedAreaData.h"
+#include "ERuntimeGenerationType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavigationDataInterface -FallbackName=NavigationDataInterface
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavDataConfig -FallbackName=NavDataConfig
 #include "NavigationData.generated.h"
 
 class UPrimitiveComponent;

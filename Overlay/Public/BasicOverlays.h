@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Overlays.h"
 #include "OverlayItem.h"
+#include "Overlays.h"
 #include "BasicOverlays.generated.h"
 
 UCLASS()

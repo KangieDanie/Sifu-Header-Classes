@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+#include "EGameDifficulty.h"
 #include "WGGameplayStatics.generated.h"
 
 class ACharacter;
@@ -11,13 +12,13 @@ class SIFU_API UWGGameplayStatics : public UBlueprintFunctionLibrary {
 public:
     UWGGameplayStatics();
     UFUNCTION(BlueprintCallable)
-    static bool BPF_TakeVisualLoggerSnapshot(const FString& _fileName, FText& _outError);
-    
-    UFUNCTION(BlueprintCallable)
     static FName BPF_StartConversation(ACharacter* _character, FName _startingSegment, const bool _bGenericSubtitles, ACharacter* _secondary, bool _bCutOtherDialogs, bool _bLookAtEnabled, bool _bIgnoreCharacterCanSpeak);
     
     UFUNCTION(BlueprintCallable)
-    static void BPF_SetVisualLoggerPaused(bool _bPaused);
+    static void BPF_SetGameDifficulty(EGameDifficulty _eDifficulty);
+    
+    UFUNCTION(BlueprintPure)
+    static EGameDifficulty BPF_GetGameDifficulty(bool _bNeedSaveGame);
     
     UFUNCTION(BlueprintCallable)
     static void BPF_CutDialog();

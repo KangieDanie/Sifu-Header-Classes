@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "AkSpotReflector.generated.h"
 
-class UAkAcousticTexture;
 class UAkAuxBus;
+class UAkAcousticTexture;
 
 UCLASS()
 class AKAUDIO_API AAkSpotReflector : public AActor {

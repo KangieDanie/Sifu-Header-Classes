@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "ActorPerceptionUpdatedDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "PerceptionUpdatedDelegateDelegate.h"
+#include "ActorPerceptionUpdatedDelegateDelegate.h"
 #include "ActorPerceptionInfoUpdatedDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EEndPlayReason -FallbackName=EEndPlayReason
 #include "ActorPerceptionBlueprintInfo.h"
 #include "AIPerceptionComponent.generated.h"
 
+class AActor;
 class AAIController;
 class UAISenseConfig;
-class AActor;
 class UAISense;
 
 UCLASS(BlueprintType, ClassGroup=Custom, Config=Game, meta=(BlueprintSpawnableComponent))

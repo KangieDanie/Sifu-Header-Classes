@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=NodeAndChannelMappings -FallbackName=NodeAndChannelMappings
 //CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneNameableTrack -FallbackName=MovieSceneNameableTrack
 //CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneTrackTemplateProducer -FallbackName=MovieSceneTrackTemplateProducer
+//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=NodeAndChannelMappings -FallbackName=NodeAndChannelMappings
 #include "MovieSceneControlRigParameterTrack.generated.h"
 
 class UControlRig;

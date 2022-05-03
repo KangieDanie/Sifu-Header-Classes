@@ -6,8 +6,8 @@
 #include "ERelationshipTypes.h"
 #include "TargetableWidget.generated.h"
 
-class UWidget;
 class AActor;
+class UWidget;
 class USceneComponent;
 
 UCLASS(EditInlineNew)

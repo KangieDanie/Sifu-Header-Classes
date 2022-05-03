@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "ConditionalGameplayEffect.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 #include "GameplayEffectExecutionScopedModifierInfo.h"
-#include "ConditionalGameplayEffect.h"
 #include "GameplayEffectExecutionDefinition.generated.h"
 
-class UGameplayEffectExecutionCalculation;
 class UGameplayEffect;
+class UGameplayEffectExecutionCalculation;
 
 USTRUCT(BlueprintType)
 struct GAMEPLAYABILITIES_API FGameplayEffectExecutionDefinition {

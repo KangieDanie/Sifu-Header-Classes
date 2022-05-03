@@ -4,11 +4,11 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "LockableDoor.generated.h"
 
-class USCSaveGameComponent;
+class ULevelSequence;
 class USkeletalMeshComponent;
+class USCSaveGameComponent;
 class USceneComponent;
 class UAnimationAsset;
-class ULevelSequence;
 class APawn;
 class AController;
 class AFightingCharacter;

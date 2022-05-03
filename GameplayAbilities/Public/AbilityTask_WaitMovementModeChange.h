@@ -6,8 +6,8 @@
 #include "AbilityTask_WaitMovementModeChange.generated.h"
 
 class ACharacter;
-class UAbilityTask_WaitMovementModeChange;
 class UGameplayAbility;
+class UAbilityTask_WaitMovementModeChange;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitMovementModeChange : public UAbilityTask {

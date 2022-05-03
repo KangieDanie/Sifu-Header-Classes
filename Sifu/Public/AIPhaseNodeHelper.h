@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIPhaseNodeHardLink.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+#include "AIPhaseNodeHardLink.h"
 #include "AIPhaseNodeHelper.generated.h"
 
 UCLASS(BlueprintType)

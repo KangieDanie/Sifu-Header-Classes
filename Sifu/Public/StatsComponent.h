@@ -1,33 +1,34 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EEndPlayReason -FallbackName=EEndPlayReason
-#include "CharacterProgressionReward.h"
-#include "ECharacterProgressionRewardTypes.h"
-#include "EWeightCategory.h"
-#include "EPendantUpdate.h"
-#include "ECharacterStat.h"
-#include "CharacterStatChangedDelegateDelegate.h"
-#include "AttackDataRow.h"
-#include "EPendingttackXPType.h"
-#include "EAttackLearningState.h"
-#include "EEarnXPInstigator.h"
-#include "FocusPointsGainStruct.h"
-#include "DamageInfos.h"
-#include "ECharacterProgressionRewardConditions.h"
-#include "EStatsWeaponComputingMethod.h"
 #include "CombatDeckDetails.h"
+#include "AttackDataRow.h"
+#include "ECharacterProgressionRewardTypes.h"
+#include "CharacterProgressionReward.h"
+#include "EPendantUpdate.h"
+#include "DamageInfos.h"
+#include "EPendingttackXPType.h"
+#include "CharacterStatChangedDelegateDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EEndPlayReason -FallbackName=EEndPlayReason
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
+#include "ECharacterStat.h"
+#include "EWeightCategory.h"
+#include "EAttackLearningState.h"
+#include "FocusPointsGainStruct.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=GameplayAttribute -FallbackName=GameplayAttribute
+#include "ECharacterProgressionRewardConditions.h"
+#include "EEarnXPInstigator.h"
+#include "EStatsWeaponComputingMethod.h"
 #include "StatsComponent.generated.h"
 
-class UCharacterProgressionDB;
-class UCharacterProgressionUnlockDB;
 class AActor;
+class UCharacterProgressionUnlockDB;
 class AFightingCharacter;
-class UStatsDB;
+class UTexture2D;
 class UBaseWeaponData;
 class UEffectData;
-class UTexture2D;
+class UStatsDB;
+class UCharacterProgressionDB;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UStatsComponent : public UActorComponent {
@@ -41,7 +42,7 @@ public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnResourceAmountChanged, int32, _iNewAmount);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FLevelUp);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FFightingStyleUnlockProgress, int32, _iSpecialAbility, float, _fPrevProgress, float, _fIncrement, bool, _bValidated);
-    DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FDeathCounterDecrement, int32, _iCount, AActor*, _actor);
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FDeathCounterDecrement, int32, _iCount, AActor*, _actor, bool, _bAllowDecrement);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FAttackUnlocked, const FAttackDataRow&, _attack);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAttackProgressionUpdated, const FAttackDataRow&, _attack, int32, _iAmount);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FAttackProgressionLost, AFightingCharacter*, _opponent);
@@ -107,6 +108,12 @@ protected:
     UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
     int32 m_iMaxAge;
     
+    UPROPERTY(BlueprintReadWrite)
+    bool m_bUsePendant;
+    
+    UPROPERTY(BlueprintReadWrite)
+    bool m_bAllowDeathCounterDecrement;
+    
 private:
     UPROPERTY(EditAnywhere)
     float m_fAIPendingAttackXCancelDelay;
@@ -171,6 +178,9 @@ public:
     void BPF_SetCharacterAge(int32 _iAge);
     
     UFUNCTION(BlueprintCallable)
+    void BPF_ResetStat(ECharacterStat _eStat);
+    
+    UFUNCTION(BlueprintCallable)
     void BPF_ResetDeathCounter(AActor* _actorGivingCharge);
     
     UFUNCTION(BlueprintCallable)
@@ -230,6 +240,9 @@ public:
     float BPF_GetFocusPointsRefillBonus(FSCUserDefinedEnumHandler _focusGainEnum) const;
     
     UFUNCTION(BlueprintPure)
+    ECharacterStat BPF_GetCharacterStatFromAttribute(const FGameplayAttribute& _attribute) const;
+    
+    UFUNCTION(BlueprintPure)
     UCharacterProgressionDB* BPF_GetCharacterProgressionDB();
     
     UFUNCTION(BlueprintPure)
@@ -279,6 +292,9 @@ public:
     
     UFUNCTION(BlueprintImplementableEvent)
     void BPE_WeightCategoryChanged(EWeightCategory _eWeightCategory);
+    
+    UFUNCTION(BlueprintImplementableEvent)
+    void BPE_StatChanged(ECharacterStat _eStat, int32 _previousValue, int32 _currentValue);
     
     UFUNCTION(BlueprintImplementableEvent)
     void BPE_SparePointsWin(int32 _iNbSparePointsWin);

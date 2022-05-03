@@ -3,8 +3,8 @@
 #include "BTService.h"
 #include "BTService_BlueprintBase.generated.h"
 
-class AAIController;
 class AActor;
+class AAIController;
 class APawn;
 
 UCLASS(Abstract, Blueprintable)

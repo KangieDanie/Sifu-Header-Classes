@@ -62,6 +62,12 @@ public:
     UPROPERTY(BlueprintReadOnly)
     FGameplayAttributeData Score;
     
+    UPROPERTY(BlueprintReadOnly)
+    FGameplayAttributeData DeathCounterMax;
+    
+    UPROPERTY(BlueprintReadOnly)
+    FGameplayAttributeData GameDifficulty;
+    
     UCharacterStatAttributeSet();
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     

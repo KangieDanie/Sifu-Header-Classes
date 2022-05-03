@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AbilityTask.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "WaitOverlapDelegateDelegate.h"
+#include "AbilityTask.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "AbilityTask_WaitOverlap.generated.h"
 
 class UAbilityTask_WaitOverlap;
 class UGameplayAbility;
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitOverlap : public UAbilityTask {

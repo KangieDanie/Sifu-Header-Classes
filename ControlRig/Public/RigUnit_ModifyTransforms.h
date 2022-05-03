@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RigUnit_HighlevelBaseMutable.h"
+#include "EControlRigModifyBoneMode.h"
 #include "RigUnit_ModifyTransforms_PerItem.h"
 #include "RigUnit_ModifyTransforms_WorkData.h"
-#include "EControlRigModifyBoneMode.h"
 #include "RigUnit_ModifyTransforms.generated.h"
 
 USTRUCT()

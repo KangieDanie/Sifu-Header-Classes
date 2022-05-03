@@ -1,9 +1,9 @@
 #include "AIComponent.h"
 #include "Net/UnrealNetwork.h"
 
+class UArchetypeAsset;
 class AActor;
 class AAISpawner;
-class UArchetypeAsset;
 
 void UAIComponent::OnRep_Spawner() {
 }

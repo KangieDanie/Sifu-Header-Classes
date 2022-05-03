@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EOrderType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=DynamicBlendSettings -FallbackName=DynamicBlendSettings
-#include "ELookAtRefDirMode.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EVisibilityBasedAnimTickOption -FallbackName=EVisibilityBasedAnimTickOption
+#include "EOrderType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "EFightingActionState.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EVisibilityBasedAnimTickOption -FallbackName=EVisibilityBasedAnimTickOption
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ELookAtApplyMode -FallbackName=ELookAtApplyMode
+#include "ELookAtRefDirMode.h"
 #include "OrderServiceInfosList.h"
 #include "OrderDB.generated.h"
 

@@ -1,12 +1,12 @@
 #include "AbilitySystemBlueprintLibrary.h"
 #include "Templates/SubclassOf.h"
 
-class AActor;
 class UGameplayEffect;
+class UAbilitySystemComponent;
+class AActor;
 class UObject;
 class UPhysicalMaterial;
 class USceneComponent;
-class UAbilitySystemComponent;
 class UGameplayCueInterface;
 class IGameplayCueInterface;
 

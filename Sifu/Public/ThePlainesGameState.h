@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGameState -FallbackName=SCGameState
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
-#include "EDangerStates.h"
 #include "SpawnerPerZone.h"
+#include "EDangerStates.h"
 #include "EGameModeTypes.h"
 #include "ThePlainesGameState.generated.h"
 

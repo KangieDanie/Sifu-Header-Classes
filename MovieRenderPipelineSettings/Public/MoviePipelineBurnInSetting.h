@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftClassPath -FallbackName=SoftClassPath
 #include "MoviePipelineBurnInSetting.generated.h"
 
-class UTextureRenderTarget2D;
 class UMoviePipelineBurnInWidget;
+class UTextureRenderTarget2D;
 
 UCLASS()
 class MOVIERENDERPIPELINESETTINGS_API UMoviePipelineBurnInSetting : public UMoviePipelineRenderPass {

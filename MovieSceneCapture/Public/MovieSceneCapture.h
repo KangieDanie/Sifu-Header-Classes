@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "MovieSceneCaptureSettings.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftClassPath -FallbackName=SoftClassPath
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "MovieSceneCaptureInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftClassPath -FallbackName=SoftClassPath
+#include "MovieSceneCaptureSettings.h"
 #include "MovieSceneCapture.generated.h"
 
-class UMovieSceneCaptureProtocolBase;
 class UMovieSceneImageCaptureProtocolBase;
 class UMovieSceneAudioCaptureProtocolBase;
+class UMovieSceneCaptureProtocolBase;
 
 UCLASS(BlueprintType, PerObjectConfig, Config=EditorPerProjectUserSettings)
 class MOVIESCENECAPTURE_API UMovieSceneCapture : public UObject, public IMovieSceneCaptureInterface {

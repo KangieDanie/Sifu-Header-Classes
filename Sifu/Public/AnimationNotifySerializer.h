@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCAnimNotifyExtraInfo.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+#include "SCAnimNotifyExtraInfo.h"
 #include "AnimationNotifySerializer.generated.h"
 
 UCLASS(BlueprintType)

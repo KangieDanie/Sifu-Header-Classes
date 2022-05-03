@@ -3,9 +3,9 @@
 #include "MovieSceneSequenceID.h"
 #include "MovieSceneRootEvaluationTemplateInstance.generated.h"
 
-class UMovieSceneEntitySystemLinker;
 class UMovieSceneSequence;
 class UMovieSceneCompiledDataManager;
+class UMovieSceneEntitySystemLinker;
 class UObject;
 
 USTRUCT(BlueprintType)

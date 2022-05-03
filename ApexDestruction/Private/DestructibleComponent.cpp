@@ -9,6 +9,10 @@ void UDestructibleComponent::SetDestructibleMesh(UDestructibleMesh* NewMesh) {
 void UDestructibleComponent::ReplaceAllMaterials(UMaterialInterface* Material) {
 }
 
+bool UDestructibleComponent::IsFractured() const {
+    return false;
+}
+
 UDestructibleMesh* UDestructibleComponent::GetDestructibleMesh() {
     return NULL;
 }

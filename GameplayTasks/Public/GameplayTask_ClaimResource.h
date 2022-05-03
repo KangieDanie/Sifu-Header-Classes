@@ -4,10 +4,10 @@
 #include "GameplayTask.h"
 #include "GameplayTask_ClaimResource.generated.h"
 
+class UGameplayTaskResource;
+class UGameplayTask_ClaimResource;
 class UGameplayTaskOwnerInterface;
 class IGameplayTaskOwnerInterface;
-class UGameplayTask_ClaimResource;
-class UGameplayTaskResource;
 
 UCLASS()
 class GAMEPLAYTASKS_API UGameplayTask_ClaimResource : public UGameplayTask {

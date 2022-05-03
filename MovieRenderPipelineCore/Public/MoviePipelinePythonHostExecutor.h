@@ -4,8 +4,8 @@
 #include "MoviePipelineExecutorBase.h"
 #include "MoviePipelinePythonHostExecutor.generated.h"
 
-class UMoviePipelinePythonHostExecutor;
 class UMoviePipelineQueue;
+class UMoviePipelinePythonHostExecutor;
 class UWorld;
 
 UCLASS()

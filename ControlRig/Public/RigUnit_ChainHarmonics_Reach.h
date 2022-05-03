@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EControlRigAnimEasingType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "EControlRigAnimEasingType.h"
 #include "RigUnit_ChainHarmonics_Reach.generated.h"
 
 USTRUCT(BlueprintType)

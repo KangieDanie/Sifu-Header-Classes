@@ -1,9 +1,9 @@
 #include "SCLevelSequence.h"
 
-class UAnimMontage;
 class AActor;
-class APlayerController;
+class UAnimMontage;
 class USCLevelSequenceDirectorData;
+class APlayerController;
 class ACharacter;
 class ACameraActor;
 class ULevelSequence;

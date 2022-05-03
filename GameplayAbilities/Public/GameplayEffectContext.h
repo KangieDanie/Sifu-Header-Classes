@@ -3,10 +3,10 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "GameplayEffectContext.generated.h"
 
-class UObject;
+class UAbilitySystemComponent;
 class AActor;
 class UGameplayAbility;
-class UAbilitySystemComponent;
+class UObject;
 
 USTRUCT()
 struct GAMEPLAYABILITIES_API FGameplayEffectContext {

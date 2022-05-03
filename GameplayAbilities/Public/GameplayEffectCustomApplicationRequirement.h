@@ -4,8 +4,8 @@
 #include "GameplayEffectSpec.h"
 #include "GameplayEffectCustomApplicationRequirement.generated.h"
 
-class UGameplayEffect;
 class UAbilitySystemComponent;
+class UGameplayEffect;
 
 UCLASS(Abstract, Blueprintable)
 class GAMEPLAYABILITIES_API UGameplayEffectCustomApplicationRequirement : public UObject {

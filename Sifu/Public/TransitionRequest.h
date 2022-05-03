@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETransitionRotation.h"
 #include "ESpeedState.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCCardinalPoints -FallbackName=ESCCardinalPoints
+#include "ETransitionRotation.h"
 #include "TransitionRequest.generated.h"
 
 USTRUCT(BlueprintType)

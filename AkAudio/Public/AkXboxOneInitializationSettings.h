@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "AkPlatformInitialisationSettingsBase.h"
 #include "AkCommonInitializationSettings.h"
-#include "AkXboxOneAdvancedInitializationSettings.h"
+#include "AkPlatformInitialisationSettingsBase.h"
 #include "AkXboxOneApuHeapInitializationSettings.h"
 #include "AkCommunicationSettingsWithSystemInitialization.h"
+#include "AkXboxOneAdvancedInitializationSettings.h"
 #include "AkXboxOneInitializationSettings.generated.h"
 
 UCLASS(DefaultConfig, Config=Game)

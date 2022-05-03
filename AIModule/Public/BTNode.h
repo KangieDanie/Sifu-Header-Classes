@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTaskOwnerInterface -FallbackName=GameplayTaskOwnerInterface
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTaskOwnerInterface -FallbackName=GameplayTaskOwnerInterface
 #include "BTNode.generated.h"
 
-class UBTCompositeNode;
 class UBehaviorTree;
+class UBTCompositeNode;
 
 UCLASS(Abstract, Config=Game)
 class AIMODULE_API UBTNode : public UObject, public IGameplayTaskOwnerInterface {

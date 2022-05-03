@@ -1,9 +1,9 @@
 #include "ComboTransitionCondition.h"
 #include "Templates/SubclassOf.h"
 
-class AActor;
 class UComboTransitionCondition;
 class AFightingCharacter;
+class AActor;
 
 bool UComboTransitionCondition::BPF_TestConditionOfClass(TSubclassOf<UComboTransitionCondition> _condition, const AFightingCharacter* _owner) {
     return false;

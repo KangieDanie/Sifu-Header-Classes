@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 #include "EAttributeBasedFloatCalculationType.h"
 #include "ScalableFloat.h"
-#include "EGameplayModEvaluationChannel.h"
 #include "GameplayEffectAttributeCaptureDefinition.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "EGameplayModEvaluationChannel.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CurveTableRowHandle -FallbackName=CurveTableRowHandle
 #include "AttributeBasedFloat.generated.h"
 

@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCAIComponent -FallbackName=SCAIComponent
 #include "EGlobalBehaviors.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCSoundSwitchValue -FallbackName=SCSoundSwitchValue
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCAIComponent -FallbackName=SCAIComponent
 #include "EAlertedReason.h"
 #include "AIComponent.generated.h"
 
 class AAISpawner;
-class UArchetypeAsset;
 class AActor;
+class UArchetypeAsset;
 class UBehaviorTree;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

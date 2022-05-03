@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GameplayTagRequirements.h"
 #include "EGameplayModOp.h"
 #include "GameplayEffectAttributeCaptureDefinition.h"
-#include "GameplayTagRequirements.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-#include "EGameplayEffectScopedModifierAggregatorType.h"
 #include "GameplayEffectModifierMagnitude.h"
+#include "EGameplayEffectScopedModifierAggregatorType.h"
 #include "GameplayModEvaluationChannelSettings.h"
 #include "GameplayEffectExecutionScopedModifierInfo.generated.h"
 

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "EGearRarity.h"
 #include "EEquipmentSlot.h"
 #include "SlotEquipmentValues.h"
 #include "ELootBoxType.h"
+#include "EGearRarity.h"
 #include "FragmentEcononyDB.generated.h"
 
 UCLASS(BlueprintType)

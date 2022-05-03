@@ -1,25 +1,25 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Geometry -FallbackName=Geometry
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Geometry -FallbackName=Geometry
 #include "WidgetLayoutLibrary.generated.h"
 
 class UVerticalBoxSlot;
-class UHorizontalBoxSlot;
-class UWidgetSwitcherSlot;
-class UScaleBoxSlot;
-class UUniformGridSlot;
-class UWrapBoxSlot;
-class USizeBoxSlot;
 class UWidget;
+class UWrapBoxSlot;
+class UWidgetSwitcherSlot;
+class UUniformGridSlot;
+class USizeBoxSlot;
 class UScrollBoxSlot;
+class UScaleBoxSlot;
 class USafeZoneSlot;
 class UOverlaySlot;
+class UBorderSlot;
+class UHorizontalBoxSlot;
 class UGridSlot;
 class UCanvasPanelSlot;
-class UBorderSlot;
 class UObject;
 class APlayerController;
 

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftClassPath -FallbackName=SoftClassPath
-#include "ETwoPlayerSplitScreenType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftObjectPath -FallbackName=SoftObjectPath
-#include "EThreePlayerSplitScreenType.h"
+#include "ETwoPlayerSplitScreenType.h"
 #include "EFourPlayerSplitScreenType.h"
+#include "EThreePlayerSplitScreenType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftClassPath -FallbackName=SoftClassPath
 #include "GameModeName.h"
 #include "GameMapsSettings.generated.h"
 

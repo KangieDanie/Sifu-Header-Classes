@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EAlertLevel.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-#include "EGlobalBehaviors.h"
-#include "ESCAICombatRoles.h"
-#include "ESCAICombatRolesChangeReason.h"
+#include "DamageInfos.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
+#include "EGlobalBehaviors.h"
+#include "EAlertLevel.h"
+#include "ESCAICombatRoles.h"
 #include "EAlertLevelThreshold.h"
 #include "EOrderState.h"
 #include "EMcDominationGaugeSteps.h"
 #include "EAlertedReason.h"
 #include "EOrderType.h"
 #include "EFightingState.h"
-#include "DamageInfos.h"
+#include "ESCAICombatRolesChangeReason.h"
 #include "AIDirectorActor.generated.h"
 
-class AAISituationActor;
 class AFightingCharacter;
+class AAISituationActor;
 class UAIFightingComponent;
 class ABaseCharacter;
 class USCAiAction;
@@ -25,12 +25,16 @@ UCLASS()
 class SIFU_API AAIDirectorActor : public AActor {
     GENERATED_BODY()
 public:
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnAIDeathDetected, const AFightingCharacter*, _AICharacter, const FDamageInfos&, _damageInfos);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FGlobalBehaviorChanged, EGlobalBehaviors, EGlobalBehaviors);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FAlertLevelChangedMulticastDynamic, EAlertLevel, EAlertLevel);
     DECLARE_DYNAMIC_DELEGATE_OneParam(FAlertLevelChanged, EAlertLevel, EAlertLevel);
     
     UPROPERTY(BlueprintAssignable)
     FGlobalBehaviorChanged OnGlobalBehaviorsChanged;
+    
+    UPROPERTY(BlueprintAssignable)
+    FOnAIDeathDetected OnAIDeathDetected;
     
     UPROPERTY(BlueprintAssignable)
     USCDelegate::FDynamicMulticast OnDifficultyLevelChanged;

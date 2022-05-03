@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "InputAction.h"
-#include "EControllerIconAxisTypes.h"
 #include "EUIInputModes.h"
+#include "EControllerIconAxisTypes.h"
 #include "EActionMouseButtons.h"
 #include "ButtonAction.generated.h"
 
-class UGenericInputData;
 class UTexture2D;
+class UGenericInputData;
 
 USTRUCT(BlueprintType)
 struct SIFU_API FButtonAction {

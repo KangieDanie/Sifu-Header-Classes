@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "SlateColor.h"
 #include "SlateWidgetStyle.h"
-#include "SlateBrush.h"
 #include "SlateFontInfo.h"
+#include "SlateBrush.h"
 #include "EditableTextStyle.generated.h"
 
 USTRUCT(BlueprintType)

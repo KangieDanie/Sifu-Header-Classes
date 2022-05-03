@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnSynthEnvelopeValueDelegate.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundAttenuationSettings -FallbackName=SoundAttenuationSettings
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundSubmixSendInfo -FallbackName=SoundSubmixSendInfo
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundSourceBusSendInfo -FallbackName=SoundSourceBusSendInfo
+#include "OnSynthEnvelopeValueDelegate.h"
 #include "SynthComponent.generated.h"
 
-class USoundSubmixBase;
-class USoundAttenuation;
 class USoundClass;
+class USoundAttenuation;
 class USoundConcurrency;
-class USoundEffectSourcePresetChain;
 class USynthSound;
+class USoundEffectSourcePresetChain;
+class USoundSubmixBase;
 class UAudioComponent;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

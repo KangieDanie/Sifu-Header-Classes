@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CompositeFallbackFont.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Int32Range -FallbackName=Int32Range
+#include "CompositeFallbackFont.h"
 #include "CompositeSubFont.generated.h"
 
 USTRUCT(BlueprintType)

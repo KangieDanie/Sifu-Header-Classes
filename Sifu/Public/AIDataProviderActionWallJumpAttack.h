@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EWallJumpAttackParameter.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIDataProvider_QueryParams -FallbackName=AIDataProvider_QueryParams
+#include "EWallJumpAttackParameter.h"
 #include "AIDataProviderActionWallJumpAttack.generated.h"
 
 UCLASS(CollapseCategories, EditInlineNew)

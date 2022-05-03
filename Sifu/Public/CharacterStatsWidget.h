@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCUserWidget.h"
 #include "CharacterStatsBindings.h"
+#include "SCUserWidget.h"
 #include "CombatDeckDetails.h"
 #include "CharacterStatsWidget.generated.h"
 

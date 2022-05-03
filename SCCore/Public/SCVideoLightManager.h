@@ -3,11 +3,11 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "SCVideoLightManager.generated.h"
 
-class UMaterialInterface;
-class UTextureRenderTarget2D;
 class UMediaTexture;
-class UMaterialInstanceDynamic;
 class UCanvas;
+class UTextureRenderTarget2D;
+class UMaterialInstanceDynamic;
+class UMaterialInterface;
 class UMediaSource;
 class ULocalLightComponent;
 class UCurveLinearColor;

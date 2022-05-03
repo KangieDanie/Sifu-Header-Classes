@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "OpenColorIOColorConversionSettings.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 #include "OpenColorIOBlueprintLibrary.generated.h"
 
-class UTextureRenderTarget2D;
 class UTexture;
 class UObject;
+class UTextureRenderTarget2D;
 
 UCLASS(BlueprintType, MinimalAPI)
 class UOpenColorIOBlueprintLibrary : public UBlueprintFunctionLibrary {

@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
-#include "SpeedStateAnimContainer.h"
-#include "EQuadrantTypes.h"
-#include "ETransitionRotation.h"
-#include "ESpeedState.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
-#include "RotationAnimContainer.h"
-#include "QuadrantAnimContainer.h"
-#include "OrientedRotationAnimContainer.h"
 #include "CardinalAnimContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "QuadrantAnimContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+#include "ESpeedState.h"
+#include "SpeedStateAnimContainer.h"
+#include "RotationAnimContainer.h"
+#include "ETransitionRotation.h"
+#include "EQuadrantTypes.h"
+#include "OrientedRotationAnimContainer.h"
 #include "CardinalChangementAnimContainer.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCCardinalPoints -FallbackName=ESCCardinalPoints
 #include "AnimContainerLibrary.generated.h"

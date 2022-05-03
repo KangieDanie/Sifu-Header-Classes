@@ -2,11 +2,18 @@
 
 class USCSaveObjectGameData;
 
+void UWGSaveObjectGameData::ReloadDefaultStatsFromDataTable() {
+}
+
 void UWGSaveObjectGameData::BPF_RemoveGameplayTag(FGameplayTag _gameplayTagToAdd) {
 }
 
 bool UWGSaveObjectGameData::BPF_HasGameplayTag(FGameplayTag _gameplayTagToAdd) {
     return false;
+}
+
+float UWGSaveObjectGameData::BPF_GetDefaultStatValue(ECharacterStat _eStat, bool& _bFound) const {
+    return 0.0f;
 }
 
 void UWGSaveObjectGameData::BPF_AddOrUpdateMaskSnapshot(int32 _iMask, const FDuplicatedSaveData& _duplicatedData) {

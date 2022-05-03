@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EOrderType.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "ETargetingPrio.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "EOrderType.h"
 #include "VariableWeightLayerToBoneMask.h"
 #include "BaseWeaponOverrideInfo.h"
 #include "BaseWeaponData.generated.h"

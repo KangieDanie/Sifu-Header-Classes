@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ELocationYToSpawnEnum.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Niagara -ObjectName=NiagaraDataInterface -FallbackName=NiagaraDataInterface
+#include "ELocationXToSpawnEnum.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 #include "EDebugTypeEnum.h"
 #include "ELocationFilteringModeEnum.h"
 #include "EDataSourceTypeEnum.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-#include "ELocationYToSpawnEnum.h"
-#include "ELocationXToSpawnEnum.h"
 #include "ELocationZToSpawnEnum.h"
 #include "EDataSortTypeEnum.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector

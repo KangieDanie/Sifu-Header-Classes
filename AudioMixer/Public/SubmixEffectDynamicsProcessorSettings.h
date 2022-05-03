@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ESubmixEffectDynamicsChannelLinkMode.h"
 #include "ESubmixEffectDynamicsPeakMode.h"
 #include "ESubmixEffectDynamicsProcessorType.h"
-#include "ESubmixEffectDynamicsChannelLinkMode.h"
 #include "SubmixEffectDynamicProcessorFilterSettings.h"
 #include "SubmixEffectDynamicsProcessorSettings.generated.h"
 

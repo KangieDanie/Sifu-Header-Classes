@@ -1,35 +1,35 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "InputContext.h"
 #include "BaseCharacter.h"
-#include "HitRequest.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=GenericTeamAgentInterface -FallbackName=GenericTeamAgentInterface
-#include "EDangerStates.h"
-#include "TargetableActor.h"
-#include "EALBinaryOperation.h"
-#include "EFactionsEnums.h"
-#include "HittableActor.h"
+#include "EOrderType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=AbilitySystemInterface -FallbackName=AbilitySystemInterface
+#include "TargetableActor.h"
+#include "HittableActor.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=GenericTeamAgentInterface -FallbackName=GenericTeamAgentInterface
 #include "HitDefenseResult.h"
-#include "InputAction.h"
-#include "EEquipmentSlot.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
+#include "HitRequest.h"
+#include "ECameraTeleportationRotationBehavior.h"
 #include "DamageInfos.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGestureContainer -FallbackName=SCGestureContainer
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
-#include "HitDescription.h"
 #include "EPredictionBehavior.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
+#include "HitDescription.h"
 #include "HandledWeaponInfo.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
+#include "EFactionsEnums.h"
 #include "PelvisDirectionComputationParams.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "EOrderType.h"
-#include "ECameraTeleportationRotationBehavior.h"
-#include "EALPriority.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGestureAndBlendProfile -FallbackName=SCGestureAndBlendProfile
-#include "EFidgetMirroringTypes.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+#include "InputContext.h"
+#include "EALPriority.h"
+#include "EALBinaryOperation.h"
 #include "EFightingCharacterBPComponents.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGestureContainer -FallbackName=SCGestureContainer
+#include "EFidgetMirroringTypes.h"
+#include "InputAction.h"
+#include "EEquipmentSlot.h"
+#include "EDangerStates.h"
 #include "EQuadrantTypes.h"
 #include "EHeight.h"
 #include "EItemPowers.h"
@@ -41,41 +41,41 @@
 #include "ImpactResult.h"
 #include "FightingCharacter.generated.h"
 
-class UCameraComponentThird;
-class AFightingCharacter;
-class UMessengerComponent;
-class UCapsuleComponent;
-class UDeathDB;
 class UEffectData;
-class AActor;
-class AInteractiveMovable;
-class UAvailabilityLayerDB;
-class ABaseWeapon;
-class UAttackComponent;
-class UPrimitiveComponent;
-class UBaseWeaponData;
-class UPlayerFightingComponent;
 class UAIFightingComponent;
+class UMaterialInterface;
+class AActor;
+class UTargetableActorComponent;
+class UPlayerFightingComponent;
+class UAvailabilityLayerDB;
+class UMessengerComponent;
+class UStatsComponent;
+class UMaterialParameterCollection;
 class UCharacterHitBoxComponent;
+class UPrimitiveComponent;
+class AInteractiveMovable;
 class UDefenseComponent;
 class USCAbilitySystemComponent;
-class UTargetableActorComponent;
 class UPhysicalAnimationComponent;
+class UAttackComponent;
+class UCameraComponentThird;
+class UBaseWeaponData;
+class UOrderComponent;
 class UHitComponent;
 class UCharacterHealthComponent;
-class UASMComponent;
+class UCapsuleComponent;
 class UReplayablePhysicsComponent;
 class UFightingCharAnimRepComponent;
-class UOrderComponent;
 class UReplayFightingCharacterComponent;
-class UMaterialParameterCollection;
-class UMaterialInterface;
+class UASMComponent;
+class UDeathDB;
 class UAvailabilityLayerData;
-class UStatsComponent;
+class ABaseWeapon;
 class USkeletalMeshComponent;
 class UActorComponent;
 class UPlayerAnim;
 class UVisibleWeaponData;
+class AFightingCharacter;
 class UAvoidPropertyDB;
 
 UCLASS()

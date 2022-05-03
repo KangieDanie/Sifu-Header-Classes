@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "InheritedDataAsset.h"
-#include "ECinematicLayerTypes.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "SequenceRoleTypeDescription.h"
 #include "MaterialParameterBlendSettings.h"
+#include "ECinematicLayerTypes.h"
 #include "SCLevelSequenceDirectorData.generated.h"
 
 class USCLevelSequenceRoleData;

@@ -10,9 +10,9 @@
 #include "BaseWeapon.generated.h"
 
 class UWeaponGameplayData;
+class UBaseWeaponData;
 class USkeletalMeshComponent;
 class UTargetSettingsDB;
-class UBaseWeaponData;
 class UAnimInstanceReplicationComponent;
 class AFightingCharacter;
 class UAvailabilityLayerData;

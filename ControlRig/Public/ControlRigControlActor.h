@@ -6,10 +6,10 @@
 #include "ControlRigControlActor.generated.h"
 
 class UMaterialInterface;
-class UControlRig;
-class USceneComponent;
 class UStaticMeshComponent;
+class UControlRig;
 class UMaterialInstanceDynamic;
+class USceneComponent;
 
 UCLASS()
 class CONTROLRIG_API AControlRigControlActor : public AActor {

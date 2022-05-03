@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EAIWuguanTicketEvaluation.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EAIAttackTicketJokerSituation.h"
-#include "EAIWuguanTicketEvaluation.h"
-#include "SCAITicketEnum.h"
 #include "AIAttackJokerSituationConfigsPerDominationStep.h"
+#include "SCAITicketEnum.h"
 #include "TicketSettings.generated.h"
 
 class UOrderDB;
@@ -14,6 +14,9 @@ UCLASS(DefaultConfig, Config=WuguanAI)
 class SIFU_API UTicketSettings : public UObject {
     GENERATED_BODY()
 public:
+    UPROPERTY(Config)
+    int32 m_iSerializeVersion;
+    
     UPROPERTY(Config, EditAnywhere)
     TMap<EAIWuguanTicketEvaluation, float> m_AttackTicketScoreFactors;
     

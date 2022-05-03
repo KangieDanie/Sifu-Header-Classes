@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "FrameRange.h"
 #include "EAvoidType.h"
+#include "FrameRange.h"
 #include "AvoidWindow.generated.h"
 
 class UAvoidPropertyDB;

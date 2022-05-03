@@ -5,10 +5,10 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EnvQueryGenerator_BlueprintBase.generated.h"
 
+class UObject;
 class UEnvQueryContext;
 class UEnvQueryItemType;
 class AActor;
-class UObject;
 
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class AIMODULE_API UEnvQueryGenerator_BlueprintBase : public UEnvQueryGenerator {

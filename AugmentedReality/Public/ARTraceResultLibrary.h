@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ARTraceResult.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+#include "ARTraceResult.h"
 #include "EARLineTraceChannels.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "ARTraceResultLibrary.generated.h"

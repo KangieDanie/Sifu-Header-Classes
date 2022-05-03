@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCWuguanUserEnumSetting.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCBaseGameSettings -FallbackName=SCBaseGameSettings
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftObjectPath -FallbackName=SoftObjectPath
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftObjectPath -FallbackName=SoftObjectPath
+#include "SCWuguanUserEnumSetting.h"
 #include "SCGameSettings.generated.h"
 
 class UMirrorAnimDB;
 class UOrderService;
 
-UCLASS(DefaultConfig, Config=Game)
+UCLASS()
 class SIFU_API USCGameSettings : public USCBaseGameSettings {
     GENERATED_BODY()
 public:

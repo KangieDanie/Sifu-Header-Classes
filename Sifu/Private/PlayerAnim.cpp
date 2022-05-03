@@ -262,6 +262,7 @@ void UPlayerAnim::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifet
     DOREPLIFETIME(UPlayerAnim, m_FreeMoveBlendSpaceV1);
     DOREPLIFETIME(UPlayerAnim, m_FreeMoveBlendSpaceV2);
     DOREPLIFETIME(UPlayerAnim, m_FreeMoveBlendSpaceV3);
+    DOREPLIFETIME(UPlayerAnim, m_LookAtAnimHandler);
     DOREPLIFETIME(UPlayerAnim, m_TraversalAnimStruct);
     DOREPLIFETIME(UPlayerAnim, m_eForcedQuadrant);
     DOREPLIFETIME(UPlayerAnim, m_bFallInProgress1);

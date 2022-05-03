@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "CameraTransitionInfoPairStruct.generated.h"
 
-class UAbstractCameraData;
 class UCameraTransitionInfo;
+class UAbstractCameraData;
 
 USTRUCT(BlueprintType)
 struct SIFU_API FCameraTransitionInfoPairStruct {

@@ -3,9 +3,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Image -FallbackName=Image
 #include "AsyncImage.generated.h"
 
+class UMaterialInterface;
 class UAsyncImage;
 class UTexture2D;
-class UMaterialInterface;
 
 UCLASS()
 class UAsyncImage : public UImage {

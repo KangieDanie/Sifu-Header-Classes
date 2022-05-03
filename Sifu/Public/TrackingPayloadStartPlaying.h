@@ -15,6 +15,12 @@ public:
     UPROPERTY()
     FString m_Platform;
     
+    UPROPERTY()
+    FString ver;
+    
+    UPROPERTY()
+    FString difficulty;
+    
     SIFU_API FTrackingPayloadStartPlaying();
 };
 

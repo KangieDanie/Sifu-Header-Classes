@@ -1,7 +1,7 @@
 #include "LayersBlueprintLibrary.h"
 
-class UObject;
 class AActor;
+class UObject;
 
 void ULayersBlueprintLibrary::RemoveActorFromLayer(AActor* InActor, const FActorLayer& Layer) {
 }

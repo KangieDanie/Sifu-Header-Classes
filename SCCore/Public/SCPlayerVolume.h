@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCVolume.h"
-#include "VolumeBeginOverlapSignatureDelegate.h"
 #include "VolumeEndOverlapSignatureDelegate.h"
+#include "VolumeBeginOverlapSignatureDelegate.h"
 #include "SCPlayerVolume.generated.h"
 
 UCLASS()

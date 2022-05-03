@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "OrderService.h"
-#include "TargetTransformDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "OrderService.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "BPOrderServiceInstance.h"
+#include "TargetTransformDelegateDelegate.h"
 #include "SnapOrderService.generated.h"
 
 class UCurveFloat;

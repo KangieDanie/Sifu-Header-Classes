@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCUserWidget.h"
 #include "EQuadrantTypes.h"
+#include "SCUserWidget.h"
 #include "HUDWidget.generated.h"
 
 UCLASS(EditInlineNew)

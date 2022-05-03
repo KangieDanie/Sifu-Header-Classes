@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BTTaskNode -FallbackName=BTTaskNode
-#include "EGlobalBehaviors.h"
 #include "EFightingActionState.h"
+#include "EGlobalBehaviors.h"
 #include "RunReactionBTTaskNode.generated.h"
 
 UCLASS()

@@ -1,39 +1,40 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "AISuperDizzyParams.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "JiggleAnimContainer.h"
-#include "AIDifficultyLevel.h"
 #include "EDefenseTactics.h"
 #include "SCAITriggerableActionsArray.h"
 #include "AIConditionedActionArray.h"
 #include "AIWeaponInfo.h"
-#include "CardinalAnimContainer.h"
+#include "AIActionReaction.h"
+#include "BaseActorConditionInstance.h"
 #include "EAIWuguanTicketEvaluation.h"
 #include "AIAttackReaction.h"
-#include "AIActionReaction.h"
-#include "VoiceVariationsAkSwitchContainer.h"
 #include "LocomotionPaceSelector.h"
+#include "AIDifficultyLevel.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ECharacterGender -FallbackName=ECharacterGender
+#include "VoiceVariationsAkSwitchContainer.h"
 #include "PatrolActivity.h"
 #include "ESCAICombatRoles.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "AIRangePerCircleIndex.h"
-#include "BaseActorConditionInstance.h"
+#include "CardinalAnimContainer.h"
+#include "JiggleAnimContainer.h"
 #include "ArchetypeAsset.generated.h"
 
-class UBehaviorTree;
-class UDodgeTypeUseCaseMatrix;
 class UAttackPropertiesResistanceDB;
+class UDodgeTypeUseCaseMatrix;
 class UBaseMovementDB;
 class UAIContextualDefense;
 class UCurveFloat;
 class UAvoidAbility;
-class UVitalPointDB;
-class UThrowableInfoForAIDataAsset;
 class ABaseWeapon;
-class UNavigationQueryFilter;
+class UThrowableInfoForAIDataAsset;
+class UBehaviorTree;
 class UBlackboardData;
+class UNavigationQueryFilter;
+class UVitalPointDB;
 class UDataTable;
 class UFidgetDB;
 
@@ -54,33 +55,30 @@ public:
     bool m_bDismissDeathForTakedown;
     
     UPROPERTY(EditAnywhere)
-    float m_fHealth;
-    
-    UPROPERTY(EditAnywhere)
-    float m_fStructure;
-    
-    UPROPERTY(EditAnywhere)
     bool m_bInfiniteStructure;
     
     UPROPERTY(EditAnywhere)
     float m_fGrabbableStructureRatio;
     
     UPROPERTY(EditAnywhere)
+    FAISuperDizzyParams m_SuperDizzyPerDifficulty[3];
+    
+    UPROPERTY()
     bool m_bCanBeSuperDizzy;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     float m_fSuperDizzyResistance;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     float m_fSuperDizzyRecoveryCooldown;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     float m_fSuperDizzyRecoveryCooldownWhenComplete;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     float m_fSuperDizzyGaugeRatioAfterSuperDizzy;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     float m_fSuperDizzyRecoveryPerSec;
     
     UPROPERTY(EditAnywhere)
@@ -114,6 +112,9 @@ public:
     float m_fAbandonTicketTimeout;
     
     UPROPERTY(EditAnywhere)
+    UAttackPropertiesResistanceDB* m_AttackPropertyResistanceDBPerDifficulty[3];
+    
+    UPROPERTY()
     UAttackPropertiesResistanceDB* m_AttackPropertyResistanceDB;
     
     UPROPERTY(BlueprintReadOnly, EditAnywhere)
@@ -128,8 +129,11 @@ public:
     UPROPERTY(EditAnywhere)
     bool m_bLowStructureOnSpawn;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     UCurveFloat* m_GuardRecoveryRateByLife;
+    
+    UPROPERTY(EditAnywhere)
+    UCurveFloat* m_GuardRecoveryRateByLifePerDifficulty[3];
     
     UPROPERTY(EditAnywhere)
     bool m_bCanDefend;
@@ -187,6 +191,9 @@ public:
     
     UPROPERTY(EditAnywhere)
     TArray<FAIActionReaction> m_ReactionActions;
+    
+    UPROPERTY(EditAnywhere)
+    bool m_bCanUseReactionActions;
     
     UPROPERTY(EditAnywhere)
     float m_fFarFromEnemyDistThresold;
@@ -299,6 +306,20 @@ public:
     UPROPERTY(EditAnywhere)
     FBaseActorConditionInstance m_SpareCondition;
     
+private:
+    UPROPERTY(EditAnywhere)
+    float m_fHealth;
+    
+    UPROPERTY(EditAnywhere)
+    float m_fHealthMultiplier[3];
+    
+    UPROPERTY(EditAnywhere)
+    float m_fStructure;
+    
+    UPROPERTY(EditAnywhere)
+    float m_fStructureMultiplier[3];
+    
+public:
     UArchetypeAsset();
 };
 

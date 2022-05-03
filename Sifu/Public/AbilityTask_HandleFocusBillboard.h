@@ -5,9 +5,9 @@
 #include "TargetForSlotsEnumHandler.h"
 #include "AbilityTask_HandleFocusBillboard.generated.h"
 
+class AAimingBillboardActor;
 class UAbilityTask_HandleFocusBillboard;
 class UGameplayAbility;
-class AAimingBillboardActor;
 
 UCLASS()
 class SIFU_API UAbilityTask_HandleFocusBillboard : public UAbilityTask {

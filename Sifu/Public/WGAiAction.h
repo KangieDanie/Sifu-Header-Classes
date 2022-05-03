@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UOrderParamsInstanceStruct.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCAiAction -FallbackName=SCAiAction
+#include "EComboAIConditionGroupOperator.h"
 #include "ESpeedState.h"
 #include "UOrderParamsClassInstance.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "UOrderParamsInstanceStruct.h"
 #include "AICancelCondition.h"
-#include "EComboAIConditionGroupOperator.h"
 #include "EGlobalBehaviors.h"
 #include "WGAiAction.generated.h"
 
-class AFightingAIController;
 class AFightingPlayerController;
 class AFightingCharacter;
+class AFightingAIController;
 class UAIFightingComponent;
 class USCCrowdFollowingComponent;
 class UOrderParams;

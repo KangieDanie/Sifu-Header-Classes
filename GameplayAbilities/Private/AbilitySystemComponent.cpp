@@ -3,11 +3,11 @@
 #include "Templates/SubclassOf.h"
 
 class UGameplayAbility;
-class UAnimMontage;
-class UGameplayEffect;
 class UAbilitySystemComponent;
-class UDataTable;
+class UGameplayEffect;
+class UAnimMontage;
 class UAttributeSet;
+class UDataTable;
 
 bool UAbilitySystemComponent::TryActivateAbilityByClass(TSubclassOf<UGameplayAbility> InAbilityToActivate, bool bAllowRemoteActivation) {
     return false;

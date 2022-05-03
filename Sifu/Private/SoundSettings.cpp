@@ -14,7 +14,8 @@ USoundSettings::USoundSettings() {
     this->m_AdvancedVibrationStateON = TEXT("On");
     this->m_AdvancedVibrationStateOFF = TEXT("Off");
     this->m_eDefaultChannelConfig = AkChannelConfiguration::Ak_2_0;
-    this->m_HandlingMonoBusList.AddDefaulted(3);
+    this->m_Audio3DRTPC = TEXT("RTPC_Audio3D");
+    this->m_HandlingMonoBusList.AddDefaulted(4);
     this->m_VoiceArchetypeSwitchGroup = TEXT("Voice_Archetype");
     this->m_VoiceVariationSwitchGroup = TEXT("Voice_Variation");
     this->m_VoiceGenderSwitchGroup = TEXT("Voice_Gender");

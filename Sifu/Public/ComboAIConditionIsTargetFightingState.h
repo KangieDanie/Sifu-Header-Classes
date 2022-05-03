@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EFightingState.h"
 #include "ComboAIConditionOnState.h"
 #include "EComboAIConditionOnState.h"
+#include "EFightingState.h"
 #include "ComboAIConditionIsTargetFightingState.generated.h"
 
 UCLASS(EditInlineNew)

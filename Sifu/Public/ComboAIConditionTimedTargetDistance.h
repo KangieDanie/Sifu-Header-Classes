@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIComboCondition.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCMathExpressionFloat -FallbackName=SCMathExpressionFloat
+#include "AIComboCondition.h"
 #include "ComboAIConditionTimedTargetDistance.generated.h"
 
 UCLASS(EditInlineNew)

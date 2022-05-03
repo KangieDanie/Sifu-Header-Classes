@@ -5,8 +5,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
 #include "AsyncTaskAiAction.generated.h"
 
-class USCAiAction;
 class UAsyncTaskAiAction;
+class USCAiAction;
 class UAIFightingComponent;
 
 UCLASS()

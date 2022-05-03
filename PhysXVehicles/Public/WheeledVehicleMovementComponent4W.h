@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VehicleDifferential4WData.h"
 #include "WheeledVehicleMovementComponent.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RuntimeFloatCurve -FallbackName=RuntimeFloatCurve
 #include "VehicleEngineData.h"
+#include "VehicleDifferential4WData.h"
 #include "VehicleTransmissionData.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RuntimeFloatCurve -FallbackName=RuntimeFloatCurve
 #include "WheeledVehicleMovementComponent4W.generated.h"
 
 UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

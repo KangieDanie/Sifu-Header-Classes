@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
-#include "OnItemPropertySelectionChangedDelegate.h"
 #include "OnItemPropertyDragDetectedDelegate.h"
+#include "OnItemPropertySelectionChangedDelegate.h"
 #include "AkItemProperties.generated.h"
 
 UCLASS(DefaultConfig, Config=Editor)

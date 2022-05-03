@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "CardinalMatchArray.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "EAvoidLaunchMethod.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=Bool -FallbackName=Bool
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+#include "CardinalMatchArray.h"
+#include "EAvoidLaunchMethod.h"
 #include "AvoidDB.generated.h"
 
-class UAvoidMatchCondition;
 class UCurveFloat;
+class UAvoidMatchCondition;
 class UAvoidPropertyDB;
 
 UCLASS()

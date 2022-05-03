@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Widget.h"
 #include "RadialBoxSettings.h"
+#include "Widget.h"
 #include "EDynamicBoxType.h"
-#include "UserWidgetPool.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-#include "SlateChildSize.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EVerticalAlignment -FallbackName=EVerticalAlignment
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EHorizontalAlignment -FallbackName=EHorizontalAlignment
+#include "SlateChildSize.h"
+#include "UserWidgetPool.h"
 #include "DynamicEntryBoxBase.generated.h"
 
 class UUserWidget;

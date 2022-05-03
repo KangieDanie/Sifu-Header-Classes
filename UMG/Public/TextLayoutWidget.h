@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Widget.h"
-#include "ShapedTextOptions.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=ETextJustify -FallbackName=ETextJustify
 //CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=ETextWrappingPolicy -FallbackName=ETextWrappingPolicy
+#include "Widget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=ETextJustify -FallbackName=ETextJustify
+#include "ShapedTextOptions.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
 #include "TextLayoutWidget.generated.h"
 

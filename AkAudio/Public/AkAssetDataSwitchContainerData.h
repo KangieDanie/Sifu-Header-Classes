@@ -3,9 +3,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "AkAssetDataSwitchContainerData.generated.h"
 
+class UAkAssetDataSwitchContainerData;
 class UAkGroupValue;
 class UAkMediaAsset;
-class UAkAssetDataSwitchContainerData;
 
 UCLASS(EditInlineNew)
 class AKAUDIO_API UAkAssetDataSwitchContainerData : public UObject {

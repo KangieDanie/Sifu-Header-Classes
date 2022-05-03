@@ -11,6 +11,9 @@ public:
     UPROPERTY(EditAnywhere)
     FAttackTicketConfig m_Config;
     
+    UPROPERTY()
+    int32 m_iSerializeVersion;
+    
     UAIAttackTicketData();
 };
 

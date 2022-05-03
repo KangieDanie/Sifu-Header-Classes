@@ -2,10 +2,10 @@
 #include "CoreMinimal.h"
 #include "RigUnit_HighlevelBaseMutable.h"
 #include "RigUnit_BoneHarmonics_BoneTarget.h"
-#include "EControlRigAnimEasingType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "EControlRigRotationOrder.h"
 #include "RigUnit_BoneHarmonics_WorkData.h"
+#include "EControlRigAnimEasingType.h"
+#include "EControlRigRotationOrder.h"
 #include "RigUnit_BoneHarmonics.generated.h"
 
 USTRUCT()

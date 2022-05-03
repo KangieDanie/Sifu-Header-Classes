@@ -1,8 +1,8 @@
 #include "AIActionWallJumpAttack.h"
 #include "Templates/SubclassOf.h"
 
-class UAIFightingComponent;
 class AFightingCharacter;
+class UAIFightingComponent;
 class UAIActionWallJumpAttack;
 class AActor;
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BTAuxiliaryNode.h"
 #include "EBTFlowAbortMode.h"
+#include "BTAuxiliaryNode.h"
 #include "BTDecorator.generated.h"
 
 UCLASS(Abstract)

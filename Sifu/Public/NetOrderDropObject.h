@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EDropReason.h"
 #include "NetOrderStructPlayAnimVariableWeight.h"
+#include "EDropReason.h"
 #include "NetOrderDropObject.generated.h"
 
 USTRUCT(BlueprintType)

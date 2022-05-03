@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=AbilityTask -FallbackName=AbilityTask
-#include "DetectInputActionDelegateDelegate.h"
 #include "InputAction.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=AbilityTask -FallbackName=AbilityTask
 #include "InputContext.h"
+#include "DetectInputActionDelegateDelegate.h"
 #include "AbilityTask_DetectInputAction.generated.h"
 
 class UAbilityTask_DetectInputAction;

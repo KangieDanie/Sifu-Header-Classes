@@ -3,19 +3,20 @@
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=DeveloperSettings -ObjectName=DeveloperSettings -FallbackName=DeveloperSettings
 #include "SCGameFlowData.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "SCVolumeClusterMaterialsPath.h"
 #include "ActorsPoolConfig.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "SCErrorPopup.h"
 #include "SCCoreSettings.generated.h"
 
-class UGameFlow;
-class USCBaseGameSettings;
 class ASCSequenceAnchor;
+class USCBaseGameSettings;
+class ASCCharacterImpostor;
+class UGameFlow;
 class USCLevelSequenceDirectorData;
+class USCInGameAchievementsManagerSettings;
 class USCAiAction;
 class AActor;
-class ASCCharacterImpostor;
 
 UCLASS(DefaultConfig, Config=SCCore)
 class SCCORE_API USCCoreSettings : public UDeveloperSettings {
@@ -29,6 +30,9 @@ public:
     
     UPROPERTY(Config, EditAnywhere)
     TSoftObjectPtr<UGameFlow> m_playingGameFlow;
+    
+    UPROPERTY(Config, EditAnywhere)
+    TSoftClassPtr<USCInGameAchievementsManagerSettings> m_achievementsSettings;
     
     UPROPERTY(Config, EditAnywhere)
     FSCVolumeClusterMaterialsPath m_DefaultVolumeVisualizerMaterial;

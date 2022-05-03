@@ -1,27 +1,27 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraComponent -FallbackName=CameraComponent
-#include "ECameraTransitionState.h"
-#include "BaseComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCBlendType -FallbackName=ESCBlendType
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "CameraTargetPosition.h"
+#include "BaseComponent.h"
 #include "CameraLookAtServiceBehaviorConfig.h"
+#include "ECameraTransitionState.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-#include "CameraRepulsionConfig.h"
-#include "CameraLookAtServiceBehaviorTime.h"
+#include "CameraTargetPosition.h"
 #include "CameraMirrorManagementConfig.h"
+#include "CameraRepulsionConfig.h"
+#include "CameraLookAtServiceBehavior.h"
+#include "CameraLookAtServiceBehaviorTime.h"
 #include "ECameraLockAlgorithms.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCSequenceBlendViewState -FallbackName=ESCSequenceBlendViewState
-#include "CameraLookAtServiceBehavior.h"
 #include "CameraComponentThird.generated.h"
 
 class USCLevelSequence;
-class UCameraDB;
-class UAbstractCameraData;
 class UCameraLagStruct;
+class UCameraDB;
 class UMaterialParameterCollection;
+class UAbstractCameraData;
 class AActor;
 class UBlackboardComponent;
 
@@ -87,6 +87,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void BPF_UnFreezeHidingZoneRepulsion(int32 _iHandle);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_UnFreezeCameraDeadZoneRepulsion(int32 _iHandle);
     
     UFUNCTION(BlueprintPure)
     FVector BPF_TransformInputVector(FVector2D _vInputVector) const;
@@ -176,6 +179,9 @@ public:
     bool BPF_IsColliding() const;
     
     UFUNCTION(BlueprintPure)
+    bool BPF_IsAnimDrivenInMixerNode() const;
+    
+    UFUNCTION(BlueprintPure)
     bool BPF_HasLookAt() const;
     
     UFUNCTION(BlueprintPure)
@@ -209,7 +215,7 @@ public:
     FTransform BPF_GetCameraTransform() const;
     
     UFUNCTION(BlueprintPure)
-    float BPF_GetCameraShakeFactor();
+    float BPF_GetCameraShakeFactor() const;
     
     UFUNCTION(BlueprintPure)
     float BPF_GetCameraCollisionTargetRatio() const;
@@ -228,6 +234,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     int32 BPF_FreezeHidingZoneRepulsion(const FString& _contextString);
+    
+    UFUNCTION(BlueprintCallable)
+    int32 BPF_FreezeCameraDeadZoneRepulsion(const FString& _contextString);
     
     UFUNCTION(BlueprintPure)
     bool BPF_ComputeIsMirrorFromCharacterPosOnScreen() const;

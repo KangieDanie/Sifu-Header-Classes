@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "SkillFilter.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "SkillTreeNode.h"
 #include "SkillsChilds.generated.h"
 
-class USCAbilitySystemComponent;
 class USkillsChilds;
+class USCAbilitySystemComponent;
 
 UCLASS(BlueprintType, CollapseCategories, EditInlineNew)
 class USkillsChilds : public UObject {

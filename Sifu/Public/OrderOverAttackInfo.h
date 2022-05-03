@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EOrderType.h"
 #include "HitDefenseResult.h"
 #include "HitRequest.h"
+#include "EOrderType.h"
 #include "OrderOverAttackInfo.generated.h"
 
 class AActor;

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "TrackableImageDelegateDelegate.h"
-#include "TrackablePointDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "TrackableDelegateDelegate.h"
 #include "TrackablePlaneDelegateDelegate.h"
+#include "TrackablePointDelegateDelegate.h"
 #include "TrackableFaceDelegateDelegate.h"
+#include "TrackableImageDelegateDelegate.h"
 #include "TrackableEnvProbeDelegateDelegate.h"
 #include "TrackableObjectDelegateDelegate.h"
 #include "ARTrackableNotifyComponent.generated.h"

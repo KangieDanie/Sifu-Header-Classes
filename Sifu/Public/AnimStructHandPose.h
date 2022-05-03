@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AnimStructBase.h"
-#include "EHandPoseBlendInTypes.h"
 #include "EHandPoseBlendOutTypes.h"
+#include "EHandPoseBlendInTypes.h"
+#include "AnimStructBase.h"
 #include "AnimStructHandPose.generated.h"
 
 USTRUCT(BlueprintType)

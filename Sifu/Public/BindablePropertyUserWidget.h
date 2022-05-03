@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "SCUserWidget.h"
 #include "OnPropertyUpdatedSignatureDelegate.h"
+#include "SCUserWidget.h"
 #include "OnInputUpdateSignatureDelegate.h"
 #include "BindablePropertyUserWidget.generated.h"
 

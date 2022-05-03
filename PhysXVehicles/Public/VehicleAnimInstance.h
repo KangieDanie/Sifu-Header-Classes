@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimInstance -FallbackName=AnimInstance
 #include "VehicleAnimInstance.generated.h"
 
-class UWheeledVehicleMovementComponent;
 class AWheeledVehicle;
+class UWheeledVehicleMovementComponent;
 
 UCLASS(NonTransient)
 class PHYSXVEHICLES_API UVehicleAnimInstance : public UAnimInstance {

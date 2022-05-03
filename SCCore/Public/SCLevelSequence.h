@@ -9,15 +9,15 @@
 
 class APlayerController;
 class USCLevelSequenceDirectorData;
-class ALevelSequenceActor;
-class AActor;
 class ACameraActor;
 class ASCSequenceAnchor;
+class AActor;
 class UAnimMontage;
 class ACharacter;
 class UAnimSequence;
 class ULevelSequence;
 class UMaterialParameterCollection;
+class ALevelSequenceActor;
 
 UCLASS()
 class SCCORE_API USCLevelSequence : public ULevelSequenceDirector {

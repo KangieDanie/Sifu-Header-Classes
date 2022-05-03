@@ -24,6 +24,9 @@ public:
     
 private:
     UPROPERTY(EditAnywhere)
+    float m_fMaxHealthMultiplier[3];
+    
+    UPROPERTY(EditAnywhere)
     float m_fRecoveryRate;
     
     UPROPERTY(EditAnywhere)

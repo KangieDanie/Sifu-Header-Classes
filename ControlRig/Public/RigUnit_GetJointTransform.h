@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RigUnitMutable.h"
-#include "ETransformGetterType.h"
 #include "ETransformSpaceMode.h"
+#include "ETransformGetterType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "RigUnit_GetJointTransform.generated.h"
 

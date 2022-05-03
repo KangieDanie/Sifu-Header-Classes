@@ -39,6 +39,8 @@ FProfileData::FProfileData() {
     this->m_GameOptions[35] = 0.00f;
     this->m_GameOptions[36] = 0.00f;
     this->m_GameOptions[37] = 0.00f;
+    this->m_GameOptions[38] = 0.00f;
+    this->m_GameOptions[39] = 0.00f;
     this->m_bInputHoldToggleActivated = false;
 }
 

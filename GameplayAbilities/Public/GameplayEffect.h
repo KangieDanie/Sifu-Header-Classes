@@ -1,17 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagAssetInterface -FallbackName=GameplayTagAssetInterface
-#include "ConditionalGameplayEffect.h"
-#include "EGameplayEffectDurationType.h"
-#include "GameplayEffectExecutionDefinition.h"
-#include "ScalableFloat.h"
-#include "GameplayEffectModifierMagnitude.h"
 #include "GameplayEffectCue.h"
 #include "GameplayModifierInfo.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "ConditionalGameplayEffect.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagAssetInterface -FallbackName=GameplayTagAssetInterface
 #include "EGameplayEffectPeriodInhibitionRemovedPolicy.h"
+#include "GameplayEffectExecutionDefinition.h"
+#include "ScalableFloat.h"
+#include "EGameplayEffectDurationType.h"
+#include "GameplayEffectModifierMagnitude.h"
 #include "InheritedTagContainer.h"
 #include "GameplayTagRequirements.h"
 #include "GameplayEffectQuery.h"
@@ -21,6 +20,7 @@
 #include "EGameplayEffectStackingPeriodPolicy.h"
 #include "GameplayAbilitySpecDef.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 #include "GameplayEffect.generated.h"
 
 class UGameplayEffectCustomApplicationRequirement;
@@ -48,9 +48,6 @@ public:
     
     UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
     TArray<FGameplayModifierInfo> Modifiers;
-    
-    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
-    bool bApplyOverTime;
     
     UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
     TArray<FGameplayEffectExecutionDefinition> Executions;

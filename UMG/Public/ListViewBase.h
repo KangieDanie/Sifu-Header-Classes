@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "OnListEntryGeneratedDynamicDelegate.h"
 #include "Widget.h"
+#include "OnListEntryGeneratedDynamicDelegate.h"
 #include "OnListEntryReleasedDynamicDelegate.h"
 #include "UserWidgetPool.h"
 #include "ESlateVisibility.h"

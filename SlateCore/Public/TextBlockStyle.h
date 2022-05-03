@@ -2,10 +2,10 @@
 #include "CoreMinimal.h"
 #include "SlateColor.h"
 #include "SlateWidgetStyle.h"
-#include "SlateBrush.h"
-#include "SlateFontInfo.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+#include "SlateFontInfo.h"
+#include "SlateBrush.h"
 #include "TextBlockStyle.generated.h"
 
 USTRUCT(BlueprintType)

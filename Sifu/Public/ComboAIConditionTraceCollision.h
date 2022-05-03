@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EAIConditionTraceRotationContext.h"
+#include "EAIConditionTraceContext.h"
+#include "AIComboCondition.h"
+#include "AIConditionTraceOffset.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EEnvTraceShape -FallbackName=EEnvTraceShape
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CollisionResponseContainer -FallbackName=CollisionResponseContainer
-#include "AIComboCondition.h"
-#include "EAIConditionTraceContext.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
-#include "AIConditionTraceOffset.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "EAIConditionTraceRotationContext.h"
 #include "ComboAIConditionTraceCollision.generated.h"
 
 class UAIFightingComponent;

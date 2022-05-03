@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EOrderType.h"
 #include "BaseActorCondition.h"
+#include "EOrderType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "EOrderAccessMode.h"
 #include "OrderCondition.generated.h"

@@ -4,9 +4,9 @@
 #include "OnlineShowLoginUIResultDelegate.h"
 #include "ShowLoginUICallbackProxy.generated.h"
 
+class APlayerController;
 class UShowLoginUICallbackProxy;
 class UObject;
-class APlayerController;
 
 UCLASS(MinimalAPI)
 class UShowLoginUICallbackProxy : public UBlueprintAsyncActionBase {

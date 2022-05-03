@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EditableOrderType.h"
 #include "BaseTargetEvaluation.h"
+#include "EditableOrderType.h"
 #include "TE_GetOrderTarget.generated.h"
 
 UCLASS()

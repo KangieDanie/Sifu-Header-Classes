@@ -5,8 +5,8 @@
 #include "InputMappingKeySlotContainer.h"
 #include "GenericInputData.generated.h"
 
-class UGenericInputData;
 class UGenericInputUIData;
+class UGenericInputData;
 
 UCLASS(BlueprintType)
 class SIFU_API UGenericInputData : public UDataAsset {

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCGameplayAbilityActivationInfo.h"
-#include "EALBinaryOperation.h"
 #include "SCGameplayAbility.h"
 #include "HitBox.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "EALBinaryOperation.h"
 #include "InputAction.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "HitRequest.h"

@@ -2,9 +2,9 @@
 #include "Templates/SubclassOf.h"
 
 class AActor;
-class UObject;
 class UGameplayTagAssetInterface;
 class IGameplayTagAssetInterface;
+class UObject;
 
 bool UBlueprintGameplayTagLibrary::RemoveGameplayTag(FGameplayTagContainer& TagContainer, FGameplayTag Tag) {
     return false;

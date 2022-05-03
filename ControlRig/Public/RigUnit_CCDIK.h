@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
-#include "RigUnit_HighlevelBaseMutable.h"
-#include "RigUnit_CCDIK_RotationLimit.h"
 #include "RigUnit_CCDIK_WorkData.h"
+#include "RigUnit_HighlevelBaseMutable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+#include "RigUnit_CCDIK_RotationLimit.h"
 #include "RigUnit_CCDIK.generated.h"
 
 USTRUCT()

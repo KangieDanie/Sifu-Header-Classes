@@ -1,4 +1,5 @@
 #include "InteractionDetectionComponent.h"
+#include "Templates/SubclassOf.h"
 
 class UInteractionObjectComponent;
 class AActor;
@@ -17,6 +18,12 @@ AActor* UInteractionDetectionComponent::BPF_GetCurrentInteractiveObject() const 
 
 UInteractionObjectComponent* UInteractionDetectionComponent::BPF_GetCurrentInteractiveComponent() const {
     return NULL;
+}
+
+void UInteractionDetectionComponent::BPF_DisableInteractionWithObjects(TSubclassOf<AActor> _actorToDisable) {
+}
+
+void UInteractionDetectionComponent::BPF_AllowInteractionWithObjects(TSubclassOf<AActor> _actorToEnable) {
 }
 
 UInteractionDetectionComponent::UInteractionDetectionComponent() {

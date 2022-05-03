@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EThrowObjectActionType.h"
 #include "PlayOrderTask.h"
+#include "EThrowObjectActionType.h"
 #include "PlayOrderThrowObjectTask.generated.h"
 
 UCLASS()

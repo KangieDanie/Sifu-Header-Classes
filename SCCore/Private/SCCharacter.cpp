@@ -2,8 +2,8 @@
 #include "Net/UnrealNetwork.h"
 
 class UAnimSequence;
-class USkeletalMesh;
 class AActor;
+class USkeletalMesh;
 
 void ASCCharacter::ServerSetGender_Implementation(ECharacterGender _eGender) {
 }
@@ -21,6 +21,9 @@ void ASCCharacter::BPF_Unspawn(UAnimSequence* _animation, bool _bMirror, bool _b
 }
 
 void ASCCharacter::BPF_SetMesh(USkeletalMesh* _newMesh, bool _bSwapOnlyRendering) {
+}
+
+void ASCCharacter::BPF_SetGender(ECharacterGender _eGender) {
 }
 
 void ASCCharacter::BPF_SetCollisionEnabled(bool _bEnabled, bool _bKeepStaticMeshCollisions) {

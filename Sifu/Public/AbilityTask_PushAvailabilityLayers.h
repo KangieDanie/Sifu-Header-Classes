@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=AbilityTask -FallbackName=AbilityTask
-#include "EALPriority.h"
 #include "EALBinaryOperation.h"
+#include "EALPriority.h"
 #include "AbilityTask_PushAvailabilityLayers.generated.h"
 
-class UAvailabilityLayerData;
 class UAbilityTask_PushAvailabilityLayers;
+class UAvailabilityLayerData;
 class UGameplayAbility;
 
 UCLASS()

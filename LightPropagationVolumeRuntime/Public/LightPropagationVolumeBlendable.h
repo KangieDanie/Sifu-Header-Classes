@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlendableInterface -FallbackName=BlendableInterface
 //CROSS-MODULE INCLUDE V2: -ModuleName=Renderer -ObjectName=LightPropagationVolumeSettings -FallbackName=LightPropagationVolumeSettings
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlendableInterface -FallbackName=BlendableInterface
 #include "LightPropagationVolumeBlendable.generated.h"
 
 UCLASS(BlueprintType, MinimalAPI)

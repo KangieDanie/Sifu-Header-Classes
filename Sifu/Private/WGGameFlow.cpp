@@ -1,12 +1,12 @@
 #include "WGGameFlow.h"
 
-void UWGGameFlow::TravelToPendingMapInternal(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask) {
+void UWGGameFlow::TravelToPendingMapInternal(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, bool _bKeepCheats) {
 }
 
 void UWGGameFlow::OnControllerReconnectConfirm() {
 }
 
-void UWGGameFlow::BPF_TravelToPendingMap(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, float _fFadeDuration) {
+void UWGGameFlow::BPF_TravelToPendingMap(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, float _fFadeDuration, bool _bKeepCheats) {
 }
 
 void UWGGameFlow::BPF_RestartCurrentMap() {
@@ -28,7 +28,7 @@ bool UWGGameFlow::BPF_IsPendingTravel() {
 void UWGGameFlow::BPF_GoToNextMap(bool _bSaveBefore) {
 }
 
-bool UWGGameFlow::BPF_GotoMap(FName _mapTag, FGameplayTagContainer _specificMapOptions, bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, EMenuEnum _eMenuToShow, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask) {
+bool UWGGameFlow::BPF_GotoMap(FName _mapTag, FGameplayTagContainer _specificMapOptions, bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, EMenuEnum _eMenuToShow, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, bool _bKeepCheats) {
     return false;
 }
 
@@ -38,6 +38,10 @@ FName UWGGameFlow::BPF_GetFirstPlayableMapTagName() const {
 
 FName UWGGameFlow::BPF_GetCurrentMapTag() const {
     return NAME_None;
+}
+
+bool UWGGameFlow::BPF_CurrentMapHasMapOption(EWGGameFlowMapOption _eMapOption) const {
+    return false;
 }
 
 UWGGameFlow::UWGGameFlow() {

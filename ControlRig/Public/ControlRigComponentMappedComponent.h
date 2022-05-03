@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EControlRigComponentMapDirection.h"
 #include "ERigElementType.h"
+#include "EControlRigComponentMapDirection.h"
 #include "ControlRigComponentMappedComponent.generated.h"
 
 class USceneComponent;

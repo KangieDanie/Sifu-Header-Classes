@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AbilityTask_ApplyRootMotion_Base.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ERootMotionFinishVelocityMode -FallbackName=ERootMotionFinishVelocityMode
 #include "ApplyRootMotionConstantForceDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ERootMotionFinishVelocityMode -FallbackName=ERootMotionFinishVelocityMode
 #include "AbilityTask_ApplyRootMotionConstantForce.generated.h"
 
 class UGameplayAbility;

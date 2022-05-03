@@ -1,9 +1,9 @@
 #include "SCGameplayAbility.h"
 
 class AFightingCharacter;
-class USCGameplayAbility;
-class AActor;
 class UBaseTargetEvaluation;
+class AActor;
+class USCGameplayAbility;
 class UScriptStruct;
 
 UBaseTargetEvaluation* USCGameplayAbility::BPF_GetTargetEvaluationFromTargetResult(const AFightingCharacter* _character, const FTargetResult& _targetInfos) const {

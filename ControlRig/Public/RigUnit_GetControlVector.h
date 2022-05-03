@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RigUnit.h"
-#include "EBoneGetterSetterMode.h"
 #include "CachedRigElement.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "RigUnit.h"
+#include "EBoneGetterSetterMode.h"
 #include "RigUnit_GetControlVector.generated.h"
 
 USTRUCT()

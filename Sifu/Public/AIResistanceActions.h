@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIConditionedAction.h"
 #include "AITimedConditionedAction.h"
+#include "AIConditionedAction.h"
 #include "AIResistanceActions.generated.h"
 
 USTRUCT(BlueprintType)

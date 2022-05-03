@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIComboCondition.h"
 #include "AIPhaseNodeSoftLink.h"
+#include "AIComboCondition.h"
 #include "AIPhaseNodeSoftLinkByMCDomination.h"
 #include "ComboAIConditionIsInPhaseScenario.generated.h"
 

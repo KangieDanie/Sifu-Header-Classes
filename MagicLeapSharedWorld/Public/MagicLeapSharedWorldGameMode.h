@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MagicLeapSharedWorldSharedData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=GameMode -FallbackName=GameMode
+#include "MagicLeapSharedWorldSharedData.h"
 #include "MagicLeapSharedWorldGameMode.generated.h"
 
 class AMagicLeapSharedWorldPlayerController;

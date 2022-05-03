@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "BaseFightingStateBehavior.h"
-#include "PropertyReactionMovement.h"
-#include "AIResistanceActions.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "PropertyReactionMovement.h"
 #include "PropertyReactionHit.h"
+#include "AIResistanceActions.h"
 #include "PropertyReaction.generated.h"
 
 USTRUCT(BlueprintType)
@@ -22,6 +22,9 @@ public:
     
     UPROPERTY(EditAnywhere)
     FPropertyReactionHit m_HitReaction;
+    
+    UPROPERTY(EditAnywhere)
+    bool m_bAlwayKeepCurrentStateDurationOnHit;
     
     UPROPERTY(EditAnywhere)
     bool m_bPauseGuardBreak;

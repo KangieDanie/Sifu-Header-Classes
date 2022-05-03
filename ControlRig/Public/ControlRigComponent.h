@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "ControlRigComponentDelegateDelegate.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PrimitiveComponent -FallbackName=PrimitiveComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PrimitiveComponent -FallbackName=PrimitiveComponent
 #include "ControlRigComponentMappedElement.h"
+#include "ControlRigComponentDelegateDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EControlRigComponentSpace.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "ERigElementType.h"
-#include "ControlRigComponentMappedCurve.h"
 #include "ControlRigComponentMappedBone.h"
+#include "ControlRigComponentMappedCurve.h"
 #include "ControlRigComponentMappedComponent.h"
 #include "ControlRigComponent.generated.h"
 
-class UControlRig;
 class USkeletalMesh;
+class UControlRig;
 class UControlRigComponent;
 class USkeletalMeshComponent;
 

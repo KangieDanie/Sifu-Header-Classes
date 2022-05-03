@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyEvent -FallbackName=AnimNotifyEvent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyEvent -FallbackName=AnimNotifyEvent
 #include "SCAnimationHelper.generated.h"
 
+class UAnimSequenceBase;
 class UAnimNotifyState;
 class UAnimationAsset;
-class UAnimSequenceBase;
 class UAnimSequence;
 class UAnimNotify;
 

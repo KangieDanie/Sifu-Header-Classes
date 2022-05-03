@@ -3,8 +3,8 @@
 #include "SCSpectatorPawnBase.h"
 #include "ReplaySpectatorPawn.generated.h"
 
-class UReplayCineCameraComponent;
 class AController;
+class UReplayCineCameraComponent;
 
 UCLASS()
 class SIFU_API AReplaySpectatorPawn : public ASCSpectatorPawnBase {

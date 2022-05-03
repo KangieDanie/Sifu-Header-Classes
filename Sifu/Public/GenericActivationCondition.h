@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "BaseActorTargetConditionInstance.h"
 #include "OrderServiceActivationConditions.h"
 #include "EOrderServiceDeactivationMethod.h"
 #include "EOrderServiceConditionUpdateFrequency.h"
-#include "BaseActorTargetConditionInstance.h"
 #include "GenericActivationCondition.generated.h"
 
 UCLASS(EditInlineNew)

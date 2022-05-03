@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCAnimInstance.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PoseSnapshot -FallbackName=PoseSnapshot
+#include "SCAnimInstance.h"
 #include "SCCharacterImpostorAnimInstance.generated.h"
 
 class UAnimSequence;

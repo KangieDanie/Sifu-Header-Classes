@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "NetOrderStructAttackEnv.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "ImpactResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "HitRequest.h"
 #include "NetOrderStructTakedown.generated.h"
 

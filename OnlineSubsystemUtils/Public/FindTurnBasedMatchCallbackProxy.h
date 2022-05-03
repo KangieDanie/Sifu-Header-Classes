@@ -7,8 +7,8 @@
 class UObject;
 class UTurnBasedMatchInterface;
 class ITurnBasedMatchInterface;
-class APlayerController;
 class UFindTurnBasedMatchCallbackProxy;
+class APlayerController;
 
 UCLASS(MinimalAPI)
 class UFindTurnBasedMatchCallbackProxy : public UOnlineBlueprintCallProxyBase {

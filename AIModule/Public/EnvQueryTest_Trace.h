@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "EnvQueryTest.h"
-#include "AIDataProviderFloatValue.h"
 #include "EnvTraceData.h"
+#include "AIDataProviderFloatValue.h"
 #include "AIDataProviderBoolValue.h"
 #include "EnvQueryTest_Trace.generated.h"
 

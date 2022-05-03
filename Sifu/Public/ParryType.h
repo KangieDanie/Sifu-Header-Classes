@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EParryHeight.h"
 #include "EParrySide.h"
 #include "EParryDirection.h"
-#include "EParryHeight.h"
 #include "ParryType.generated.h"
 
 USTRUCT(BlueprintType)

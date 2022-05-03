@@ -1,24 +1,24 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundSubmixSpectralAnalysisBandSettings -FallbackName=SoundSubmixSpectralAnalysisBandSettings
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAudioRecordingExportType -FallbackName=EAudioRecordingExportType
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EFFTPeakInterpolationMethod -FallbackName=EFFTPeakInterpolationMethod
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EFFTSize -FallbackName=EFFTSize
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAudioSpectrumType -FallbackName=EAudioSpectrumType
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EFFTWindowType -FallbackName=EFFTWindowType
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SourceEffectChainEntry -FallbackName=SourceEffectChainEntry
-#include "OnSoundLoadCompleteDelegate.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAudioSpectrumBandPresetType -FallbackName=EAudioSpectrumBandPresetType
 #include "EMusicalNoteName.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAudioRecordingExportType -FallbackName=EAudioRecordingExportType
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EFFTSize -FallbackName=EFFTSize
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EFFTPeakInterpolationMethod -FallbackName=EFFTPeakInterpolationMethod
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EFFTWindowType -FallbackName=EFFTWindowType
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAudioSpectrumType -FallbackName=EAudioSpectrumType
+#include "OnSoundLoadCompleteDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundSubmixSpectralAnalysisBandSettings -FallbackName=SoundSubmixSpectralAnalysisBandSettings
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAudioSpectrumBandPresetType -FallbackName=EAudioSpectrumBandPresetType
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SourceEffectChainEntry -FallbackName=SourceEffectChainEntry
 #include "AudioMixerBlueprintLibrary.generated.h"
 
-class UObject;
 class USoundWave;
+class USoundEffectSourcePresetChain;
+class UObject;
 class USoundSubmix;
 class UAudioBus;
 class USoundEffectSubmixPreset;
-class USoundEffectSourcePresetChain;
 class USoundCue;
 
 UCLASS(BlueprintType)

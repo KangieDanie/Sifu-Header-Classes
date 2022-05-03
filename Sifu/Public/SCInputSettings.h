@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=DeveloperSettings -ObjectName=DeveloperSettings -FallbackName=DeveloperSettings
+#include "InputPresetsEnumHandler.h"
+#include "InputPriorityGroup.h"
 #include "InputAction.h"
 #include "AlwaysCollidingActions.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=DeveloperSettings -ObjectName=DeveloperSettings -FallbackName=DeveloperSettings
-#include "InputPriorityGroup.h"
-#include "InputMappingProfileEnumHandler.h"
-#include "InputPresetsEnumHandler.h"
 #include "InputMappingData.h"
+#include "InputMappingProfileEnumHandler.h"
 #include "MappingProfileList.h"
-#include "RemappingIncompatibilityGroup.h"
-#include "ActionMappingCompatibilityRule.h"
-#include "InputMappingCompatibilityRule.h"
 #include "RemappingClasses.h"
+#include "RemappingIncompatibilityGroup.h"
+#include "InputMappingCompatibilityRule.h"
+#include "ActionMappingCompatibilityRule.h"
 #include "SCInputSettings.generated.h"
 
 class UMenuDB;

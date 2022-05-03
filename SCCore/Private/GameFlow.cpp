@@ -16,5 +16,6 @@ void UGameFlow::BPF_AddMapOption(FGameplayTag _optionToAdd) {
 UGameFlow::UGameFlow() {
     this->m_currentNode = NULL;
     this->m_pendingNode = NULL;
+    this->m_ControllerClass = NULL;
 }
 

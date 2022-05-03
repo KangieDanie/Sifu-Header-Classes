@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "WeaponAnimInfo.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
-#include "HitBox.h"
 #include "EApplyDamageOnWeaponType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "AvailabilityLayerWindow.h"
+#include "HitBox.h"
+#include "WeaponAnimInfo.h"
 #include "AbsorbWindow.h"
 #include "AvoidWindow.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer

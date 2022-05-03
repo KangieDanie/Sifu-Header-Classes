@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=OnlineSubsystem -ObjectName=EMPMatchOutcome -FallbackName=EMPMatchOutcome
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=OnlineBlueprintCallProxyBase -FallbackName=OnlineBlueprintCallProxyBase
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EmptyOnlineDelegate__DelegateSignature -FallbackName=EmptyOnlineDelegateDelegate
-//CROSS-MODULE INCLUDE V2: -ModuleName=OnlineSubsystem -ObjectName=EMPMatchOutcome -FallbackName=EMPMatchOutcome
 #include "EndMatchCallbackProxy.generated.h"
 
 class UObject;
-class UEndMatchCallbackProxy;
 class UTurnBasedMatchInterface;
 class ITurnBasedMatchInterface;
+class UEndMatchCallbackProxy;
 class APlayerController;
 
 UCLASS(MinimalAPI)

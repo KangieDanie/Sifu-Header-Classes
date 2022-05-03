@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "MovieSceneEvaluationGroupLUTIndex.h"
-#include "MovieSceneFieldEntry_EvaluationTrack.h"
 #include "MovieSceneFieldEntry_ChildTemplate.h"
+#include "MovieSceneFieldEntry_EvaluationTrack.h"
 #include "MovieSceneEvaluationGroup.generated.h"
 
 USTRUCT(BlueprintType)

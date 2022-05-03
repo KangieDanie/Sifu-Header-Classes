@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Volume -FallbackName=Volume
 #include "AkReverbVolume.generated.h"
 
-class UAkAuxBus;
 class UAkLateReverbComponent;
+class UAkAuxBus;
 
 UCLASS()
 class AKAUDIO_API AAkReverbVolume : public AVolume {

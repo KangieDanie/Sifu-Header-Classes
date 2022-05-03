@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCGameplayAbility.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "SCGameplayAbility.h"
 #include "ParryFromDownAbility.generated.h"
 
 UCLASS()

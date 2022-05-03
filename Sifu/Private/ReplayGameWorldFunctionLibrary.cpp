@@ -1,11 +1,11 @@
 #include "ReplayGameWorldFunctionLibrary.h"
 
-class AActor;
+class ASCCharacterImpostor;
 class UObject;
+class AActor;
 class AFightingCharacter;
 class ASCPlayerController;
 class UExponentialHeightFogComponent;
-class ASCCharacterImpostor;
 
 bool UReplayGameWorldFunctionLibrary::BPF_IsPhotomodeActivated(const UObject* _worldContextObject) {
     return false;

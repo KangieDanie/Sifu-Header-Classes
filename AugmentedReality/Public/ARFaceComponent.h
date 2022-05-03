@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "ARFaceUpdatePayload.h"
 #include "ARComponent.h"
-#include "EARFaceTransformMixing.h"
 #include "EFaceComponentDebugMode.h"
+#include "EARFaceTransformMixing.h"
 #include "ARFaceComponent.generated.h"
 
 UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

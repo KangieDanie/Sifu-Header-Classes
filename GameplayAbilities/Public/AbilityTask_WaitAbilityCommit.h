@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "AbilityTask.h"
 #include "WaitAbilityCommitDelegateDelegate.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagQuery -FallbackName=GameplayTagQuery
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagQuery -FallbackName=GameplayTagQuery
 #include "AbilityTask_WaitAbilityCommit.generated.h"
 
 class UAbilityTask_WaitAbilityCommit;

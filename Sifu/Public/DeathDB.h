@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=InheritedDataAsset -FallbackName=InheritedDataAsset
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "DeathRadialImpulse.h"
 #include "SCDeathAnimTypeEnum.h"
 #include "DeathStandupAnimations.h"
 #include "DeathDB.generated.h"
 
-class ULevelSequence;
 class UAnimSequence;
+class ULevelSequence;
 
 UCLASS(BlueprintType)
 class SIFU_API UDeathDB : public UInheritedDataAsset {

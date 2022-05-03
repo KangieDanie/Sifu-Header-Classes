@@ -6,8 +6,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "GenericEnvironmentalInteractionComponent.generated.h"
 
-class USplineComponent;
 class UWallEnvironmentalAttackSettings;
+class USplineComponent;
 
 UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UGenericEnvironmentalInteractionComponent : public UBaseEnvironmentalInteractionComponent {

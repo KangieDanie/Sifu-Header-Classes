@@ -1,28 +1,28 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "NetOrderStruct.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=GameplayAbility -FallbackName=GameplayAbility
-#include "SCGameplayAbilityActorInfo.h"
-#include "PlayOrderInfos.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagQuery -FallbackName=GameplayTagQuery
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=GameplayEventData -FallbackName=GameplayEventData
 #include "InputDetection.h"
 #include "EALBinaryOperation.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-#include "NetOrderStruct.h"
-#include "TargetResult.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 #include "InputAction.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
+#include "TargetResult.h"
+#include "SCGameplayAbilityActorInfo.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=GameplayEventData -FallbackName=GameplayEventData
 #include "SCGameplayAbilityActivationInfo.h"
 #include "EOrderType.h"
+#include "PlayOrderInfos.h"
 #include "SCGameplayAbility.generated.h"
 
-class UGameplayEffect;
-class UAvailabilityLayerData;
 class UAbilityPayload;
-class AActor;
+class UAvailabilityLayerData;
+class UGameplayEffect;
 class UBaseTargetEvaluation;
 class AFightingCharacter;
+class AActor;
 class USCGameplayAbility;
 class UScriptStruct;
 

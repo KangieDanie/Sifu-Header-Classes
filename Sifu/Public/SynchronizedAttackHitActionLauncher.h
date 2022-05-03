@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HitDescription.h"
+#include "EOrderType.h"
 #include "HitActionLauncher.h"
 #include "EditableOrderType.h"
-#include "EOrderType.h"
+#include "HitDescription.h"
 #include "EQuadrantTypes.h"
-#include "WeaponAnimInfo.h"
 #include "OverridingHitBox.h"
 #include "AnimSyncContainer.h"
+#include "WeaponAnimInfo.h"
 #include "SynchronizedAttackHitActionLauncher.generated.h"
 
-class AActor;
 class AFightingCharacter;
+class AActor;
 
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class SIFU_API USynchronizedAttackHitActionLauncher : public UHitActionLauncher {

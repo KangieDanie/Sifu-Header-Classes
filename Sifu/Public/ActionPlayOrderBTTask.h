@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AIBTTaskNode.h"
 #include "EOrderType.h"
+#include "AIBTTaskNode.h"
 #include "EditableOrderType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "EFightingActionState.h"

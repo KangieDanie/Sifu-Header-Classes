@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NetStructPickUpObject.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Interface -FallbackName=Interface
+#include "NetStructPickUpObject.h"
 #include "GenericPickableActorInterface.generated.h"
 
 class AFightingCharacter;

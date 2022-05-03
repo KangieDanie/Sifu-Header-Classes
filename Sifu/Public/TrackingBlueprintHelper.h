@@ -12,6 +12,9 @@ public:
     static void BPF_SendTrackingEvent_UnlockAllSkillsPermanently(int64 _iTimePlayed);
     
     UFUNCTION(BlueprintCallable)
+    static void BPF_SendTrackingEvent_HideoutStarted(const FString& _mapName);
+    
+    UFUNCTION(BlueprintCallable)
     static void BPF_SendTrackingEvent_HideoutCompleted(const FString& _mapName);
     
     UFUNCTION(BlueprintCallable)

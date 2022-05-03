@@ -25,6 +25,9 @@ void UCharacterHealthComponent::GetLifetimeReplicatedProps(TArray<FLifetimePrope
 
 UCharacterHealthComponent::UCharacterHealthComponent() {
     this->m_bCanRecoverHealth = true;
+    this->m_fMaxHealthMultiplier[0] = 1.00f;
+    this->m_fMaxHealthMultiplier[1] = 1.00f;
+    this->m_fMaxHealthMultiplier[2] = 1.00f;
     this->m_fRecoveryRate = 0.00f;
     this->m_fRecoveryCooldownInit = 0.00f;
     this->m_fGhostDamageRecoveryRate = 5.00f;

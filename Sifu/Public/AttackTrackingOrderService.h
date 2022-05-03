@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "OrderService.h"
 #include "EOrderType.h"
 #include "BPOrderServiceInstance.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "AttackTrackingOrderService.generated.h"
 
 UCLASS(EditInlineNew)

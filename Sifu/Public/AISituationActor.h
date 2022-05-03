@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-#include "EGlobalBehaviors.h"
-#include "EAlertLevel.h"
-#include "SCImpostorForSave.h"
-#include "SpawnerGroupSoundData.h"
 #include "AISituationNamedActor.h"
+#include "EGlobalBehaviors.h"
+#include "SpawnerGroupSoundData.h"
+#include "SCImpostorForSave.h"
 #include "AIPhaseTransitionData.h"
 #include "EFightingState.h"
+#include "EAlertLevel.h"
 #include "AISituationActor.generated.h"
 
 class ABaseCharacter;

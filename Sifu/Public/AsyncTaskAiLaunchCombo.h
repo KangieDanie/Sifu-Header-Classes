@@ -7,8 +7,8 @@
 #include "AsyncTaskAiLaunchCombo.generated.h"
 
 class UAsyncTaskAiLaunchCombo;
-class UAIActionLaunchCombo;
 class UAIFightingComponent;
+class UAIActionLaunchCombo;
 
 UCLASS()
 class SIFU_API UAsyncTaskAiLaunchCombo : public UBlueprintAsyncActionBase {

@@ -1,31 +1,31 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EHeight.h"
 #include "InteractiveMovable.h"
 #include "EThrowableState.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "EBounceType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
-#include "EDebugTargetState.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCollisionResponsePreset -FallbackName=SCCollisionResponsePreset
+#include "EDebugTargetState.h"
+#include "EHeight.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "HitBox.h"
 #include "ThrowableActor.generated.h"
 
-class UBoxComponent;
-class AActor;
-class UThrowObjectAnimRequest;
 class USphereComponent;
+class AActor;
+class UBoxComponent;
+class UThrowObjectAnimRequest;
 class USceneComponent;
+class UThrowableData;
 class UPhysicalActorDependencyComponent;
+class UHitBoxComponent;
 class UThrowableObjMovementComponent;
 class UAIPerceptionStimuliSourceComponent;
 class UReplayablePhysObjectComponent;
-class UHitBoxComponent;
 class UReplayableDestructionComponent;
 class UCurveFloat;
-class UThrowableData;
 class AFightingCharacter;
 
 UCLASS()
@@ -49,6 +49,12 @@ protected:
     
     UPROPERTY(EditAnywhere)
     FVector m_vThrowStartBoxExtent;
+    
+    UPROPERTY(BlueprintReadOnly)
+    FVector m_vLastHitLocation;
+    
+    UPROPERTY(BlueprintReadOnly)
+    FVector m_vLastHitNormal;
     
     UPROPERTY(Transient)
     TArray<AActor*> m_aHitActorToRemove;

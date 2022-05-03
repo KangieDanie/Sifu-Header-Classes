@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "NiagaraVariable.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-#include "NiagaraVariable.h"
 #include "NiagaraParameterCollection.generated.h"
 
-class UNiagaraParameterCollectionInstance;
 class UMaterialParameterCollection;
+class UNiagaraParameterCollectionInstance;
 
 UCLASS()
 class NIAGARA_API UNiagaraParameterCollection : public UObject {

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RigUnit_AnimBase.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RuntimeFloatCurve -FallbackName=RuntimeFloatCurve
+#include "RigUnit_AnimBase.h"
 #include "RigUnit_AnimEvalRichCurve.generated.h"
 
 USTRUCT()

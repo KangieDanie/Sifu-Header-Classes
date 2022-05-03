@@ -3,8 +3,8 @@
 #include "RigUnit_MathTransformBase.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=EAxis -FallbackName=EAxis
-#include "EControlRigClampSpatialMode.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
+#include "EControlRigClampSpatialMode.h"
 #include "RigUnit_MathTransformClampSpatially.generated.h"
 
 USTRUCT()

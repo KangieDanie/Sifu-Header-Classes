@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EAkCallbackType.h"
 #include "AkCallbackInfo.h"
 #include "AkSegmentInfo.h"
+#include "EAkCallbackType.h"
 #include "AkMusicSyncCallbackInfo.generated.h"
 
 UCLASS()

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCUserWidget.h"
-#include "EAttackLearningState.h"
-#include "ECharacterProgressionRewardTypes.h"
-#include "InventorySearchFilter.h"
 #include "EButtonNotificationType.h"
+#include "ECharacterProgressionRewardTypes.h"
+#include "EAttackLearningState.h"
+#include "InventorySearchFilter.h"
 #include "NewNotificationWidget.generated.h"
 
 UCLASS(EditInlineNew)

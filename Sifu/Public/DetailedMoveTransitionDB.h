@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETransitionGlobalType.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "DetailedMoveTransition.h"
 #include "EMoveStatus.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+#include "ETransitionGlobalType.h"
+#include "DetailedMoveTransition.h"
 #include "DetailedMoveTransitionDB.generated.h"
 
 UCLASS()

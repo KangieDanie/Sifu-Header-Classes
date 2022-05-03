@@ -5,6 +5,8 @@
 #include "ReplicatedDamageEvent.h"
 #include "ReplayableDestructibleComponent.generated.h"
 
+class UReplayableStaticObjectComponent;
+
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UReplayableDestructibleComponent : public UDestructibleComponent {
     GENERATED_BODY()
@@ -21,6 +23,9 @@ protected:
     
     UPROPERTY(EditAnywhere, Replicated)
     bool m_bOnFirstDestructionEnableChunksCollision;
+    
+    UPROPERTY(Export, Transient)
+    UReplayableStaticObjectComponent* m_ReplayableStaticObjectComponent;
     
     UPROPERTY(ReplicatedUsing=OnRep_DamageEvents)
     TArray<FReplicatedDamageEvent> m_DamageEvents;

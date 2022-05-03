@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ESubmixFilterAlgorithm.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundEffectSubmixPreset -FallbackName=SoundEffectSubmixPreset
 #include "ESubmixFilterType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SoundEffectSubmixPreset -FallbackName=SoundEffectSubmixPreset
 #include "SubmixEffectFilterSettings.h"
 #include "SubmixEffectFilterPreset.generated.h"
 

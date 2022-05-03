@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EQSQueryResultSourceInterface.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EEnvQueryStatus.h"
+#include "EQSQueryResultSourceInterface.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EnvQueryInstanceBlueprintWrapper.generated.h"
 
-class AActor;
-class UEnvQueryItemType;
 class UEnvQueryInstanceBlueprintWrapper;
+class UEnvQueryItemType;
+class AActor;
 
 UCLASS(BlueprintType)
 class AIMODULE_API UEnvQueryInstanceBlueprintWrapper : public UObject, public IEQSQueryResultSourceInterface {

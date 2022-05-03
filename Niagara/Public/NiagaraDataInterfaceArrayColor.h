@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NiagaraDataInterfaceArray.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
+#include "NiagaraDataInterfaceArray.h"
 #include "NiagaraDataInterfaceArrayColor.generated.h"
 
 UCLASS(EditInlineNew)

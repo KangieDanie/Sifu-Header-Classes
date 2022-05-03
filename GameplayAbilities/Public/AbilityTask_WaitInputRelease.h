@@ -4,8 +4,8 @@
 #include "InputReleaseDelegateDelegate.h"
 #include "AbilityTask_WaitInputRelease.generated.h"
 
-class UGameplayAbility;
 class UAbilityTask_WaitInputRelease;
+class UGameplayAbility;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitInputRelease : public UAbilityTask {

@@ -20,6 +20,9 @@ void UCameraComponentThird::BPF_UnFreezeLockService(int32 _iHandle) {
 void UCameraComponentThird::BPF_UnFreezeHidingZoneRepulsion(int32 _iHandle) {
 }
 
+void UCameraComponentThird::BPF_UnFreezeCameraDeadZoneRepulsion(int32 _iHandle) {
+}
+
 FVector UCameraComponentThird::BPF_TransformInputVector(FVector2D _vInputVector) const {
     return FVector{};
 }
@@ -118,6 +121,10 @@ bool UCameraComponentThird::BPF_IsColliding() const {
     return false;
 }
 
+bool UCameraComponentThird::BPF_IsAnimDrivenInMixerNode() const {
+    return false;
+}
+
 bool UCameraComponentThird::BPF_HasLookAt() const {
     return false;
 }
@@ -160,7 +167,7 @@ FTransform UCameraComponentThird::BPF_GetCameraTransform() const {
     return FTransform{};
 }
 
-float UCameraComponentThird::BPF_GetCameraShakeFactor() {
+float UCameraComponentThird::BPF_GetCameraShakeFactor() const {
     return 0.0f;
 }
 
@@ -185,6 +192,10 @@ int32 UCameraComponentThird::BPF_FreezeLockService(const FString& _contextString
 }
 
 int32 UCameraComponentThird::BPF_FreezeHidingZoneRepulsion(const FString& _contextString) {
+    return 0;
+}
+
+int32 UCameraComponentThird::BPF_FreezeCameraDeadZoneRepulsion(const FString& _contextString) {
     return 0;
 }
 

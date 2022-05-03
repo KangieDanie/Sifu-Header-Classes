@@ -6,8 +6,8 @@
 #include "JoinSessionCallbackProxy.generated.h"
 
 class UObject;
-class UJoinSessionCallbackProxy;
 class APlayerController;
+class UJoinSessionCallbackProxy;
 
 UCLASS(MinimalAPI)
 class UJoinSessionCallbackProxy : public UOnlineBlueprintCallProxyBase {

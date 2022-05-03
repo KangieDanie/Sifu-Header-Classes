@@ -3,15 +3,15 @@
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TableRowBase -FallbackName=TableRowBase
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "HitImpact.h"
 #include "DeflectImpact.h"
 #include "EHittedReaction.h"
 #include "EAttackPowers.h"
 #include "EHitType.h"
-#include "EKnockbackBehavior.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "EFightingState.h"
 #include "AttackPropertyLevel.h"
+#include "EKnockbackBehavior.h"
 #include "HitboxDataRow.generated.h"
 
 class UCurveFloat;

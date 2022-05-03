@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "AIActionReaction.h"
 #include "SCAITriggerableActionsArray.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EDefenseTactics.h"
 #include "AIConditionedActionArray.h"
 #include "AIAttackReaction.h"
-#include "AIActionReaction.h"
 #include "AIMasterArchetype.generated.h"
 
 UCLASS()

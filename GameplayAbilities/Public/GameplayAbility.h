@@ -1,32 +1,32 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "GameplayAbilityTargetDataHandle.h"
-#include "GameplayEventData.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "EGameplayAbilityInstancingPolicy.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTaskOwnerInterface -FallbackName=GameplayTaskOwnerInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
 #include "EGameplayAbilityReplicationPolicy.h"
 #include "EGameplayAbilityNetExecutionPolicy.h"
 #include "GameplayAbilityActivationInfo.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "EGameplayAbilityInstancingPolicy.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTaskOwnerInterface -FallbackName=GameplayTaskOwnerInterface
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "GameplayEventData.h"
 #include "EGameplayAbilityNetSecurityPolicy.h"
+#include "GameplayEffectContextHandle.h"
 #include "AbilityTriggerData.h"
+#include "GameplayCueParameters.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "GameplayAbilityTargetingLocationInfo.h"
 #include "GameplayEffectSpecHandle.h"
 #include "GameplayAbilityActorInfo.h"
-#include "GameplayCueParameters.h"
-#include "GameplayEffectContextHandle.h"
 #include "ActiveGameplayEffectHandle.h"
+#include "GameplayAbilityTargetDataHandle.h"
 #include "GameplayAbility.generated.h"
 
-class AActor;
+class UAnimMontage;
 class UGameplayEffect;
 class UGameplayTask;
-class UAnimMontage;
 class USkeletalMeshComponent;
 class UAbilitySystemComponent;
+class AActor;
 
 UCLASS(Blueprintable)
 class GAMEPLAYABILITIES_API UGameplayAbility : public UObject, public IGameplayTaskOwnerInterface {

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkExternalSourceInfo -FallbackName=AkExternalSourceInfo
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCharacterImpostor -FallbackName=SCCharacterImpostor
 #include "ESCSignificanceBuckets.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkExternalSourceInfo -FallbackName=AkExternalSourceInfo
 #include "BaseCharacterImpostor.generated.h"
 
 class UCurveFloat;

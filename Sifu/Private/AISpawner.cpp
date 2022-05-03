@@ -2,9 +2,9 @@
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 
-class ABaseCharacter;
-class ABaseWeapon;
 class UAIPhaseScenario;
+class ABaseWeapon;
+class ABaseCharacter;
 
 void AAISpawner::OnAiBehaviorChanged(EGlobalBehaviors _eNewBehavior, const bool _bFromDialog) {
 }
@@ -51,6 +51,9 @@ TArray<FCarriedProps> AAISpawner::BPF_GetCarriedProps() const {
     return TArray<FCarriedProps>();
 }
 
+void AAISpawner::BPF_AskForRespawn() {
+}
+
 
 
 AAISpawner::AAISpawner() {
@@ -59,6 +62,9 @@ AAISpawner::AAISpawner() {
     this->m_ForcedPreFightLookAtTarget = NULL;
     this->m_pathPatrol = NULL;
     this->m_ePatrolLaunchMethod = EPatrolLaunchMethod::AtSpawn;
+    this->m_PhaseScenarios[0] = NULL;
+    this->m_PhaseScenarios[1] = NULL;
+    this->m_PhaseScenarios[2] = NULL;
     this->m_PhaseScenario = NULL;
     this->m_eFaction = EFactionsEnums::Count;
     this->m_fRespawnTime = 0.10f;
@@ -75,5 +81,7 @@ AAISpawner::AAISpawner() {
     this->m_carriedWeapon = NULL;
     this->m_bKeepIdleAnimDuringAlertedDialogs = false;
     this->m_AIIdleDB = NULL;
+    this->m_EditorClass = NULL;
+    this->m_PhaseScenarioOverride = NULL;
 }
 

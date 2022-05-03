@@ -7,6 +7,9 @@ class UHittedDB;
 void UHitComponent::OnDangerStateChangedCallback(EDangerStates _ePreviousDangerState, EDangerStates _eNewDangerState) {
 }
 
+void UHitComponent::BPF_ToggleInfiniteDamageOnHit(bool _bActivate) {
+}
+
 void UHitComponent::BPF_ResetHitAnimRequestToDefault() {
 }
 

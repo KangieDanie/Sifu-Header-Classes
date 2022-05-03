@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "MovieSceneImageCaptureProtocolBase.h"
 #include "CapturedPixelsID.h"
-#include "FrameMetrics.h"
 #include "CapturedPixels.h"
+#include "FrameMetrics.h"
 #include "UserDefinedCaptureProtocol.generated.h"
 
 class UWorld;

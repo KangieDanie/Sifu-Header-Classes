@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NetOrderStructDash.h"
 #include "OrderParams.h"
+#include "NetOrderStructDash.h"
 #include "OrderDashParams.generated.h"
 
 UCLASS(BlueprintType, EditInlineNew)

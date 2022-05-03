@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HierarchicalInstancedStaticMeshComponent -FallbackName=HierarchicalInstancedStaticMeshComponent
-#include "InstancePointDamageSignatureDelegate.h"
 #include "InstanceRadialDamageSignatureDelegate.h"
+#include "InstancePointDamageSignatureDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "FoliageInstancedStaticMeshComponent.generated.h"
 

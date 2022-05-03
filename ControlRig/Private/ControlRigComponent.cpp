@@ -1,7 +1,7 @@
 #include "ControlRigComponent.h"
 
-class UControlRigComponent;
 class USkeletalMesh;
+class UControlRigComponent;
 class UControlRig;
 class USkeletalMeshComponent;
 

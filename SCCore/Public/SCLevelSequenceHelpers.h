@@ -6,9 +6,9 @@
 #include "SCLevelSequenceHelpers.generated.h"
 
 class ACharacter;
-class AActor;
-class ALevelSequenceActor;
 class APlayerController;
+class ALevelSequenceActor;
+class AActor;
 
 UCLASS(BlueprintType)
 class SCCORE_API USCLevelSequenceHelpers : public UBlueprintFunctionLibrary {
@@ -28,7 +28,7 @@ public:
     static void BPF_RegisterSequenceActor(const ALevelSequenceActor* _sequenceActor, AActor* _actor, FName _roleName);
     
     UFUNCTION(BlueprintCallable)
-    static void BPF_PlaySequence(const ALevelSequenceActor* _sequenceActor, ACharacter* _characterOwner);
+    static void BPF_PlaySequence(const ALevelSequenceActor* _sequenceActor, ACharacter* _characterOwner, bool _bLoop);
     
     UFUNCTION(BlueprintCallable)
     static void BPF_PauseSequence(const ALevelSequenceActor* _sequenceActor);

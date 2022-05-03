@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ESCAICombatRoles.h"
 #include "AIPhaseTransition.h"
+#include "ESCAICombatRoles.h"
 #include "AIPhaseTransitionRoleChange.generated.h"
 
 UCLASS(EditInlineNew)

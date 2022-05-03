@@ -1,7 +1,7 @@
 #include "FakePhysicComponent.h"
 
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 
 void UFakePhysicComponent::NotifyBeginOverlap(UPrimitiveComponent* _OverlappedComp, AActor* _Other, UPrimitiveComponent* _otherComp, int32 _iOtherBodyIndex, bool _bFromSweep, const FHitResult& _OverlapInfo) {
 }

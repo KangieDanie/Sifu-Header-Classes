@@ -3,18 +3,19 @@
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCBaseUserWidget -FallbackName=SCBaseUserWidget
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=EUMGSequencePlayMode -FallbackName=EUMGSequencePlayMode
 #include "EUIInputModes.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=EUMGSequencePlayMode -FallbackName=EUMGSequencePlayMode
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EPlatform -FallbackName=EPlatform
 #include "SCUserWidget.generated.h"
 
 class USCUserWidget;
-class UWidgetData;
-class UWidgetAnimation;
-class UThePlainesGameInstance;
-class UPanelWidget;
-class UStatsComponent;
 class USocialManager;
+class UWidgetData;
+class UDefenseComponent;
+class UWidgetAnimation;
+class UPanelWidget;
+class UThePlainesGameInstance;
+class UStatsComponent;
 class USocialComponent;
 class ASCPlayerController;
 class UMenuWidget;
@@ -22,7 +23,6 @@ class UMenuDB;
 class UCharacterHealthComponent;
 class AFightingPlayerController;
 class AFightingCharacter;
-class UDefenseComponent;
 class UWorld;
 class UAttackComponent;
 class USCAbilitySystemComponent;

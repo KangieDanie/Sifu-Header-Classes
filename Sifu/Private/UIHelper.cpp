@@ -1,9 +1,9 @@
 #include "UIHelper.h"
 
+class UTextBlock;
+class ULocalPlayer;
 class UWidget;
 class UUserWidget;
-class ULocalPlayer;
-class UTextBlock;
 class UPanelWidget;
 class UButtonUserWidget;
 class UWidgetAnimation;

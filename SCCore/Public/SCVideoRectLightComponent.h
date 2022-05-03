@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "SCVideoRectLightComponent.generated.h"
 
-class UCurveLinearColor;
 class UMediaTexture;
+class UCurveLinearColor;
 
 UCLASS(EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SCCORE_API USCVideoRectLightComponent : public URectLightComponent {

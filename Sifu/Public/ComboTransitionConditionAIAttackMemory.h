@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AIComboCondition.h"
-#include "EAIMemoryAttackType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "EAIMemoryAttackType.h"
 #include "ComboTransitionConditionAIAttackMemory.generated.h"
 
 class AThrowableActor;

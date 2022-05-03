@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Margin.h"
 #include "SlateWidgetStyle.h"
 #include "ButtonStyle.h"
 #include "SlateBrush.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-#include "Margin.h"
 #include "ComboButtonStyle.generated.h"
 
 USTRUCT(BlueprintType)

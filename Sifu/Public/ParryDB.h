@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "ParriedProfile.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "ParryAnimationCharacterQuadrantArray.h"
+#include "ParriedProfile.h"
 #include "ParryDB.generated.h"
 
 class UCurveFloat;
 class UParryMatch;
-class UParryPropertyDB;
 class UAvailabilityLayerData;
+class UParryPropertyDB;
 
 UCLASS()
 class SIFU_API UParryDB : public UDataAsset {

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SolverTrailingData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "SolverCollisionData.h"
 #include "SolverBreakingData.h"
+#include "SolverTrailingData.h"
 #include "RecordedFrame.generated.h"
 
 USTRUCT(BlueprintType)

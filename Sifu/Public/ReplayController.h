@@ -10,15 +10,16 @@
 #include "ReplayVideoRecorderCreatedDelegateDelegate.h"
 #include "ReplayController.generated.h"
 
-class UReplayFightingCharacterComponent;
-class UReplayTimelineController;
+class UReplaySystem;
 class UCurveFloat;
+class UReplayTimelineController;
 class AActor;
+class UReplayLoadingScreenWidget;
 class UReplayMainUserWidget;
 class AReplayVideoRecorder;
 class UReplayKey;
 class UReplayTimelineModel;
-class UReplaySystem;
+class UReplayFightingCharacterComponent;
 class UObject;
 class AReplayingCamera;
 class UReplayCineCameraComponent;
@@ -58,8 +59,14 @@ protected:
     UPROPERTY(EditDefaultsOnly)
     TSubclassOf<AActor> m_VirtualCameraClass;
     
+    UPROPERTY(EditDefaultsOnly)
+    TSubclassOf<UReplayLoadingScreenWidget> m_LoadingScreenWidgetClass;
+    
     UPROPERTY(BlueprintReadOnly, Export, Transient)
     UReplayMainUserWidget* m_MainUserWidget;
+    
+    UPROPERTY(BlueprintReadOnly, Export, Transient)
+    UReplayLoadingScreenWidget* m_LoadingScreenWidgetInstance;
     
     UPROPERTY(BlueprintReadOnly, Transient)
     AActor* m_VirtualCamera;
@@ -73,6 +80,9 @@ protected:
 public:
     AReplayController();
 protected:
+    UFUNCTION()
+    void OnKeysLoaded();
+    
     UFUNCTION()
     void OnKeyMoved(UReplayKey* _key);
     
@@ -100,11 +110,6 @@ public:
     UFUNCTION(BlueprintCallable)
     void BPF_StartSkipTimeToNextKeyFrameTask();
     
-protected:
-    UFUNCTION(BlueprintCallable)
-    UReplayMainUserWidget* BPF_SpawnMainUserWidget();
-    
-public:
     UFUNCTION(BlueprintCallable)
     void BPF_SetDemoPlayTimeDilation(float _fValue);
     

@@ -10,6 +10,9 @@ public:
     UPROPERTY(EditAnywhere)
     uint32 m_uiMCDominationFlags;
     
+    UPROPERTY()
+    int32 m_iSerializeVersion;
+    
     UComboAIConditionMCDomination();
 };
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NetStructOpeningDoor.h"
 #include "OrderParams.h"
+#include "NetStructOpeningDoor.h"
 #include "OrderOpeningDoorParams.generated.h"
 
 UCLASS(BlueprintType, EditInlineNew)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCAITicketEnum.h"
 #include "SCAITriggerableActions.h"
+#include "SCAITicketEnum.h"
 #include "AILaunchAttackTriggerableAction.generated.h"
 
 UCLASS(EditInlineNew)

@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "EWheelSweepType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "EWheelSweepType.h"
 #include "VehicleWheel.generated.h"
 
 class UStaticMesh;
-class UWheeledVehicleMovementComponent;
 class UTireType;
 class UTireConfig;
+class UWheeledVehicleMovementComponent;
 
 UCLASS(BlueprintType)
 class PHYSXVEHICLES_API UVehicleWheel : public UObject {

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ActiveGameplayEffectHandle.h"
 #include "GameplayAttribute.h"
 #include "EGameplayModOp.h"
-#include "ActiveGameplayEffectHandle.h"
 #include "GameplayModifierEvaluatedData.generated.h"
 
 USTRUCT(BlueprintType)

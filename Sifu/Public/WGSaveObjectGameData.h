@@ -1,8 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameSaveData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCSaveObjectGameData -FallbackName=SCSaveObjectGameData
+#include "GameSaveData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "ECharacterStat.h"
 #include "DuplicatedSaveData.h"
 #include "WGSaveObjectGameData.generated.h"
 
@@ -15,10 +16,16 @@ public:
     
     UWGSaveObjectGameData();
     UFUNCTION(BlueprintCallable)
+    void ReloadDefaultStatsFromDataTable();
+    
+    UFUNCTION(BlueprintCallable)
     void BPF_RemoveGameplayTag(FGameplayTag _gameplayTagToAdd);
     
     UFUNCTION(BlueprintCallable)
     bool BPF_HasGameplayTag(FGameplayTag _gameplayTagToAdd);
+    
+    UFUNCTION(BlueprintPure)
+    float BPF_GetDefaultStatValue(ECharacterStat _eStat, bool& _bFound) const;
     
     UFUNCTION(BlueprintCallable)
     void BPF_AddOrUpdateMaskSnapshot(int32 _iMask, const FDuplicatedSaveData& _duplicatedData);

@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=InheritedDataAsset -FallbackName=InheritedDataAsset
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=Bool -FallbackName=Bool
+#include "CardinalSpeed.h"
+#include "SpeedStateBlendTo.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "reeMoveAnimQuadrant.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=InheritedDataAsset -FallbackName=InheritedDataAsset
-#include "SpeedStateBlendTo.h"
-#include "CardinalSpeed.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=Bool -FallbackName=Bool
 #include "LockMoveAnimQuadrant.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCBlendType -FallbackName=ESCBlendType
 #include "LocomotionRotationParams.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ESpeedState.h"
 #include "BaseMovementDB.generated.h"
 
-class UTransitionAnimRequest;
 class UDetailedMoveTransitionDB;
 class UCurveFloat;
+class UTransitionAnimRequest;
 class USpeedPivotFootData;
 class UDodgeDB;
 

@@ -3,10 +3,10 @@
 #include "InteractiveGizmo.h"
 #include "IntervalGizmo.generated.h"
 
-class UGizmoComponentAxisSource;
 class UGizmoTransformChangeStateTarget;
 class UTransformProxy;
 class UPrimitiveComponent;
+class UGizmoComponentAxisSource;
 
 UCLASS(NonTransient)
 class INTERACTIVETOOLSFRAMEWORK_API UIntervalGizmo : public UInteractiveGizmo {

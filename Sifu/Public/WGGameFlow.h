@@ -1,11 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=GameFlow -FallbackName=GameFlow
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCGameInstanceState -FallbackName=ESCGameInstanceState
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCGameInstanceState -FallbackName=ESCGameInstanceState
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=GameFlow -FallbackName=GameFlow
 #include "EMenuEnum.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "EWGGameFlowMapOption.h"
 #include "WGGameFlow.generated.h"
 
 class ULevelStreaming;
@@ -26,7 +27,7 @@ protected:
 public:
     UWGGameFlow();
     UFUNCTION()
-    void TravelToPendingMapInternal(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask);
+    void TravelToPendingMapInternal(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, bool _bKeepCheats);
     
 protected:
     UFUNCTION()
@@ -34,7 +35,7 @@ protected:
     
 public:
     UFUNCTION(BlueprintCallable)
-    void BPF_TravelToPendingMap(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, float _fFadeDuration);
+    void BPF_TravelToPendingMap(bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, float _fFadeDuration, bool _bKeepCheats);
     
     UFUNCTION(BlueprintCallable)
     void BPF_RestartCurrentMap();
@@ -55,13 +56,16 @@ public:
     void BPF_GoToNextMap(bool _bSaveBefore);
     
     UFUNCTION(BlueprintCallable)
-    bool BPF_GotoMap(FName _mapTag, FGameplayTagContainer _specificMapOptions, bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, EMenuEnum _eMenuToShow, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask);
+    bool BPF_GotoMap(FName _mapTag, FGameplayTagContainer _specificMapOptions, bool _bSaveBefore, int32 _iSnapshotToOverrideFrom, bool _bDeleteWorldStateSave, EMenuEnum _eMenuToShow, bool _bReloadFirstSaveBefore, int32 _iPartOfSaveToResetMask, bool _bKeepCheats);
     
     UFUNCTION(BlueprintPure)
     FName BPF_GetFirstPlayableMapTagName() const;
     
     UFUNCTION(BlueprintPure)
     FName BPF_GetCurrentMapTag() const;
+    
+    UFUNCTION(BlueprintPure)
+    bool BPF_CurrentMapHasMapOption(EWGGameFlowMapOption _eMapOption) const;
     
 };
 

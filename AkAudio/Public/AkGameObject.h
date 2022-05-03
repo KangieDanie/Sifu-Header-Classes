@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
+#include "AkExternalSourceInfo.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=LatentActionInfo -FallbackName=LatentActionInfo
 #include "OnAkPostEventCallbackDelegate.h"
-#include "AkExternalSourceInfo.h"
 #include "AkGameObject.generated.h"
 
 class UAkAudioEvent;

@@ -7,8 +7,8 @@
 #include "EWaitAttributeChangeComparison.h"
 #include "AbilityTask_WaitAttributeChange.generated.h"
 
-class UAbilitySystemComponent;
 class UGameplayAbility;
+class UAbilitySystemComponent;
 class UAbilityTask_WaitAttributeChange;
 class AActor;
 

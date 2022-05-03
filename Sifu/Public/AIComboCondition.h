@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCAIActionMemoryEntryHandler -FallbackName=SCAIActionMemoryEntryHandler
 #include "ComboTransitionCondition.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCTypedValue -FallbackName=SCTypedValue
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCAIActionMemoryEntryHandler -FallbackName=SCAIActionMemoryEntryHandler
 #include "AIComboCondition.generated.h"
 
-class AActor;
 class ASCCharacter;
 class UAIFightingComponent;
+class AActor;
 
 UCLASS(Abstract, EditInlineNew)
 class SIFU_API UAIComboCondition : public UComboTransitionCondition, public ISCAIActionMemoryEntryHandler {

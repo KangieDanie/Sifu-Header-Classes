@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
-#include "SCAnimOrderServiceSettings.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimMetaData -FallbackName=AnimMetaData
-#include "PropertyFloorBoneRepartition.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoneReferenceContainerInterface -FallbackName=BoneReferenceContainerInterface
+#include "SCAnimOrderServiceSettings.h"
 #include "WeaponAnimInfo.h"
+#include "PropertyFloorBoneRepartition.h"
 #include "SCAnimMetaData.generated.h"
 
 class ABaseCharacter;

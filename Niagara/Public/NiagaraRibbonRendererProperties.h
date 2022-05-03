@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ENiagaraRibbonFacingMode.h"
 #include "NiagaraRendererProperties.h"
-#include "NiagaraVariableAttributeBinding.h"
 #include "ENiagaraRibbonTessellationMode.h"
 #include "ENiagaraRibbonDrawDirection.h"
-#include "NiagaraUserParameterBinding.h"
-#include "ENiagaraRibbonFacingMode.h"
 #include "NiagaraRibbonUVSettings.h"
+#include "NiagaraUserParameterBinding.h"
+#include "NiagaraVariableAttributeBinding.h"
 #include "NiagaraRibbonRendererProperties.generated.h"
 
 class UMaterialInterface;

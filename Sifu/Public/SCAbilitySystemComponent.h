@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=AbilitySystemComponent -FallbackName=AbilitySystemComponent
-#include "AbilityDelegateHandler.h"
 #include "AbilityDynamicDelegateDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=AbilitySystemComponent -FallbackName=AbilitySystemComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "AbilityDelegateHandler.h"
 #include "SCAbilitySystemComponent.generated.h"
 
+class USkillGameplayEffect;
 class UGameplayEffect;
 class UGameplayAbility;
-class USkillGameplayEffect;
 
 UCLASS(EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API USCAbilitySystemComponent : public UAbilitySystemComponent {

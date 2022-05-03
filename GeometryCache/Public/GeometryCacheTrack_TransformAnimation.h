@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GeometryCacheTrack.h"
 #include "GeometryCacheMeshData.h"
+#include "GeometryCacheTrack.h"
 #include "GeometryCacheTrack_TransformAnimation.generated.h"
 
 UCLASS(CollapseCategories, Deprecated, NotPlaceable)

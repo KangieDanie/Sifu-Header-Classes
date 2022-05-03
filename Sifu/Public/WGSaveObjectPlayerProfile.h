@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ProfileData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCSaveObjectPlayerProfile -FallbackName=SCSaveObjectPlayerProfile
+#include "ProfileData.h"
 #include "WGSaveObjectPlayerProfile.generated.h"
 
 UCLASS()

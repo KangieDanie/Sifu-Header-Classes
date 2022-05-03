@@ -8,5 +8,6 @@ enum class EMCDominationGaugeAsFlag {
     Negative,
     Neutral,
     Positive = 0x4,
+    PositivePlus = 0x8,
 };
 

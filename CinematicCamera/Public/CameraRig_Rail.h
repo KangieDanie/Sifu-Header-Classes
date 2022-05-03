@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "CameraRig_Rail.generated.h"
 
-class USplineComponent;
 class USceneComponent;
+class USplineComponent;
 
 UCLASS()
 class CINEMATICCAMERA_API ACameraRig_Rail : public AActor {

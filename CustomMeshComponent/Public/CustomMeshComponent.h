@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CustomMeshTriangle.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=MeshComponent -FallbackName=MeshComponent
+#include "CustomMeshTriangle.h"
 #include "CustomMeshComponent.generated.h"
 
 UCLASS(EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

@@ -8,8 +8,8 @@
 
 class UEnvQueryContext;
 class UEnvQueryInstanceBlueprintWrapper;
-class UObject;
 class UEnvQuery;
+class UObject;
 
 UCLASS(BlueprintType, Transient, Config=Game)
 class AIMODULE_API UEnvQueryManager : public UAISubsystem {

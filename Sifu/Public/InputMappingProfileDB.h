@@ -4,9 +4,9 @@
 #include "InputContext.h"
 #include "InputMappingProfileDB.generated.h"
 
+class UInputMappingProfileContextDB;
 class UInputMappingPresets;
 class UInputMappingProfileUIData;
-class UInputMappingProfileContextDB;
 
 UCLASS(BlueprintType)
 class UInputMappingProfileDB : public UDataAsset {

@@ -2,11 +2,11 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "EnvQueryGenerator_ProjectedPoints.h"
-#include "EnvTraceData.h"
 #include "AIDataProviderFloatValue.h"
-#include "EnvDirection.h"
-#include "AIDataProviderIntValue.h"
+#include "EnvTraceData.h"
 #include "EPointOnCircleSpacingMethod.h"
+#include "AIDataProviderIntValue.h"
+#include "EnvDirection.h"
 #include "EnvQueryGenerator_OnCircle.generated.h"
 
 class UEnvQueryContext;

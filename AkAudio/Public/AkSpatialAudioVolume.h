@@ -3,9 +3,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Volume -FallbackName=Volume
 #include "AkSpatialAudioVolume.generated.h"
 
-class UAkRoomComponent;
-class UAkSurfaceReflectorSetComponent;
 class UAkLateReverbComponent;
+class UAkSurfaceReflectorSetComponent;
+class UAkRoomComponent;
 
 UCLASS()
 class AKAUDIO_API AAkSpatialAudioVolume : public AVolume {

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BlackboardKeySelector.h"
-#include "EQSParametrizedQueryExecutionRequest.h"
 #include "BTService_BlackboardBase.h"
+#include "EQSParametrizedQueryExecutionRequest.h"
+#include "BlackboardKeySelector.h"
 #include "BTService_RunEQS.generated.h"
 
 UCLASS()

@@ -2,10 +2,10 @@
 #include "CoreMinimal.h"
 #include "OrderService.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoneReferenceContainerInterface -FallbackName=BoneReferenceContainerInterface
-#include "BPOrderServiceInstance.h"
 #include "HittedServiceInfos.h"
 #include "EOrderType.h"
 #include "HitBox.h"
+#include "BPOrderServiceInstance.h"
 #include "HittedAnimContainer.h"
 #include "HitRequest.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult

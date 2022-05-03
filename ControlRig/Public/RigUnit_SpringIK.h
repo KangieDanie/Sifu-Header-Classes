@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RigUnit_HighlevelBaseMutable.h"
+#include "RigUnit_SpringIK_WorkData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EControlRigVectorKind.h"
 #include "RigUnit_SpringIK_DebugSettings.h"
-#include "RigUnit_SpringIK_WorkData.h"
 #include "RigUnit_SpringIK.generated.h"
 
 USTRUCT()

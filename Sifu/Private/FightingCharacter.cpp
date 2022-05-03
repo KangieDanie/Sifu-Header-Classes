@@ -1,32 +1,32 @@
 #include "FightingCharacter.h"
 #include "Net/UnrealNetwork.h"
-#include "SCAbilitySystemComponent.h"
-#include "ReplayFightingCharacterComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PhysicalAnimationComponent -FallbackName=PhysicalAnimationComponent
 #include "DefenseComponent.h"
-#include "CharacterHitBoxComponent.h"
-#include "CharacterHealthComponent.h"
-#include "ReplayablePhysicsComponent.h"
 #include "TargetableActorComponent.h"
-#include "MessengerComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CapsuleComponent -FallbackName=CapsuleComponent
+#include "CharacterHealthComponent.h"
+#include "CharacterHitBoxComponent.h"
+#include "SCAbilitySystemComponent.h"
+#include "MessengerComponent.h"
+#include "ReplayablePhysicsComponent.h"
 #include "FightingCharAnimRepComponent.h"
+#include "ReplayFightingCharacterComponent.h"
 
-class AActor;
 class UPrimitiveComponent;
+class UActorComponent;
+class UMaterialInterface;
+class AActor;
+class UHitComponent;
 class UOrderComponent;
 class UEffectData;
 class UPlayerFightingComponent;
-class ABaseWeapon;
+class AInteractiveMovable;
 class UAttackComponent;
 class UAIFightingComponent;
-class UMaterialInterface;
 class UAvailabilityLayerData;
-class UActorComponent;
-class AInteractiveMovable;
+class ABaseWeapon;
 class UStatsComponent;
 class USkeletalMeshComponent;
-class UHitComponent;
 class UDeathDB;
 class UCameraComponentThird;
 class UASMComponent;

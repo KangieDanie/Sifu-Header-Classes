@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "RigHierarchyContainer.h"
-#include "RigInfluenceMapPerEvent.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NodeMappingProviderInterface -FallbackName=NodeMappingProviderInterface
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "RigInfluenceMapPerEvent.h"
+#include "RigHierarchyContainer.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Interface_AssetUserData -FallbackName=Interface_AssetUserData
 #include "ERigExecutionType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=PropertyPath -ObjectName=CachedPropertyPath -FallbackName=CachedPropertyPath
 #include "ControlRigDrawContainer.h"
 #include "ControlRig.generated.h"
 
-class UAssetUserData;
 class UControlRigGizmoLibrary;
 class URigVM;
 class UAnimationDataSourceRegistry;
 class UControlRig;
+class UAssetUserData;
 
 UCLASS(Abstract, BlueprintType, EditInlineNew)
 class CONTROLRIG_API UControlRig : public UObject, public INodeMappingProviderInterface, public IInterface_AssetUserData {

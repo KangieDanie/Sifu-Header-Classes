@@ -2,8 +2,8 @@
 #include "Templates/SubclassOf.h"
 
 class UObject;
-class USCGameplayAbility;
 class UCurveFloat;
+class USCGameplayAbility;
 class UAsyncTaskWaitForInput;
 
 UAsyncTaskWaitForInput* UAsyncTaskWaitForInput::BPF_WaitForInputWithFreezeExtraValidationDelegate(UObject* _context, float _fDelayBeforeFreeze, float _fDelayBeforeAllowingInput, FTestInputAdditionalValidationDelegate _additionalDelegate, TSubclassOf<USCGameplayAbility> _abilityToTest, TArray<InputAction> _specificActionsToTest, TArray<InputAction> _extraAvailableActions, ESCBlendType _eBlendType, UCurveFloat* _curveDynamic, float _fCameraSlomotionFactor, bool _bLaunchOnlyIfAvailable) {

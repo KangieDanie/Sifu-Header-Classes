@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "AbilityTask_WaitGameplayEffectApplied.h"
 #include "GameplayEffectAppliedTargetDelegateDelegate.h"
-#include "GameplayTargetDataFilterHandle.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagQuery -FallbackName=GameplayTagQuery
+#include "GameplayTargetDataFilterHandle.h"
 #include "GameplayTagRequirements.h"
 #include "AbilityTask_WaitGameplayEffectApplied_Target.generated.h"
 

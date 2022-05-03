@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 #include "AkLateReverbComponent.generated.h"
 
-class UAkAuxBus;
 class UAkLateReverbComponent;
+class UAkAuxBus;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class AKAUDIO_API UAkLateReverbComponent : public USceneComponent {

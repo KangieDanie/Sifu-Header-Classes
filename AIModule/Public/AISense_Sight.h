@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AISightEvent.h"
 #include "AISense.h"
+#include "AISightEvent.h"
 #include "AISense_Sight.generated.h"
 
 UCLASS(Config=Game)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SaveAdditionalInfos.h"
 #include "FilterProperties.h"
+#include "SaveAdditionalInfos.h"
 #include "InputMappingProfileEnumHandler.h"
 #include "InputMappingProfileData.h"
 #include "ProfileData.generated.h"
@@ -14,7 +14,7 @@ public:
     TArray<FFilterProperties> m_FilterPresets;
     
     UPROPERTY(SaveGame, VisibleAnywhere)
-    float m_GameOptions[38];
+    float m_GameOptions[40];
     
     UPROPERTY(BlueprintReadOnly, SaveGame, VisibleAnywhere)
     TMap<FString, FSaveAdditionalInfos> m_SaveAdditionalInfoMap;

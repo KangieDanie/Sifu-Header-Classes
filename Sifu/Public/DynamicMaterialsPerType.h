@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "DynamicMaterialsPerType.generated.h"
 
-class UMaterialInstance;
 class UMaterialInstanceDynamic;
+class UMaterialInstance;
 
 USTRUCT(BlueprintType)
 struct FDynamicMaterialsPerType {

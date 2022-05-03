@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AkTriangle.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "AkTriangle.h"
 #include "AkAcousticSurface.h"
 #include "AkGeometryData.generated.h"
 

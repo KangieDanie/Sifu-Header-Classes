@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "InputPresetsEnumHandler.h"
-#include "InputMappingGroup.h"
 #include "InputMappingData.h"
+#include "InputMappingGroup.h"
 #include "InputContext.h"
 #include "InputMappingProfileData.generated.h"
 

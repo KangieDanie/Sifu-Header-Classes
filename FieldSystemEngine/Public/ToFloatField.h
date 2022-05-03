@@ -3,8 +3,8 @@
 #include "FieldNodeFloat.h"
 #include "ToFloatField.generated.h"
 
-class UToFloatField;
 class UFieldNodeInt;
+class UToFloatField;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class FIELDSYSTEMENGINE_API UToFloatField : public UFieldNodeFloat {

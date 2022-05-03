@@ -2,28 +2,29 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "EditableOrderType.h"
+#include "ESpeedState.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "EAIGameplayStates.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CollisionResponseContainer -FallbackName=CollisionResponseContainer
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
-#include "ESpeedState.h"
+#include "EditableOrderType.h"
+#include "EAIChangeToIndirectRoleStates.h"
 #include "AIAttackHitDetectionVolume.h"
 #include "EAIPositioningOption.h"
 #include "NavAreaPerRange.h"
 #include "ESCAICombatRoles.h"
-#include "TimerAndOffset.h"
+#include "AIDominationGaugeSteps.h"
 #include "EAIWuguanTicketEvaluation.h"
-#include "EAIChangeToIndirectRoleStates.h"
+#include "TimerAndOffset.h"
 #include "EOrderType.h"
 #include "EDefenseTactics.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Int32Range -FallbackName=Int32Range
 #include "GlobalAISettings.generated.h"
 
+class UTraversalDB;
 class UDodgeTypeUseCaseMatrix;
 class UNavArea;
 class UAIMasterArchetype;
-class UTraversalDB;
 class UCurveFloat;
 class UNavigationQueryFilter;
 class AAIDirectorActor;
@@ -32,6 +33,9 @@ UCLASS(DefaultConfig, Config=WuguanAI)
 class SIFU_API UGlobalAISettings : public UObject {
     GENERATED_BODY()
 public:
+    UPROPERTY(Config)
+    int32 m_iSerializeVersion;
+    
     UPROPERTY(Config, EditAnywhere)
     float m_fDelayBeforeInvestigation;
     
@@ -126,7 +130,7 @@ public:
     TArray<EAIPositioningOption> m_DefaultPositioningOptions;
     
     UPROPERTY(Config, EditAnywhere)
-    int32 m_AttackTicketJokerComboAttackCount[3];
+    int32 m_AttackTicketJokerComboAttackCount[4];
     
     UPROPERTY(Config, EditAnywhere)
     float m_fSpawningTimePerFrame;
@@ -171,10 +175,13 @@ public:
     float m_fDifficultyUpdateRate;
     
     UPROPERTY(Config, EditAnywhere)
-    float m_DominationGaugeSteps[3];
+    FAIDominationGaugeSteps m_DominationGaugeStepsPerDifficulty[3];
+    
+    UPROPERTY(Config)
+    float m_DominationGaugeSteps[4];
     
     UPROPERTY(Config, EditAnywhere)
-    int32 m_MaxIndirectOponentPerDominationGauge[3];
+    int32 m_MaxIndirectOponentPerDominationGauge[4];
     
     UPROPERTY(Config, EditAnywhere)
     float m_fTauntDifficultyBonus;
@@ -267,7 +274,7 @@ public:
     float m_fFidgetNearDeathMaxRatio;
     
     UPROPERTY(Config, EditAnywhere)
-    int32 m_iLastManBonusPerDomination[3];
+    int32 m_iLastManBonusPerDomination[4];
     
     UPROPERTY(Config, EditAnywhere)
     TSoftObjectPtr<UCurveFloat> m_LastManBonusPerCharges;

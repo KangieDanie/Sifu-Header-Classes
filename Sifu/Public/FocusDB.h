@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "StateWeight.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCollisionResponseTemplate -FallbackName=SCCollisionResponseTemplate
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
 #include "FocusDB.generated.h"
 
-class AAimingBillboardActor;
 class AVitalPointActor;
+class AAimingBillboardActor;
 
 UCLASS(BlueprintType)
 class UFocusDB : public UDataAsset {

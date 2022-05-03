@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "HitDescription.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCPoolableActorComponent -FallbackName=SCPoolableActorComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-#include "HitDescription.h"
 #include "EDangerStates.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "HitRequest.h"
 #include "HitComponent.generated.h"
 
-class UHittedDB;
 class UCurveFloat;
+class UHittedDB;
 class UHitAnimRequest;
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
@@ -94,6 +94,9 @@ public:
     UHitComponent();
     UFUNCTION()
     void OnDangerStateChangedCallback(EDangerStates _ePreviousDangerState, EDangerStates _eNewDangerState);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_ToggleInfiniteDamageOnHit(bool _bActivate);
     
     UFUNCTION(BlueprintCallable)
     void BPF_ResetHitAnimRequestToDefault();

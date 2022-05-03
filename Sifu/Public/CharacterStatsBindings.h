@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AsyncTextureStruct.h"
 #include "FloatStatBinding.h"
+#include "AsyncTextureStruct.h"
 #include "IntStatBinding.h"
 #include "CharacterStatsBindings.generated.h"
 

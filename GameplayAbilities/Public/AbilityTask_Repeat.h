@@ -4,8 +4,8 @@
 #include "RepeatedActionDelegateDelegate.h"
 #include "AbilityTask_Repeat.generated.h"
 
-class UGameplayAbility;
 class UAbilityTask_Repeat;
+class UGameplayAbility;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_Repeat : public UAbilityTask {

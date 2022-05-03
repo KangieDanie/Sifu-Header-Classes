@@ -1,43 +1,43 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EGlobalBehaviors.h"
-#include "EDefenseTactics.h"
 #include "AIComponent.h"
+#include "AIDefenseTargetAttackInfos.h"
+#include "EAvoidType.h"
+#include "HitRequest.h"
+#include "TurnAnimationArray.h"
+#include "EGlobalBehaviors.h"
 #include "EOrderType.h"
 #include "EMcDominationGaugeSteps.h"
 #include "EOrderState.h"
-#include "EAvoidType.h"
-#include "HitRequest.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
 #include "OnCombatRoleChangedDynamicDelegate.h"
-#include "AIDefenseTargetAttackInfos.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "VariableWeightEnumHandler.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
-#include "TurnAnimationArray.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "PhasesTransitionObjectCache.h"
 #include "HitDescription.h"
-#include "AIPhaseNodeHardLink.h"
+#include "EDefenseTactics.h"
 #include "AIPhaseNodeSoftLink.h"
+#include "AIPhaseNodeHardLink.h"
 #include "ESCAICombatRoles.h"
-#include "EAIContextualDefenseType.h"
 #include "EAlertedReason.h"
+#include "EAIContextualDefenseType.h"
 #include "AIFightingComponent.generated.h"
 
-class UBlendSpace1D;
-class UCombo;
 class AActor;
 class UAIFightingComponent;
+class UAIPhaseScenario;
+class UFightingMovementComponent;
+class APathPatrol;
+class UOrderComponent;
 class UAIPhaseTransition;
+class UBlendSpace1D;
+class UAttackDB;
+class UAIContextualDefense;
+class UCombo;
 class UAvoidAbility;
 class UObject;
-class UAIPhaseScenario;
-class UOrderComponent;
-class UFightingMovementComponent;
-class UAttackDB;
-class APathPatrol;
-class UAIContextualDefense;
 
 UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UAIFightingComponent : public UAIComponent {
@@ -264,6 +264,18 @@ public:
     void BPF_SetDeathCounterDecreaseWhenKilled(int32 _iCount);
     
     UFUNCTION(BlueprintCallable)
+    void BPF_SetCarriedPendantCharges(int32 _iCharges);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_SetCanUseReactionAction(bool _bValue);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_SetCanTakeAttackTicket(bool _bValue);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_SetCanDefend(bool _bValue);
+    
+    UFUNCTION(BlueprintCallable)
     void BPF_RespawnStartupWeapon();
     
 protected:
@@ -347,6 +359,9 @@ public:
     
     UFUNCTION(BlueprintPure)
     int32 BPF_GetCarriedPendantCharges() const;
+    
+    UFUNCTION(BlueprintPure)
+    bool BPF_GetCanUseReactionAction() const;
     
     UFUNCTION(BlueprintPure)
     UObject* BPF_GetBlackBoardValueAsObject(FName _key) const;

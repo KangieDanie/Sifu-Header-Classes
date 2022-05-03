@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EQSParametrizedQueryExecutionRequest.h"
-#include "BlackboardKeySelector.h"
 #include "EEnvQueryRunMode.h"
 #include "BTTask_BlackboardBase.h"
 #include "EnvNamedValue.h"
+#include "BlackboardKeySelector.h"
 #include "AIDynamicParam.h"
+#include "EQSParametrizedQueryExecutionRequest.h"
 #include "BTTask_RunEQSQuery.generated.h"
 
 class UEnvQuery;

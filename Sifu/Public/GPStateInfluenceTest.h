@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EAIGameplayStates.h"
 #include "AIInfluenceTest.h"
+#include "EAIGameplayStates.h"
 #include "GPStateInfluenceTest.generated.h"
 
 UCLASS()

@@ -4,9 +4,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "PushObjectAnimRequest.generated.h"
 
-class AActor;
 class UAnimSequence;
 class APushableActor;
+class AActor;
 
 UCLASS(Blueprintable)
 class SIFU_API UPushObjectAnimRequest : public UObject {

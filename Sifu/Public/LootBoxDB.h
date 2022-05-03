@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "LootBaseItemStruct.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "ELootBoxType.h"
 #include "LootBoxStaticData.h"
 #include "LootBoxInstancedData.h"
-#include "LootBaseItemStruct.h"
 #include "LootBoxDB.generated.h"
 
 class UDataTable;

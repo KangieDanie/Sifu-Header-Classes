@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTask -FallbackName=GameplayTask
 #include "AbilityTask_WaitConfirm.generated.h"
 
-class UAbilityTask_WaitConfirm;
 class UGameplayAbility;
+class UAbilityTask_WaitConfirm;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitConfirm : public UAbilityTask {

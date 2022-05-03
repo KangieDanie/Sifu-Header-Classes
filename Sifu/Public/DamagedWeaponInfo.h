@@ -3,9 +3,9 @@
 #include "Templates/SubclassOf.h"
 #include "DamagedWeaponInfo.generated.h"
 
-class USkeletalMesh;
 class UBaseWeaponData;
 class UWeaponGameplayData;
+class USkeletalMesh;
 
 USTRUCT(BlueprintType)
 struct FDamagedWeaponInfo {

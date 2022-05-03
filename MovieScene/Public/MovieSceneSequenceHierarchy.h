@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "MovieSceneSequenceHierarchyNode.h"
-#include "MovieSceneSubSequenceTree.h"
 #include "MovieSceneSequenceID.h"
+#include "MovieSceneSubSequenceTree.h"
 #include "MovieSceneSubSequenceData.h"
 #include "MovieSceneSequenceHierarchy.generated.h"
 

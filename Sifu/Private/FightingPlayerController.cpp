@@ -1,15 +1,15 @@
 #include "FightingPlayerController.h"
 #include "Net/UnrealNetwork.h"
 #include "WidgetPoolComponent.h"
-#include "TargetableWidgetUpdaterComponent.h"
 #include "ASMDetectionComponent.h"
+#include "TargetableWidgetUpdaterComponent.h"
 
-class AAISpawner;
-class UInteractionObjectComponent;
-class AActor;
-class UCharacterProgressionUnlockDB;
-class UPanelWidget;
 class UMenuWidget;
+class UInteractionObjectComponent;
+class UCharacterProgressionUnlockDB;
+class AActor;
+class AAISpawner;
+class UPanelWidget;
 class UPopupWidget;
 class UUserWidget;
 
@@ -389,6 +389,9 @@ AFightingPlayerController::AFightingPlayerController() {
     this->m_MenuClasses[41] = NULL;
     this->m_MenuClasses[42] = NULL;
     this->m_MenuClasses[43] = NULL;
+    this->m_MenuClasses[44] = NULL;
+    this->m_MenuClasses[45] = NULL;
+    this->m_MenuClasses[46] = NULL;
     this->m_MenuAnimationsClass = NULL;
     this->m_eMenuListPreventingInGameMenu.AddDefaulted(1);
     this->m_MenuInstances[0] = NULL;
@@ -435,6 +438,9 @@ AFightingPlayerController::AFightingPlayerController() {
     this->m_MenuInstances[41] = NULL;
     this->m_MenuInstances[42] = NULL;
     this->m_MenuInstances[43] = NULL;
+    this->m_MenuInstances[44] = NULL;
+    this->m_MenuInstances[45] = NULL;
+    this->m_MenuInstances[46] = NULL;
     this->m_OutlineMaterial = NULL;
     this->m_PopupYesNo = NULL;
     this->m_fTimeSinceLastNonRedundantUserInput = 0.00f;

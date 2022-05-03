@@ -3,8 +3,8 @@
 #include "MenuAsyncActionBase.h"
 #include "AsyncTaskWaitForSignIn.generated.h"
 
-class UAsyncTaskWaitForSignIn;
 class UObject;
+class UAsyncTaskWaitForSignIn;
 
 UCLASS()
 class UAsyncTaskWaitForSignIn : public UMenuAsyncActionBase {

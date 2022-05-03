@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PawnMovementComponent -FallbackName=PawnMovementComponent
-#include "ReplicatedVehicleState.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RVOAvoidanceInterface -FallbackName=RVOAvoidanceInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "WheelSetup.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavAvoidanceMask -FallbackName=NavAvoidanceMask
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RVOAvoidanceInterface -FallbackName=RVOAvoidanceInterface
+#include "WheelSetup.h"
+#include "ReplicatedVehicleState.h"
 #include "VehicleInputRate.h"
 #include "WheeledVehicleMovementComponent.generated.h"
 
-class UVehicleWheel;
 class AController;
+class UVehicleWheel;
 
 UCLASS(Abstract, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class PHYSXVEHICLES_API UWheeledVehicleMovementComponent : public UPawnMovementComponent, public IRVOAvoidanceInterface {

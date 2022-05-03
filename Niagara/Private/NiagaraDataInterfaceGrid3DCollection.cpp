@@ -1,7 +1,7 @@
 #include "NiagaraDataInterfaceGrid3DCollection.h"
 
-class UVolumeTexture;
 class UNiagaraComponent;
+class UVolumeTexture;
 
 void UNiagaraDataInterfaceGrid3DCollection::GetTextureSize(const UNiagaraComponent* Component, int32& SizeX, int32& SizeY, int32& SizeZ) {
 }

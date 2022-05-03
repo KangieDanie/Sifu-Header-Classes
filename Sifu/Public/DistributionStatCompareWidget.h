@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=UserWidget -FallbackName=UserWidget
 #include "DistributionStatCompareWidget.generated.h"
 
-class UStatsComponent;
 class UPreviewData;
+class UStatsComponent;
 
 UCLASS(EditInlineNew)
 class UDistributionStatCompareWidget : public UUserWidget {

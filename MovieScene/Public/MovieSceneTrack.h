@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "MovieSceneSignedObject.h"
 #include "MovieSceneTrackEvalOptions.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "MovieSceneTrackEvaluationField.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "MovieSceneTrack.generated.h"
 
 UCLASS(Abstract, DefaultToInstanced, MinimalAPI)

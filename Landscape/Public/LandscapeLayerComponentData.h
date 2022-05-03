@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "WeightmapData.h"
 #include "HeightmapData.h"
+#include "WeightmapData.h"
 #include "LandscapeLayerComponentData.generated.h"
 
 USTRUCT()

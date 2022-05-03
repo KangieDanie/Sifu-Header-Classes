@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETransformConstraintType.h"
 #include "ConstraintDescriptionEx.h"
+#include "ETransformConstraintType.h"
 #include "TransformConstraintDescription.generated.h"
 
 USTRUCT()

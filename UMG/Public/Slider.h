@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SliderStyle -FallbackName=SliderStyle
+#include "Widget.h"
 #include "OnControllerCaptureBeginEventDelegate2.h"
 #include "Widget.h"
-#include "Widget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SliderStyle -FallbackName=SliderStyle
 #include "OnMouseCaptureEndEventDelegate2.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EOrientation -FallbackName=EOrientation
+#include "OnControllerCaptureEndEventDelegate2.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "OnMouseCaptureBeginEventDelegate2.h"
-#include "OnControllerCaptureEndEventDelegate2.h"
 #include "OnFloatValueChangedEventDelegate2.h"
 #include "OnFocusLostDelegateEventDelegate.h"
 #include "OnFocusReceivedDelegateEventDelegate.h"

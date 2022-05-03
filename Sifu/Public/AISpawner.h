@@ -2,26 +2,27 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-#include "EPatrolLaunchMethod.h"
-#include "IdleAnimAndTransition.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
 #include "EGlobalBehaviors.h"
+#include "EPatrolLaunchMethod.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
+#include "AICharacterSpawnParams.h"
 #include "EFactionsEnums.h"
 #include "EFirstSpawnMethod.h"
 #include "CarriedProps.h"
+#include "IdleAnimAndTransition.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "AISpawner.generated.h"
 
+class UAIFightingComponent;
+class ABaseCharacter;
 class APathPatrol;
 class AAISpawner;
-class UAIFightingComponent;
-class UAIIdleDB;
-class ABaseCharacter;
 class UAIPhaseScenario;
 class USceneComponent;
 class ABaseWeapon;
+class UAIIdleDB;
 
 UCLASS()
 class SIFU_API AAISpawner : public AActor {
@@ -54,6 +55,9 @@ public:
     
 private:
     UPROPERTY(EditAnywhere)
+    FAICharacterSpawnParams m_SpawnParams;
+    
+    UPROPERTY()
     TSubclassOf<ABaseCharacter> m_SpawningClass;
     
     UPROPERTY(EditInstanceOnly)
@@ -68,7 +72,10 @@ private:
     UPROPERTY(EditAnywhere)
     EPatrolLaunchMethod m_ePatrolLaunchMethod;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
+    UAIPhaseScenario* m_PhaseScenarios[3];
+    
+    UPROPERTY()
     UAIPhaseScenario* m_PhaseScenario;
     
     UPROPERTY(EditAnywhere)
@@ -95,13 +102,13 @@ private:
     UPROPERTY(EditInstanceOnly)
     FName m_VoiceVariationSwitchOverride;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     int32 m_iChargesToAddWhenKilled;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     int32 m_iDeathCounterDecreaseWhenKilled;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY()
     bool m_bDeathCounterResetWhenKilled;
     
     UPROPERTY(EditAnywhere)
@@ -110,10 +117,10 @@ private:
     UPROPERTY(Export)
     USceneComponent* m_RootComp;
     
-    UPROPERTY(EditInstanceOnly)
+    UPROPERTY()
     TArray<FCarriedProps> m_carriedProps;
     
-    UPROPERTY(EditInstanceOnly)
+    UPROPERTY()
     TSubclassOf<ABaseWeapon> m_carriedWeapon;
     
     UPROPERTY()
@@ -131,6 +138,12 @@ protected:
     
     UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
     FAnimContainer m_AlertedAnimation;
+    
+    UPROPERTY(EditDefaultsOnly)
+    TSubclassOf<ABaseCharacter> m_EditorClass;
+    
+    UPROPERTY(Transient)
+    UAIPhaseScenario* m_PhaseScenarioOverride;
     
 public:
     UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
@@ -177,6 +190,9 @@ public:
     
     UFUNCTION(BlueprintPure)
     TArray<FCarriedProps> BPF_GetCarriedProps() const;
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_AskForRespawn();
     
     UFUNCTION(BlueprintImplementableEvent)
     void BPE_OnRespawnFinished(AActor* _ActorAIRespawned);

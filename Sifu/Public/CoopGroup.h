@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EGameModeTypes.h"
 #include "CoopGroupMemberInfo.h"
+#include "EGameModeTypes.h"
 #include "CoopGroup.generated.h"
 
 USTRUCT(BlueprintType)

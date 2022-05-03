@@ -3,9 +3,9 @@
 #include "GameplayTask.h"
 #include "GameplayTask_WaitDelay.generated.h"
 
+class UGameplayTask_WaitDelay;
 class UGameplayTaskOwnerInterface;
 class IGameplayTaskOwnerInterface;
-class UGameplayTask_WaitDelay;
 
 UCLASS(MinimalAPI)
 class UGameplayTask_WaitDelay : public UGameplayTask {

@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EnvQueryRequest.generated.h"
 
-class UEnvQuery;
 class UObject;
+class UEnvQuery;
 class UWorld;
 
 USTRUCT()

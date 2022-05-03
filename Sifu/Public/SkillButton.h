@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "ButtonUserWidget.h"
 #include "SkillTreeNode.h"
+#include "ButtonUserWidget.h"
 #include "SkillButton.generated.h"
 
 class USkillButton;

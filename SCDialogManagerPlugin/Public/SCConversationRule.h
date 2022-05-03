@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCDialogCondition.h"
-#include "EOperationType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "EOperationType.h"
 #include "SCConversationRule.generated.h"
 
 USTRUCT(BlueprintType)

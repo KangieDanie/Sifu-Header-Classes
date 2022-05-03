@@ -1,7 +1,7 @@
 #include "MoviePipelineExecutorBase.h"
 
-class UMoviePipeline;
 class UMoviePipelineQueue;
+class UMoviePipeline;
 
 void UMoviePipelineExecutorBase::SetStatusProgress_Implementation(const float InProgress) {
 }

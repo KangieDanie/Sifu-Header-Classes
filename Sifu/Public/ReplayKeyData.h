@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EReplayKeyCameraMode.h"
-#include "EReplayKeyTransition.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
 #include "ReplayKeyDataCameraTransitionOverrideSettings.h"
+#include "EReplayKeyTransition.h"
+#include "EReplayKeyCameraMode.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ReplayKeyCutData.h"
 #include "ReplayKeyDataCameraSettings.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
 #include "ReplayKeyData.generated.h"
 
 USTRUCT(BlueprintType)

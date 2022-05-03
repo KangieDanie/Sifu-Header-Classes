@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RigUnit.h"
 #include "CachedRigElement.h"
+#include "RigUnit.h"
 #include "RigUnit_GetControlFloat.generated.h"
 
 USTRUCT()

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "EUpdatePositionMethod.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FrameTime -FallbackName=FrameTime
 #include "EMovieScenePositionType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FrameTime -FallbackName=FrameTime
 #include "MovieSceneSequencePlaybackParams.generated.h"
 
 USTRUCT(BlueprintType)

@@ -2,9 +2,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCSaveGameComponent -FallbackName=SCSaveGameComponent
 
 class AActor;
-class UAIFightingComponent;
 class AAISpawner;
 class ASpawnerGroup;
+class UAIFightingComponent;
 
 void AAISituationActor::OnUpdatedFromSaveCallback() {
 }

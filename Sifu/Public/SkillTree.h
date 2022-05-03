@@ -5,9 +5,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDynamicDelegate__DelegateSignature -FallbackName=SCDynamicDelegateDelegate
 #include "SkillTree.generated.h"
 
-class UCurveFloat;
-class USkillsDB;
 class USkillGameplayEffect;
+class USkillsDB;
+class UCurveFloat;
 
 UCLASS()
 class SIFU_API ASkillTree : public AActor {

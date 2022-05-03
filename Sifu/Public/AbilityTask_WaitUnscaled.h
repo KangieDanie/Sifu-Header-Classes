@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "WaitUnscaledDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayAbilities -ObjectName=AbilityTask -FallbackName=AbilityTask
+#include "WaitUnscaledDelegate.h"
 #include "AbilityTask_WaitUnscaled.generated.h"
 
 class UAbilityTask_WaitUnscaled;

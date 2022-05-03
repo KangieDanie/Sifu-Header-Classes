@@ -1,7 +1,7 @@
 #include "FoliageStatistics.h"
 
-class UObject;
 class UStaticMesh;
+class UObject;
 
 int32 UFoliageStatistics::FoliageOverlappingSphereCount(UObject* WorldContextObject, const UStaticMesh* StaticMesh, FVector CenterPosition, float Radius) {
     return 0;

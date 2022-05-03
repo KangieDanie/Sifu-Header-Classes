@@ -1,12 +1,12 @@
 #include "GameplayAbility.h"
 #include "Templates/SubclassOf.h"
 
-class AActor;
-class UGameplayEffect;
 class USkeletalMeshComponent;
-class UObject;
 class UAnimMontage;
+class UGameplayEffect;
 class UAbilitySystemComponent;
+class AActor;
+class UObject;
 
 void UGameplayAbility::SetShouldBlockOtherAbilities(bool bShouldBlockAbilities) {
 }

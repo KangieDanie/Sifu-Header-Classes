@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCLevelScriptActor -FallbackName=SCLevelScriptActor
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EEndPlayReason -FallbackName=EEndPlayReason
 #include "SoundStateInfo.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EEndPlayReason -FallbackName=EEndPlayReason
 #include "AIPhaseTransitionData.h"
 #include "ThePlainesLevel.generated.h"
 
 class AActor;
 class ASCBlenderManager;
-class AFightingCharacter;
 class ULevelSequence;
+class AFightingCharacter;
 class UAkAudioBank;
 
 UCLASS()

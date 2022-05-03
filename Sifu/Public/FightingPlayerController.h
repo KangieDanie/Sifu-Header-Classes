@@ -1,43 +1,43 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "ERelationshipTypes.h"
-#include "SCPlayerController.h"
+#include "MenuStackInfos.h"
 #include "CharacterProgressionReward.h"
-#include "ECharacterProgressionRewardTypes.h"
-#include "EDangerStates.h"
-#include "EGameOptionTypes.h"
+#include "SCPlayerController.h"
 #include "EMenuEnum.h"
+#include "ERelationshipTypes.h"
+#include "ECharacterProgressionRewardTypes.h"
+#include "InputAction.h"
+#include "EGameOptionTypes.h"
 #include "ECycleDirection.h"
 #include "InteractionTextStruct.h"
-#include "InputAction.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCDelegate -FallbackName=SCDelegate
-#include "MenuStackInfos.h"
-#include "EQuadrantTypes.h"
+#include "EDangerStates.h"
 #include "CoopGroup.h"
+#include "EQuadrantTypes.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=InputCore -ObjectName=Key -FallbackName=Key
 #include "FightingPlayerController.generated.h"
 
-class AActor;
+class UWidgetPoolComponent;
 class UCharacterProgressionUnlockDB;
+class UMaterialInterface;
+class AActor;
+class UASMDetectionComponent;
 class AFightingCharacter;
 class AController;
-class UPanelWidget;
-class UEquipmentSelectionData;
-class ASkillTree;
 class AAISpawner;
+class ASkillTree;
 class UTexture2D;
 class UMenuWidget;
 class UUserWidget;
-class UMaterialInterface;
 class UPopupWidget;
-class AInteractiveObject;
-class UTargetableWidgetUpdaterComponent;
-class UASMDetectionComponent;
-class UWidgetPoolComponent;
-class UPickUpMenu;
 class UMaterialParameterCollection;
+class UEquipmentSelectionData;
+class UTargetableWidgetUpdaterComponent;
+class UPickUpMenu;
+class AInteractiveObject;
 class UInteractionObjectComponent;
+class UPanelWidget;
 
 UCLASS()
 class SIFU_API AFightingPlayerController : public ASCPlayerController {
@@ -117,7 +117,7 @@ protected:
     bool m_bHideNonInteractableObjectComponent;
     
     UPROPERTY(EditAnywhere)
-    TSubclassOf<UMenuWidget> m_MenuClasses[44];
+    TSubclassOf<UMenuWidget> m_MenuClasses[47];
     
     UPROPERTY(EditDefaultsOnly)
     TSubclassOf<UUserWidget> m_MenuAnimationsClass;
@@ -126,7 +126,7 @@ protected:
     TArray<EMenuEnum> m_eMenuListPreventingInGameMenu;
     
     UPROPERTY(Export, Transient)
-    UMenuWidget* m_MenuInstances[44];
+    UMenuWidget* m_MenuInstances[47];
     
     UPROPERTY(BlueprintReadOnly, Transient, VisibleInstanceOnly)
     TArray<FMenuStackInfos> m_MenuStack;

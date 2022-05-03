@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ComboAIConditionFindActorsEnvQueryResult.h"
-#include "AIComboCondition.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIDynamicParam -FallbackName=AIDynamicParam
+#include "AIComboCondition.h"
+#include "ComboAIConditionFindActorsEnvQueryResult.h"
 #include "ComboAIConditionFindActorsEnvQuery.generated.h"
 
 class UEnvQuery;

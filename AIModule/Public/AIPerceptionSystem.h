@@ -6,9 +6,9 @@
 #include "AIStimulus.h"
 #include "AIPerceptionSystem.generated.h"
 
-class AActor;
-class UObject;
 class UAISense;
+class UObject;
+class AActor;
 class UAISenseEvent;
 
 UCLASS(BlueprintType, Config=Game)

@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AssociatedPropsAnimInfo -FallbackName=AssociatedPropsAnimInfo
 #include "EWeaponOrientationConstraint.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AssociatedPropsAnimInfo -FallbackName=AssociatedPropsAnimInfo
 #include "EWeaponAnimType.h"
 #include "EWeaponBlendSpaceComputeTime.h"
 #include "WeaponBlendSpaceParam.h"
 #include "WeaponAnimInfo.generated.h"
 
 class UCurveFloat;
-class UAnimationAsset;
 class UBlendSpaceBase;
+class UAnimationAsset;
 
 USTRUCT(BlueprintType)
 struct SIFU_API FWeaponAnimInfo : public FAssociatedPropsAnimInfo {

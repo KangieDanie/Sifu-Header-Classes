@@ -2,7 +2,6 @@
 #include "Net/UnrealNetwork.h"
 #include "Templates/SubclassOf.h"
 
-class UAIPhaseScenario;
 class UOrderComponent;
 class UFightingMovementComponent;
 class UAttackDB;
@@ -10,6 +9,7 @@ class APathPatrol;
 class UAIContextualDefense;
 class UCombo;
 class UAvoidAbility;
+class UAIPhaseScenario;
 class AActor;
 class UObject;
 
@@ -92,6 +92,18 @@ void UAIFightingComponent::BPF_SetDeathCounterResetWhenKilled(bool _bReset) {
 }
 
 void UAIFightingComponent::BPF_SetDeathCounterDecreaseWhenKilled(int32 _iCount) {
+}
+
+void UAIFightingComponent::BPF_SetCarriedPendantCharges(int32 _iCharges) {
+}
+
+void UAIFightingComponent::BPF_SetCanUseReactionAction(bool _bValue) {
+}
+
+void UAIFightingComponent::BPF_SetCanTakeAttackTicket(bool _bValue) {
+}
+
+void UAIFightingComponent::BPF_SetCanDefend(bool _bValue) {
 }
 
 void UAIFightingComponent::BPF_RespawnStartupWeapon() {
@@ -189,6 +201,10 @@ TArray<AActor*> UAIFightingComponent::BPF_GetCarriedProps() const {
 
 int32 UAIFightingComponent::BPF_GetCarriedPendantCharges() const {
     return 0;
+}
+
+bool UAIFightingComponent::BPF_GetCanUseReactionAction() const {
+    return false;
 }
 
 UObject* UAIFightingComponent::BPF_GetBlackBoardValueAsObject(FName _key) const {

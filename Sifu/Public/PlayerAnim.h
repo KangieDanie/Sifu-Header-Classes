@@ -1,48 +1,48 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCAnimInstance -FallbackName=SCAnimInstance
+#include "BlendSpaceContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+#include "ELimbs.h"
+#include "AnimStructOverride.h"
 #include "AnimStructMoveTransition.h"
 #include "EQuadrantTypes.h"
-#include "BlendSpaceDirectionContainer.h"
-#include "BlendSpaceStructBase.h"
-#include "AnimStructAttack.h"
-#include "BlendSpaceContainer.h"
-#include "EMoveTransitionType.h"
-#include "AnimQuadrantStruct.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
-#include "MoveStatus.h"
+#include "SpeedDescriptionStruct.h"
+#include "AnimStructAttack.h"
+#include "AnimQuadrantStruct.h"
+#include "SpeedState.h"
+#include "BlendSpaceDirectionContainer.h"
+#include "EMoveStatus.h"
 #include "AnimStructBase.h"
-#include "EFallLevel.h"
-#include "AnimStructOverride.h"
-#include "ESaveBone.h"
 #include "AnimStruct4.h"
+#include "EMoveTransitionType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PoseSnapshot -FallbackName=PoseSnapshot
 #include "EOrderType.h"
 #include "AnimStructVariableWeight.h"
-#include "ESpeedState.h"
 #include "AnimStructHandPose.h"
 #include "AnimStructEmote.h"
-#include "SpeedState.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
-#include "SpeedDescriptionStruct.h"
+#include "LookAtAnimHandler.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "MovementMode.h"
-#include "LookAtAnimHandler.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PoseSnapshot -FallbackName=PoseSnapshot
+#include "EFallLevel.h"
+#include "ESaveBone.h"
+#include "BlendSpaceStructBase.h"
+#include "MoveStatus.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
 #include "AnimStructTraversal.h"
 #include "EMoveDirections.h"
-#include "EMoveStatus.h"
 #include "EGlobalBehaviors.h"
+#include "ESpeedState.h"
 #include "ETransitionGlobalType.h"
-#include "ELimbs.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "PlayerAnim.generated.h"
 
-class UAnimSequence;
-class UBaseMovementDB;
-class UHandPoseDB;
-class UCurveVector;
 class UCurveFloat;
+class UAnimSequence;
+class UHandPoseDB;
+class UBaseMovementDB;
+class UCurveVector;
 
 UCLASS(NonTransient)
 class SIFU_API UPlayerAnim : public USCAnimInstance {
@@ -298,7 +298,7 @@ protected:
     UPROPERTY(BlueprintReadOnly, EditAnywhere, Replicated)
     FBlendSpaceDirectionContainer m_FreeMoveBlendSpaceV3;
     
-    UPROPERTY(BlueprintReadOnly, EditAnywhere)
+    UPROPERTY(BlueprintReadOnly, EditAnywhere, Replicated)
     FLookAtAnimHandler m_LookAtAnimHandler;
     
     UPROPERTY(BlueprintReadOnly)

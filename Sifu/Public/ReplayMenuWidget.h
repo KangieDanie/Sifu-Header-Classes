@@ -7,8 +7,8 @@
 #include "InputAction.h"
 #include "ReplayMenuWidget.generated.h"
 
-class UReplayUIModeUserWidget;
 class UReplayScreenshotUserWidget;
+class UReplayUIModeUserWidget;
 class UReplayUIModeDB;
 class ABaseReplayController;
 class UReplaySubMenuWidget;
@@ -99,6 +99,15 @@ protected:
     
     UFUNCTION(BlueprintNativeEvent)
     void BPE_OnRemovedFromParent();
+    
+    UFUNCTION(BlueprintImplementableEvent)
+    bool BPE_OnMenuRightPressed();
+    
+    UFUNCTION(BlueprintImplementableEvent)
+    bool BPE_OnMenuOptionsPressed();
+    
+    UFUNCTION(BlueprintImplementableEvent)
+    bool BPE_OnMenuLeftPressed();
     
     UFUNCTION(BlueprintImplementableEvent)
     bool BPE_OnMenuInputPressed(InputAction _eAction);

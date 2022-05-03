@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ERBFFunctionType.h"
 #include "PoseDriverTransform.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
-#include "ERBFFunctionType.h"
 #include "ERBFDistanceMethod.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RichCurve -FallbackName=RichCurve
 #include "PoseDriverTarget.generated.h"

@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AbilityTask_ApplyRootMotion_Base.h"
-#include "ApplyRootMotionJumpForceDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
+#include "ApplyRootMotionJumpForceDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ERootMotionFinishVelocityMode -FallbackName=ERootMotionFinishVelocityMode
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "AbilityTask_ApplyRootMotionJumpForce.generated.h"
 
 class UCurveVector;
-class UCurveFloat;
 class UGameplayAbility;
+class UCurveFloat;
 class UAbilityTask_ApplyRootMotionJumpForce;
 
 UCLASS()

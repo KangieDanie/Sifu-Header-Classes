@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MoviePipelineImageSequenceOutputBase.h"
 #include "EEXRCompressionFormat.h"
+#include "MoviePipelineImageSequenceOutputBase.h"
 #include "MoviePipelineImageSequenceOutput_EXR.generated.h"
 
 UCLASS()

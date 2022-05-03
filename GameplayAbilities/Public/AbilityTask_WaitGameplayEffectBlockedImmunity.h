@@ -6,9 +6,9 @@
 #include "AbilityTask_WaitGameplayEffectBlockedImmunity.generated.h"
 
 class UAbilityTask_WaitGameplayEffectBlockedImmunity;
+class AActor;
 class UAbilitySystemComponent;
 class UGameplayAbility;
-class AActor;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitGameplayEffectBlockedImmunity : public UAbilityTask {

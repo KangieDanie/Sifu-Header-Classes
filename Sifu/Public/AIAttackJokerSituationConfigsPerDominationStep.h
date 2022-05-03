@@ -8,7 +8,7 @@ struct FAIAttackJokerSituationConfigsPerDominationStep {
     GENERATED_BODY()
 public:
     UPROPERTY(Config, EditAnywhere)
-    FAIAttackJokerSituationConfig m_Configs[3];
+    FAIAttackJokerSituationConfig m_Configs[4];
     
     SIFU_API FAIAttackJokerSituationConfigsPerDominationStep();
 };

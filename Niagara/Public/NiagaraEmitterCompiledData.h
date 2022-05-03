@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NiagaraVariable.h"
 #include "NiagaraDataSetCompiledData.h"
+#include "NiagaraVariable.h"
 #include "NiagaraEmitterCompiledData.generated.h"
 
 USTRUCT()

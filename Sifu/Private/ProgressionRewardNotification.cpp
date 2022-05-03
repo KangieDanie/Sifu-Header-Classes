@@ -1,7 +1,7 @@
 #include "ProgressionRewardNotification.h"
 
-class UProgressionRewardNotification;
 class UCharacterProgressionUnlockDB;
+class UProgressionRewardNotification;
 
 UProgressionRewardNotification* UProgressionRewardNotification::BPF_Init(ECharacterProgressionRewardTypes _eRewardType, FCharacterProgressionReward _reward, UCharacterProgressionUnlockDB* _unlock) {
     return NULL;

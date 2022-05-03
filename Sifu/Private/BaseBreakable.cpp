@@ -1,11 +1,11 @@
 #include "BaseBreakable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCStreamingActorComponent -FallbackName=SCStreamingActorComponent
 #include "ReplayableDestructibleComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=PhysicalActorDependencyComponent -FallbackName=PhysicalActorDependencyComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCStreamingActorComponent -FallbackName=SCStreamingActorComponent
 
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 
 void ABaseBreakable::OnWakeStateChanged(bool _bIsAwake) {
 }
@@ -43,6 +43,7 @@ void ABaseBreakable::BPF_EngageDestruction(const FVector& _vInHurtOrigin, float 
 ABaseBreakable::ABaseBreakable() {
     this->m_ProximityBoxCreatePhysics = CreateDefaultSubobject<UBoxComponent>(TEXT("ProximityBoxCreatePhysics"));
     this->m_ReplayableDestructibleComponent = CreateDefaultSubobject<UReplayableDestructibleComponent>(TEXT("ReplayableDestructibleComponent"));
+    this->m_ReplayablePhysObjectComponent = NULL;
     this->m_PhysicalActorDependencyComponent = CreateDefaultSubobject<UPhysicalActorDependencyComponent>(TEXT("PhysicalDependencyComp"));
     this->m_StreamingComponent = CreateDefaultSubobject<USCStreamingActorComponent>(TEXT("StreamingActorComponent"));
     this->m_uiActionStateDestroyableByMask = 330715627672;

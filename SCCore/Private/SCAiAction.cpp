@@ -1,9 +1,9 @@
 #include "SCAiAction.h"
 
-class UBlackboardComponent;
-class USCAIComponent;
-class UObject;
 class ASCCharacter;
+class UObject;
+class USCAIComponent;
+class UBlackboardComponent;
 
 void USCAiAction::BPF_SetBlackBoardValueAsVector(FName _key, const FVector& _vValue) const {
 }

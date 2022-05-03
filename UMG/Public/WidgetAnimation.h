@@ -5,8 +5,8 @@
 #include "WidgetAnimationDynamicEventDelegate.h"
 #include "WidgetAnimation.generated.h"
 
-class UUserWidget;
 class UMovieScene;
+class UUserWidget;
 
 UCLASS(MinimalAPI)
 class UWidgetAnimation : public UMovieSceneSequence {

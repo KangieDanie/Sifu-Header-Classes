@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCharacter -FallbackName=SCCharacter
-#include "DynamicMaterialsPerType.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AISightTargetInterface -FallbackName=AISightTargetInterface
 #include "DynamicMaterialInput.h"
+#include "DynamicMaterialsPerType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ECharacterGender -FallbackName=ECharacterGender
 #include "EFXMaterials.h"
 #include "InputContext.h"
@@ -14,16 +14,16 @@
 #include "EControllerNature.h"
 #include "BaseCharacter.generated.h"
 
+class APlayerState;
 class USCDialogComponent;
-class UCharacterTextLipSync;
 class USocialComponent;
-class UOrderComponent;
 class USkinTonesDB;
+class UMaterialInstanceDynamic;
+class UOrderComponent;
+class APlayerController;
+class UCharacterTextLipSync;
 class UPrimitiveComponent;
 class AActor;
-class UMaterialInstanceDynamic;
-class APlayerState;
-class APlayerController;
 
 UCLASS()
 class SIFU_API ABaseCharacter : public ASCCharacter, public IAISightTargetInterface {

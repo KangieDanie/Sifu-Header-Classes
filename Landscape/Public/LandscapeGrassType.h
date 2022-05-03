@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GrassVariety.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "GrassVariety.h"
 #include "LandscapeGrassType.generated.h"
 
 class UStaticMesh;

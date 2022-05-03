@@ -5,9 +5,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
 #include "LandscapeHeightfieldCollisionComponent.generated.h"
 
-class ULandscapeComponent;
 class ULandscapeLayerInfoObject;
 class UPhysicalMaterial;
+class ULandscapeComponent;
 
 UCLASS(MinimalAPI, ClassGroup=Custom, Within=LandscapeProxy, meta=(BlueprintSpawnableComponent))
 class ULandscapeHeightfieldCollisionComponent : public UPrimitiveComponent {

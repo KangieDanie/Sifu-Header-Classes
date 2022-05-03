@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCMathCondition.h"
 #include "ESCMathConditionValueType.h"
 #include "ESCMathConditionExpression.h"
+#include "SCMathCondition.h"
 #include "SCMathConditionGroup.generated.h"
 
 USTRUCT(BlueprintType)

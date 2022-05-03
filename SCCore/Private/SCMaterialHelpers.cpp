@@ -1,9 +1,9 @@
 #include "SCMaterialHelpers.h"
 
-class UCurveBase;
 class UObject;
 class UMaterialParameterCollection;
 class UMeshComponent;
+class UCurveBase;
 class ACharacter;
 
 void USCMaterialHelpers::BPF_SetMPCVectorParameterValue(const UObject* _worldContext, UMaterialParameterCollection* _collection, FName _parameter, FVector _vValue) {

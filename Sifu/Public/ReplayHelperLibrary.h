@@ -1,15 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
-#include "FilterProperties.h"
 #include "AnimSequenceDBEntry.h"
 #include "AvailabilityLayerCache.h"
-#include "AvailabilityLayerCaches.h"
+#include "FilterProperties.h"
 #include "AnimSequenceDBCache.h"
+#include "AvailabilityLayerCaches.h"
 #include "ReplayHelperLibrary.generated.h"
 
 class ABaseReplayController;
-class ASCPlayerController;
 class ABaseWeapon;
 
 UCLASS(BlueprintType)
@@ -28,9 +27,6 @@ public:
     
     UFUNCTION(BlueprintCallable)
     static bool BPF_IsAvailabilityLayerPushed(const FAvailabilityLayerCache& _inALCache);
-    
-    UFUNCTION(BlueprintPure)
-    static bool BPF_HasEntitlement(const ASCPlayerController* _controller, const FName& _entitlement);
     
     UFUNCTION(BlueprintCallable)
     static void BPF_GetAnimSequences(UPARAM(Ref) TArray<FAnimSequenceDBEntry>& _outSequencesDB, const FAnimSequenceDBCache& _sequencesCache, const ABaseWeapon* _weapon);

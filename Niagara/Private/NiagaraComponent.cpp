@@ -2,8 +2,8 @@
 
 class UTextureRenderTarget;
 class UObject;
-class UMaterialInterface;
 class AActor;
+class UMaterialInterface;
 class UNiagaraSystem;
 class UNiagaraDataInterface;
 

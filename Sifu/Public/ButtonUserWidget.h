@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "SCUserWidget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EButtonClickMethod -FallbackName=EButtonClickMethod
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EUINavigation -FallbackName=EUINavigation
-#include "ButtonAction.h"
 #include "InputAction.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EFocusCause -FallbackName=EFocusCause
+#include "ButtonAction.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateBrush -FallbackName=SlateBrush
-//CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EButtonClickMethod -FallbackName=EButtonClickMethod
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
 #include "ButtonUserWidget.generated.h"
 
@@ -92,19 +92,19 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable)
     FButtonUserWidgetSimpleDelegate m_OnHoldSuccess;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FSlateBrush m_DefaultStateBrush;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FSlateBrush m_MouseOverStateBrush;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FSlateBrush m_MouseDownStateBrush;
     
     UPROPERTY(EditAnywhere)
     bool m_bUseFocusStateBrush;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FSlateBrush m_FocusStateBrush;
     
     UPROPERTY(BlueprintReadOnly, Transient)

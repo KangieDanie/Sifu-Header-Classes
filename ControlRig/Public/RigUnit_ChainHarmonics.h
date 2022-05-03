@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RuntimeFloatCurve -FallbackName=RuntimeFloatCurve
 #include "RigUnit_HighlevelBaseMutable.h"
-#include "RigUnit_ChainHarmonics_Pendulum.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "RigUnit_ChainHarmonics_Wave.h"
-#include "RigUnit_ChainHarmonics_Reach.h"
 #include "RigUnit_ChainHarmonics_WorkData.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+#include "RigUnit_ChainHarmonics_Reach.h"
+#include "RigUnit_ChainHarmonics_Pendulum.h"
+#include "RigUnit_ChainHarmonics_Wave.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RuntimeFloatCurve -FallbackName=RuntimeFloatCurve
 #include "RigUnit_ChainHarmonics.generated.h"
 
 USTRUCT()
@@ -24,7 +24,7 @@ public:
     FRigUnit_ChainHarmonics_Reach Reach;
     
     UPROPERTY()
-    FRigUnit_ChainHarmonics_Wave Wave;
+    FRigUnit_ChainHarmonics_Wave wave;
     
     UPROPERTY()
     FRuntimeFloatCurve WaveCurve;

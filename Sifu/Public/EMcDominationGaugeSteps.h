@@ -7,6 +7,7 @@ enum class EMcDominationGaugeSteps : uint8 {
     Negative,
     Neutral,
     Positive,
+    PositivePlus,
     Count,
     None,
 };

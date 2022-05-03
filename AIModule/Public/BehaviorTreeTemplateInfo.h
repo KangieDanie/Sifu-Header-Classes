@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "BehaviorTreeTemplateInfo.generated.h"
 
-class UBTCompositeNode;
 class UBehaviorTree;
+class UBTCompositeNode;
 
 USTRUCT(BlueprintType)
 struct FBehaviorTreeTemplateInfo {

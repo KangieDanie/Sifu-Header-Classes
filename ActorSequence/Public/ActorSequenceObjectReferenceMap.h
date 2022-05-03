@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ActorSequenceObjectReferences.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+#include "ActorSequenceObjectReferences.h"
 #include "ActorSequenceObjectReferenceMap.generated.h"
 
 USTRUCT(BlueprintType)

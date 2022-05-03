@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NetOrderStructTraversal.h"
 #include "OrderDB.h"
+#include "NetOrderStructTraversal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "OrderTraversalDB.generated.h"
 

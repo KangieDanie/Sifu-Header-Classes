@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NiagaraVariableDataInterfaceBinding.h"
 #include "NiagaraSimulationStageBase.h"
 #include "ENiagaraIterationSource.h"
+#include "NiagaraVariableDataInterfaceBinding.h"
 #include "NiagaraSimulationStageGeneric.generated.h"
 
 UCLASS()

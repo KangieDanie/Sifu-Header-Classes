@@ -2,12 +2,12 @@
 #include "CoreMinimal.h"
 #include "GameplayAbilityActorInfo.generated.h"
 
-class USkeletalMeshComponent;
-class AActor;
-class APlayerController;
 class UAbilitySystemComponent;
-class UAnimInstance;
+class AActor;
 class UMovementComponent;
+class APlayerController;
+class USkeletalMeshComponent;
+class UAnimInstance;
 
 USTRUCT(BlueprintType)
 struct GAMEPLAYABILITIES_API FGameplayAbilityActorInfo {

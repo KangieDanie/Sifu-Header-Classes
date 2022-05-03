@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCDialogManagerPlugin -ObjectName=SCConversationRule -FallbackName=SCConversationRule
 #include "SCUserWidget.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCDialogManagerPlugin -ObjectName=SCConversationRule -FallbackName=SCConversationRule
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCDialogManagerPlugin -ObjectName=SCConversationInteractiveChoice -FallbackName=SCConversationInteractiveChoice
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCDialogManagerPlugin -ObjectName=SCDialogData -FallbackName=SCDialogData
 #include "SCDialogWidget.generated.h"

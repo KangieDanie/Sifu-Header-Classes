@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "BaseNotification.h"
-#include "CharacterProgressionReward.h"
 #include "ECharacterProgressionRewardTypes.h"
+#include "CharacterProgressionReward.h"
 #include "ProgressionRewardNotification.generated.h"
 
-class UProgressionRewardNotification;
 class UCharacterProgressionUnlockDB;
+class UProgressionRewardNotification;
 
 UCLASS()
 class UProgressionRewardNotification : public UBaseNotification {

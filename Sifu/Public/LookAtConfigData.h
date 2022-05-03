@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=InheritedDataAsset -FallbackName=InheritedDataAsset
 #include "ESpeedState.h"
-#include "EMoveStatus.h"
 #include "LookAtModifierParams.h"
+#include "EMoveStatus.h"
 #include "LookAtConfigData.generated.h"
 
 UCLASS()

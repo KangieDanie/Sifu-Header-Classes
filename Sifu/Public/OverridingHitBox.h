@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "HitBox.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "HittedAnimContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "OverridingHitBox.generated.h"
 
 class UAttackPropertiesResistanceDB;

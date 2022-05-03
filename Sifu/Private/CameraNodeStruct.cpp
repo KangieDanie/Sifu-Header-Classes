@@ -9,6 +9,7 @@ FCameraNodeStruct::FCameraNodeStruct() {
     this->m_bIsCollisionEnabled = false;
     this->m_fFov = 0.00f;
     this->m_bIsFovVertical = false;
+    this->m_bIsAnimDriven = false;
     this->m_bAllowAnimDrivenFov = false;
     this->m_bFovFromPreviousCameraData = false;
     this->m_bSnapRefLocation = false;

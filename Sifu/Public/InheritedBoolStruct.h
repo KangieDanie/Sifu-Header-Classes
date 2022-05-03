@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EInheritanceChoice.h"
 #include "InheritedStruct.h"
+#include "EInheritanceChoice.h"
 #include "InheritedBoolStruct.generated.h"
 
 USTRUCT()

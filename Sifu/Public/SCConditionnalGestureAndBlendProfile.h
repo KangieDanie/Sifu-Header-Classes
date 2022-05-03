@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGestureAndBlendProfile -FallbackName=SCGestureAndBlendProfile
 #include "EFidgetMirroringTypes.h"
-#include "EQuadrantTypes.h"
 #include "BaseActorConditionInstance.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGestureAndBlendProfile -FallbackName=SCGestureAndBlendProfile
+#include "EQuadrantTypes.h"
 #include "SCConditionnalGestureAndBlendProfile.generated.h"
 
 USTRUCT(BlueprintType)

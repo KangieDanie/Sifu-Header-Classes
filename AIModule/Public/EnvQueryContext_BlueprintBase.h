@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EnvQueryContext.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EnvQueryContext_BlueprintBase.generated.h"
 
-class AActor;
 class UObject;
+class AActor;
 
 UCLASS(Abstract, Blueprintable, EditInlineNew, MinimalAPI)
 class UEnvQueryContext_BlueprintBase : public UEnvQueryContext {

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGameMode -FallbackName=SCGameMode
 #include "DamageInfos.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCGameMode -FallbackName=SCGameMode
 #include "EFightingState.h"
 #include "ThePlainesGameMode.generated.h"
 

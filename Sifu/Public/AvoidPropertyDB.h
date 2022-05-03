@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EAvoidFeedbackTypes.h"
 #include "SpecialAbilityPropertyDB.h"
+#include "EAvoidFeedbackTypes.h"
 #include "AvoidPropertyDB.generated.h"
 
-class UCurveFloat;
 class UAvoidPropertyDB;
+class UCurveFloat;
 
 UCLASS()
 class SIFU_API UAvoidPropertyDB : public USpecialAbilityPropertyDB {

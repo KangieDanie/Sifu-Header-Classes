@@ -4,8 +4,8 @@
 #include "EGlobalBehaviors.h"
 #include "AIBehaviorSwitchActorComponent.generated.h"
 
-class ASpawnerGroup;
 class AActor;
+class ASpawnerGroup;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UAIBehaviorSwitchActorComponent : public UActorComponent {

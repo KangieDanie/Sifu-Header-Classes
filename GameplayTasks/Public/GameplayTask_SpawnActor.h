@@ -7,11 +7,11 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "GameplayTask_SpawnActor.generated.h"
 
-class UObject;
+class UGameplayTask_SpawnActor;
+class AActor;
 class UGameplayTaskOwnerInterface;
 class IGameplayTaskOwnerInterface;
-class AActor;
-class UGameplayTask_SpawnActor;
+class UObject;
 
 UCLASS(MinimalAPI)
 class UGameplayTask_SpawnActor : public UGameplayTask {

@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "HitBox.h"
+#include "TraversalTypeSettings.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "ETraversalEntryType.h"
 #include "TraversalInputBehavior.h"
-#include "TraversalTypeSettings.h"
+#include "HitBox.h"
+#include "ETraversalEntryType.h"
 #include "TraversalDB.generated.h"
 
 class UTraversalAnimRequest;

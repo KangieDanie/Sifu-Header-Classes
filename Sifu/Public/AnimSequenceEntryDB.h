@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "AnimSequenceDBEntry.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+#include "AnimSequenceDBEntry.h"
 #include "AnimSequenceEntryDB.generated.h"
 
 class ABaseWeapon;

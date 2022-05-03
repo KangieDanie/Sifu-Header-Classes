@@ -1,8 +1,8 @@
 #include "Viewport.h"
 #include "Templates/SubclassOf.h"
 
-class AActor;
 class UWorld;
+class AActor;
 
 AActor* UViewport::Spawn(TSubclassOf<AActor> ActorClass) {
     return NULL;

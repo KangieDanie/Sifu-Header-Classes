@@ -1,11 +1,11 @@
 #include "AbilityTask_ApplyRootMotionMoveToActorForce.h"
 #include "Net/UnrealNetwork.h"
 
-class AActor;
-class UGameplayAbility;
-class UCurveFloat;
-class UCurveVector;
 class UAbilityTask_ApplyRootMotionMoveToActorForce;
+class AActor;
+class UCurveFloat;
+class UGameplayAbility;
+class UCurveVector;
 
 void UAbilityTask_ApplyRootMotionMoveToActorForce::OnTargetActorSwapped(AActor* OriginalTarget, AActor* NewTarget) {
 }

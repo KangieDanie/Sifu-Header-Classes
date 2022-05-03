@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "InteractiveMovable.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
-#include "EPushableState.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "EPushableState.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCollisionResponsePreset -FallbackName=SCCollisionResponsePreset
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
 #include "PushableActor.generated.h"
 
-class UBoxComponent;
-class AFightingCharacter;
 class UStaticMeshComponent;
 class UPushObjMovementComponent;
+class UBoxComponent;
 class USceneComponent;
+class AFightingCharacter;
 class AActor;
 class ASCPlayerController;
 

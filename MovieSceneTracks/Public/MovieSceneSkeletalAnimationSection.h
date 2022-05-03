@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 //CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneSection -FallbackName=MovieSceneSection
 #include "MovieSceneSkeletalAnimationParams.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 #include "MovieSceneSkeletalAnimationSection.generated.h"
 
-class UAnimSequenceBase;
 class UAnimSequence;
+class UAnimSequenceBase;
 
 UCLASS(MinimalAPI)
 class UMovieSceneSkeletalAnimationSection : public UMovieSceneSection {

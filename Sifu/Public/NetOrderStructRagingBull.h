@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "HitBox.h"
 #include "NetOrderStructPlayAnim.h"
 #include "ERagingBullPhase.h"
-#include "HitBox.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "NetOrderStructRagingBull.generated.h"
 
 USTRUCT(BlueprintType)

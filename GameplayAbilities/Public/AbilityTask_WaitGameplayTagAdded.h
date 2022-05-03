@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AbilityTask_WaitGameplayTag.h"
 #include "WaitGameplayTagDelegateDelegate.h"
+#include "AbilityTask_WaitGameplayTag.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "AbilityTask_WaitGameplayTagAdded.generated.h"
 
+class AActor;
 class UAbilityTask_WaitGameplayTagAdded;
 class UGameplayAbility;
-class AActor;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitGameplayTagAdded : public UAbilityTask_WaitGameplayTag {

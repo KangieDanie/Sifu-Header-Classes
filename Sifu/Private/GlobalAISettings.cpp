@@ -1,6 +1,7 @@
 #include "GlobalAISettings.h"
 
 UGlobalAISettings::UGlobalAISettings() {
+    this->m_iSerializeVersion = 1;
     this->m_fDelayBeforeInvestigation = 1.50f;
     this->m_fOnPlayerDeathDifficultyRatio = 0.00f;
     this->m_fMaxDistToTriggerSuspicious = 5000.00f;
@@ -30,6 +31,7 @@ UGlobalAISettings::UGlobalAISettings() {
     this->m_AttackTicketJokerComboAttackCount[0] = 4;
     this->m_AttackTicketJokerComboAttackCount[1] = 4;
     this->m_AttackTicketJokerComboAttackCount[2] = 4;
+    this->m_AttackTicketJokerComboAttackCount[3] = 4;
     this->m_fSpawningTimePerFrame = 0.00f;
     this->m_ClimbNavArea.AddDefaulted(3);
     this->m_DropDownNavAreas.AddDefaulted(3);
@@ -48,9 +50,11 @@ UGlobalAISettings::UGlobalAISettings() {
     this->m_DominationGaugeSteps[0] = 0.00f;
     this->m_DominationGaugeSteps[1] = 0.00f;
     this->m_DominationGaugeSteps[2] = 0.00f;
+    this->m_DominationGaugeSteps[3] = 0.00f;
     this->m_MaxIndirectOponentPerDominationGauge[0] = 0;
     this->m_MaxIndirectOponentPerDominationGauge[1] = 0;
     this->m_MaxIndirectOponentPerDominationGauge[2] = 0;
+    this->m_MaxIndirectOponentPerDominationGauge[3] = 0;
     this->m_fTauntDifficultyBonus = 90.00f;
     this->m_iTauntTicketBehaviorMask = 1;
     this->m_ForbiddenOrdersForDirectOpponent.AddDefaulted(6);
@@ -83,5 +87,6 @@ UGlobalAISettings::UGlobalAISettings() {
     this->m_iLastManBonusPerDomination[0] = -1;
     this->m_iLastManBonusPerDomination[1] = -1;
     this->m_iLastManBonusPerDomination[2] = -1;
+    this->m_iLastManBonusPerDomination[3] = -1;
 }
 

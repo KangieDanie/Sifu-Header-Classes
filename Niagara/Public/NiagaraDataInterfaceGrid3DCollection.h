@@ -5,8 +5,8 @@
 #include "ENiagaraGpuBufferFormat.h"
 #include "NiagaraDataInterfaceGrid3DCollection.generated.h"
 
-class UVolumeTexture;
 class UNiagaraComponent;
+class UVolumeTexture;
 
 UCLASS(BlueprintType, EditInlineNew)
 class NIAGARA_API UNiagaraDataInterfaceGrid3DCollection : public UNiagaraDataInterfaceGrid3D {

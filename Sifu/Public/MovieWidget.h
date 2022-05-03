@@ -4,8 +4,8 @@
 #include "MovieWidget.generated.h"
 
 class UMediaTexture;
-class UMediaPlayer;
 class UImage;
+class UMediaPlayer;
 
 UCLASS(EditInlineNew)
 class SIFU_API UMovieWidget : public UUserWidget {

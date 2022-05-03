@@ -5,8 +5,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=SoftObjectPath -FallbackName=SoftObjectPath
 #include "StructSerializerObjectTestStruct.generated.h"
 
-class UObject;
 class UMetaData;
+class UObject;
 
 USTRUCT(BlueprintType)
 struct FStructSerializerObjectTestStruct {

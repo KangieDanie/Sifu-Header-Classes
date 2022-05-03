@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RigUnit_FitChainToCurve_DebugSettings.h"
 #include "CRFourPointBezier.h"
 #include "RigUnit_HighlevelBaseMutable.h"
-#include "EControlRigCurveAlignment.h"
-#include "RigElementKeyCollection.h"
-#include "RigUnit_FitChainToCurve_DebugSettings.h"
-#include "EControlRigAnimEasingType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "RigElementKeyCollection.h"
+#include "EControlRigCurveAlignment.h"
 #include "RigUnit_FitChainToCurve_Rotation.h"
+#include "EControlRigAnimEasingType.h"
 #include "RigUnit_FitChainToCurve_WorkData.h"
 #include "RigUnit_FitChainToCurvePerItem.generated.h"
 

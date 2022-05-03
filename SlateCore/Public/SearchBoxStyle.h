@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Margin.h"
 #include "SlateWidgetStyle.h"
 #include "SlateBrush.h"
-#include "SlateFontInfo.h"
 #include "EditableTextBoxStyle.h"
-#include "Margin.h"
+#include "SlateFontInfo.h"
 #include "SearchBoxStyle.generated.h"
 
 USTRUCT()

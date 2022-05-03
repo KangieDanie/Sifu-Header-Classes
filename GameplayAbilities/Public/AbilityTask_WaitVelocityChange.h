@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AbilityTask.h"
-#include "WaitVelocityChangeDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "WaitVelocityChangeDelegateDelegate.h"
 #include "AbilityTask_WaitVelocityChange.generated.h"
 
+class UGameplayAbility;
 class UMovementComponent;
 class UAbilityTask_WaitVelocityChange;
-class UGameplayAbility;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitVelocityChange : public UAbilityTask {

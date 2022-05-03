@@ -1,9 +1,9 @@
 #include "SCLevelSequenceHelpers.h"
 
-class AActor;
+class APlayerController;
 class ALevelSequenceActor;
 class ACharacter;
-class APlayerController;
+class AActor;
 
 void USCLevelSequenceHelpers::BPF_UnbindOnSequenceViewBlendStateChanged(const FSCLevelSequenceDynamicDelegate& _delegate) {
 }
@@ -17,7 +17,7 @@ void USCLevelSequenceHelpers::BPF_SetSequenceCharacter(const ALevelSequenceActor
 void USCLevelSequenceHelpers::BPF_RegisterSequenceActor(const ALevelSequenceActor* _sequenceActor, AActor* _actor, FName _roleName) {
 }
 
-void USCLevelSequenceHelpers::BPF_PlaySequence(const ALevelSequenceActor* _sequenceActor, ACharacter* _characterOwner) {
+void USCLevelSequenceHelpers::BPF_PlaySequence(const ALevelSequenceActor* _sequenceActor, ACharacter* _characterOwner, bool _bLoop) {
 }
 
 void USCLevelSequenceHelpers::BPF_PauseSequence(const ALevelSequenceActor* _sequenceActor) {

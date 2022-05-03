@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "DatasmithObjectTemplate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ELightUnits -FallbackName=ELightUnits
+#include "EDatasmithAreaLightActorType.h"
+#include "EDatasmithAreaLightActorShape.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-#include "DatasmithObjectTemplate.h"
-#include "EDatasmithAreaLightActorShape.h"
-#include "EDatasmithAreaLightActorType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ELightUnits -FallbackName=ELightUnits
 #include "DatasmithAreaLightActorTemplate.generated.h"
 
 class UTextureLightProfile;

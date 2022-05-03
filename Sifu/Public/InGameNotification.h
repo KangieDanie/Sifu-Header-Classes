@@ -4,12 +4,12 @@
 #include "EMenuEnum.h"
 #include "InGameNotification.generated.h"
 
+class ULevelUpNotification;
 class UBaseNotification;
+class UAttackProgressNotification;
 class UProgressionRewardNotification;
 class UProgressionDoorNotification;
 class UMessageNotification;
-class UAttackProgressNotification;
-class ULevelUpNotification;
 
 UCLASS(EditInlineNew)
 class UInGameNotification : public UHUDUserWidget {

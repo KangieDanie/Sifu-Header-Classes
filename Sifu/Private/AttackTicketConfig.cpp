@@ -6,6 +6,10 @@ FAttackTicketConfig::FAttackTicketConfig() {
     this->m_eCombatRole = ESCAICombatRoles::None;
     this->m_eCombatRolesMask = 0;
     this->m_iCount = 0;
+    this->m_bUsePerDifficultyCounters = false;
+    this->m_iCountPerDifficulty[0] = 0;
+    this->m_iCountPerDifficulty[1] = 0;
+    this->m_iCountPerDifficulty[2] = 0;
     this->m_fCooldownOffsetOnSynchedFires = 0.00f;
     this->m_fCooldownSynchFiresTolerance = 0.00f;
     this->m_fForcedCooldownOnDirectOpponentDeath = 0.00f;

@@ -13,6 +13,9 @@ void UHealthComponent::BPF_SetCanDieByDamage(bool _bValue) {
 void UHealthComponent::BPF_SetCanBeDamaged(bool _bValue) {
 }
 
+void UHealthComponent::BPF_SetCanAddHealth(bool _bValue) {
+}
+
 void UHealthComponent::BPF_ServerSetHealth_Implementation(float _fHealth) {
 }
 bool UHealthComponent::BPF_ServerSetHealth_Validate(float _fHealth) {

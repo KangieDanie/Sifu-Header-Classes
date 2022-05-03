@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "SCProfileData.h"
 #include "SCSaveObject.h"
 #include "CharacterSaveDescription.h"
-#include "SCProfileData.h"
 #include "SCSaveObjectPlayerProfile.generated.h"
 
 UCLASS()

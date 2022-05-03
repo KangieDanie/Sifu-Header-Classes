@@ -4,9 +4,9 @@
 #include "FoliageType.h"
 #include "FoliageType_InstancedStaticMesh.generated.h"
 
-class UMaterialInterface;
 class UStaticMesh;
 class UFoliageInstancedStaticMeshComponent;
+class UMaterialInterface;
 
 UCLASS(EditInlineNew, MinimalAPI)
 class UFoliageType_InstancedStaticMesh : public UFoliageType {

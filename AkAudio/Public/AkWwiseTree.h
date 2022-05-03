@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
 #include "OnItemSelectionChangedDelegate.h"
-#include "AkWwiseObjectDetails.h"
 #include "OnItemDragDetectedDelegate.h"
+#include "AkWwiseObjectDetails.h"
 #include "AkWwiseTree.generated.h"
 
 UCLASS(DefaultConfig, Config=Editor)

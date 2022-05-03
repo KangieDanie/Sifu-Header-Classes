@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HitBox.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "EFallHitOrigin.h"
+#include "HitBox.h"
 #include "FallHitRequest.generated.h"
 
 class AFightingCharacter;

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "HitRequest.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "ImpactResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "HitDescription.generated.h"
 
 USTRUCT(BlueprintType)

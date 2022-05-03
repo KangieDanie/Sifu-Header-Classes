@@ -1,9 +1,9 @@
 #include "SCAbilitySystemComponent.h"
 #include "Templates/SubclassOf.h"
 
+class UGameplayEffect;
 class USkillGameplayEffect;
 class UGameplayAbility;
-class UGameplayEffect;
 
 void USCAbilitySystemComponent::BPF_UnlockSkill(TSubclassOf<USkillGameplayEffect> _effect, bool _bForce) {
 }

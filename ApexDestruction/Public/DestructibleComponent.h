@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SkinnedMeshComponent -FallbackName=SkinnedMeshComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DestructibleInterface -FallbackName=DestructibleInterface
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=FractureEffect -FallbackName=FractureEffect
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DestructibleInterface -FallbackName=DestructibleInterface
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SkinnedMeshComponent -FallbackName=SkinnedMeshComponent
 #include "ComponentFractureSignatureDelegate.h"
 #include "DestructibleWakeStateDelegateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
@@ -54,6 +54,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void ReplaceAllMaterials(UMaterialInterface* Material);
+    
+    UFUNCTION(BlueprintPure)
+    bool IsFractured() const;
     
     UFUNCTION(BlueprintCallable)
     UDestructibleMesh* GetDestructibleMesh();

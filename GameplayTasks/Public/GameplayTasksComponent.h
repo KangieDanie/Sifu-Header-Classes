@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
+#include "EGameplayTaskRunResult.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "GameplayTaskOwnerInterface.h"
 #include "OnClaimedResourcesChangeSignatureDelegate.h"
-#include "EGameplayTaskRunResult.h"
 #include "GameplayTasksComponent.generated.h"
 
-class UGameplayTask;
 class UGameplayTaskResource;
+class UGameplayTask;
 
 UCLASS(BlueprintType, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class GAMEPLAYTASKS_API UGameplayTasksComponent : public UActorComponent, public IGameplayTaskOwnerInterface {

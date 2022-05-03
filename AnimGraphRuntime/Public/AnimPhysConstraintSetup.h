@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimPhysTwistAxis -FallbackName=AnimPhysTwistAxis
-#include "AnimPhysAngularConstraintType.h"
 #include "AnimPhysLinearConstraintType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "AnimPhysAngularConstraintType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimPhysTwistAxis -FallbackName=AnimPhysTwistAxis
 #include "AnimPhysConstraintSetup.generated.h"
 
 USTRUCT(BlueprintType)

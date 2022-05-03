@@ -1,9 +1,9 @@
 #include "UpdateCameraBlackboardBTService.h"
 
-class UPlayerFightingComponent;
+class UAttackComponent;
 class UCameraComponentThird;
 class AFightingCharacter;
-class UAttackComponent;
+class UPlayerFightingComponent;
 class UASMComponent;
 
 void UUpdateCameraBlackboardBTService::BPF_UpdateIsInFlyModeKey(FBlackboardKeySelector _IsInFlyModeKey) {

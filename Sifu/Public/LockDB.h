@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EMoveStatus.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "RelationshipActionConditionArray.h"
-#include "EMoveStatus.h"
 #include "LockDB.generated.h"
 
 class UCurveFloat;

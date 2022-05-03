@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EMagicLeapARPinType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "EMagicLeapARPinType.h"
 #include "MagicLeapARPinQuery.generated.h"
 
 USTRUCT(BlueprintType)

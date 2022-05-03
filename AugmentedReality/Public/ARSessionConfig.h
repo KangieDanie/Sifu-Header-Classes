@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "EAREnvironmentCaptureProbeType.h"
+#include "EARWorldAlignment.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "EARSessionType.h"
-#include "EARWorldAlignment.h"
-#include "EARPlaneDetectionMode.h"
-#include "EARFrameSyncMode.h"
 #include "EARLightEstimationMode.h"
-#include "ARVideoFormat.h"
-#include "EARFaceTrackingDirection.h"
-#include "EARFaceTrackingUpdate.h"
+#include "EARPlaneDetectionMode.h"
+#include "EAREnvironmentCaptureProbeType.h"
 #include "EARSessionTrackingFeature.h"
+#include "EARFrameSyncMode.h"
+#include "EARFaceTrackingDirection.h"
+#include "ARVideoFormat.h"
+#include "EARFaceTrackingUpdate.h"
 #include "EARSceneReconstruction.h"
 #include "ARSessionConfig.generated.h"
 
+class UARPlaneComponent;
 class UARCandidateImage;
 class UARCandidateObject;
-class UARPlaneComponent;
 class UARPointComponent;
 class UARFaceComponent;
 class UARImageComponent;
@@ -26,8 +26,8 @@ class UARPoseComponent;
 class UAREnvironmentProbeComponent;
 class UARObjectComponent;
 class UARMeshComponent;
-class UARGeoAnchorComponent;
 class UMaterialInterface;
+class UARGeoAnchorComponent;
 
 UCLASS(BlueprintType)
 class AUGMENTEDREALITY_API UARSessionConfig : public UDataAsset {

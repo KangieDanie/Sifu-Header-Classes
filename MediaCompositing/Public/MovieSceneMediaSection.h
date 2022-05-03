@@ -4,10 +4,10 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FrameNumber -FallbackName=FrameNumber
 #include "MovieSceneMediaSection.generated.h"
 
-class UMediaPlayer;
-class UMediaSoundComponent;
-class UMediaSource;
 class UMediaTexture;
+class UMediaSource;
+class UMediaSoundComponent;
+class UMediaPlayer;
 
 UCLASS(MinimalAPI)
 class UMovieSceneMediaSection : public UMovieSceneSection {

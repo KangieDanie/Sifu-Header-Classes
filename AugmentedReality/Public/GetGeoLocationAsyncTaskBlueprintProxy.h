@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "GetGeoLocationAsyncTaskBlueprintProxy.generated.h"
 
-class UObject;
 class UGetGeoLocationAsyncTaskBlueprintProxy;
+class UObject;
 
 UCLASS()
 class AUGMENTEDREALITY_API UGetGeoLocationAsyncTaskBlueprintProxy : public UARBaseAsyncTaskBlueprintProxy {

@@ -2,13 +2,13 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "ComboConditionValueToNodeMap.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "ComboTransitionCondition.generated.h"
 
-class AActor;
 class UComboTransitionCondition;
 class AFightingCharacter;
+class AActor;
 
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class SIFU_API UComboTransitionCondition : public UObject {

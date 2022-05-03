@@ -5,9 +5,9 @@
 #include "EndTurnCallbackProxy.generated.h"
 
 class UObject;
-class UEndTurnCallbackProxy;
 class UTurnBasedMatchInterface;
 class ITurnBasedMatchInterface;
+class UEndTurnCallbackProxy;
 class APlayerController;
 
 UCLASS(MinimalAPI)

@@ -4,8 +4,8 @@
 #include "InAppPurchaseQueryResultDelegate.h"
 #include "InAppPurchaseQueryCallbackProxy.generated.h"
 
-class UInAppPurchaseQueryCallbackProxy;
 class APlayerController;
+class UInAppPurchaseQueryCallbackProxy;
 
 UCLASS(BlueprintType, MinimalAPI)
 class UInAppPurchaseQueryCallbackProxy : public UObject {

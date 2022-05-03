@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "EGearRarity.h"
 #include "PictoData.h"
+#include "EGearRarity.h"
 #include "SequenceCheckPointData.h"
 #include "LootBoxOpeningSequenceDB.generated.h"
 

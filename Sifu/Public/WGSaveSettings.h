@@ -14,7 +14,7 @@ public:
     TSoftObjectPtr<UCharacterBuildDB> m_DefaultBuild;
     
     UPROPERTY(Config, EditDefaultsOnly)
-    FGameOptionMappingRange m_GameOptionValue[38];
+    FGameOptionMappingRange m_GameOptionValue[40];
     
     UWGSaveSettings();
 };

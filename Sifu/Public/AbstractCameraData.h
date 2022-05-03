@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CameraTransitionInfoPairStruct.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+#include "CameraTransitionInfoPairStruct.h"
 #include "CameraDataModifierWithBehavior.h"
 #include "AbstractCameraData.generated.h"
 

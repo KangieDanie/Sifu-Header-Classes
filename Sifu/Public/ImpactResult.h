@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AppliedHitImpact.h"
 #include "AppliedDeflectImpact.h"
-#include "EGuardType.h"
 #include "EHeight.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCCardinalPoints -FallbackName=ESCCardinalPoints
 #include "EImpactType.h"
+#include "AppliedHitImpact.h"
+#include "EGuardType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoneReference -FallbackName=BoneReference
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "EQuadrantTypes.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoneReference -FallbackName=BoneReference
 #include "ImpactResult.generated.h"
 
 class AActor;

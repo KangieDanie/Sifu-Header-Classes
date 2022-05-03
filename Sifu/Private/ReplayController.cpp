@@ -1,14 +1,16 @@
 #include "ReplayController.h"
 
 class UReplayKey;
-class UReplayTimelineModel;
-class UReplayMainUserWidget;
 class UCurveFloat;
+class UReplayTimelineModel;
 class UReplaySystem;
 class UObject;
 class UReplayFightingCharacterComponent;
 class AReplayingCamera;
 class UReplayCineCameraComponent;
+
+void AReplayController::OnKeysLoaded() {
+}
 
 void AReplayController::OnKeyMoved(UReplayKey* _key) {
 }
@@ -34,10 +36,6 @@ void AReplayController::BPF_StartVideoRecording(FReplayVideoRecorderCreatedDeleg
 }
 
 void AReplayController::BPF_StartSkipTimeToNextKeyFrameTask() {
-}
-
-UReplayMainUserWidget* AReplayController::BPF_SpawnMainUserWidget() {
-    return NULL;
 }
 
 void AReplayController::BPF_SetDemoPlayTimeDilation(float _fValue) {
@@ -103,7 +101,9 @@ AReplayController::AReplayController() {
     this->m_bDebugEnabled = true;
     this->m_eCurrentCameraMode = EReplayCameraMode::LockedVirtualCam;
     this->m_VirtualCameraClass = NULL;
+    this->m_LoadingScreenWidgetClass = NULL;
     this->m_MainUserWidget = NULL;
+    this->m_LoadingScreenWidgetInstance = NULL;
     this->m_VirtualCamera = NULL;
     this->m_VideoRecorderClass = NULL;
     this->m_VideoRecorder = NULL;

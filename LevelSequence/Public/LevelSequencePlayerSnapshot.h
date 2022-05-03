@@ -5,8 +5,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneSequenceID -FallbackName=MovieSceneSequenceID
 #include "LevelSequencePlayerSnapshot.generated.h"
 
-class ULevelSequence;
 class UCameraComponent;
+class ULevelSequence;
 
 USTRUCT(BlueprintType)
 struct FLevelSequencePlayerSnapshot {

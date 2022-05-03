@@ -1,7 +1,7 @@
 #include "ControlRig.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AnimationCore -ObjectName=AnimationDataSourceRegistry -FallbackName=AnimationDataSourceRegistry
 //CROSS-MODULE INCLUDE V2: -ModuleName=RigVM -ObjectName=RigVM -FallbackName=RigVM
+//CROSS-MODULE INCLUDE V2: -ModuleName=AnimationCore -ObjectName=AnimationDataSourceRegistry -FallbackName=AnimationDataSourceRegistry
 
 class UControlRig;
 

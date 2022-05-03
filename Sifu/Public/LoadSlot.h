@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=CharacterSaveDescription -FallbackName=CharacterSaveDescription
 #include "MenuSlot.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=CharacterSaveDescription -FallbackName=CharacterSaveDescription
 #include "LoadSlot.generated.h"
 
 class ULoadChoices;

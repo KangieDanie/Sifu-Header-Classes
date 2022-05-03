@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "WeaponVisuals.generated.h"
 
-class USkeletalMesh;
 class UMaterialInterface;
+class USkeletalMesh;
 
 USTRUCT(BlueprintType)
 struct FWeaponVisuals {

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CachedRigElement.h"
 #include "RigElementKey.h"
 #include "RigUnitMutable.h"
 #include "EBoneGetterSetterMode.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Quat -FallbackName=Quat
+#include "CachedRigElement.h"
 #include "RigUnit_SetRotation.generated.h"
 
 USTRUCT()

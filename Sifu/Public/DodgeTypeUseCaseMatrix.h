@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HitBox.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "EDodgeDirectionType.h"
+#include "HitBox.h"
 #include "DodgeTypeUseCaseMatrix.generated.h"
 
 class UArchetypeAsset;

@@ -1,11 +1,11 @@
 #include "GameplayTask_SpawnActor.h"
 #include "Templates/SubclassOf.h"
 
-class UObject;
-class AActor;
 class UGameplayTaskOwnerInterface;
 class IGameplayTaskOwnerInterface;
+class UObject;
 class UGameplayTask_SpawnActor;
+class AActor;
 
 UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(TScriptInterface<IGameplayTaskOwnerInterface> TaskOwner, FVector SpawnLocation, FRotator SpawnRotation, TSubclassOf<AActor> Class, bool bSpawnOnlyOnAuthority) {
     return NULL;

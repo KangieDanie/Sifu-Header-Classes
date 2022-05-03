@@ -3,8 +3,8 @@
 #include "OrderService.h"
 #include "HitBox.h"
 #include "HitDescription.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "HittedAnimContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "ParryToHitOrderService.generated.h"
 
 class AFightingCharacter;

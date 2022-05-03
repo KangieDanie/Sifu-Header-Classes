@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ECameraAnimDrivenComputationMethod.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BTService -FallbackName=BTService
 #include "EOrderType.h"
-#include "ECameraAnimDrivenComputationMethod.h"
 #include "AnimDrivenCameraOrderBTService.generated.h"
 
 class UCameraComponentThird;
-class UCameraData;
+class UAbstractCameraData;
 
 UCLASS(Abstract, Blueprintable)
 class SIFU_API UAnimDrivenCameraOrderBTService : public UBTService {
@@ -32,7 +32,7 @@ public:
     UAnimDrivenCameraOrderBTService();
 protected:
     UFUNCTION(BlueprintImplementableEvent)
-    UCameraData* GetCameraData() const;
+    UAbstractCameraData* GetCameraData() const;
     
 };
 

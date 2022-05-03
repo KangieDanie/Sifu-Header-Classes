@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ContentWidget.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=EStretch -FallbackName=EStretch
+#include "ContentWidget.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=EStretchDirection -FallbackName=EStretchDirection
 #include "ScaleBox.generated.h"
 

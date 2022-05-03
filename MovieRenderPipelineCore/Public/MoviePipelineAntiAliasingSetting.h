@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "MoviePipelineSetting.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAntiAliasingMethod -FallbackName=EAntiAliasingMethod
+#include "MoviePipelineSetting.h"
 #include "MoviePipelineAntiAliasingSetting.generated.h"
 
 UCLASS()

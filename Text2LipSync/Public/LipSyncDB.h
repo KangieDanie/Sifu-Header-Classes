@@ -5,8 +5,8 @@
 #include "ELipSyncAnimType.h"
 #include "LipSyncDB.generated.h"
 
-class UPoseAsset;
 class UCurveFloat;
+class UPoseAsset;
 
 UCLASS(BlueprintType)
 class TEXT2LIPSYNC_API ULipSyncDB : public UInheritedDataAsset {

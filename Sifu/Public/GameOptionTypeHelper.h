@@ -32,6 +32,9 @@ public:
     static float BPF_GetValueClamped(EGameOptionTypes _eInOption, float _fInValueToClamp);
     
     UFUNCTION(BlueprintPure)
+    static int32 BPF_GetValueAsInt(EGameOptionTypes _eInOption);
+    
+    UFUNCTION(BlueprintPure)
     static bool BPF_GetValueAsBool(EGameOptionTypes _eInOption);
     
     UFUNCTION(BlueprintPure)

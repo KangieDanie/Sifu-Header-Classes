@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PrimitiveComponent -FallbackName=PrimitiveComponent
 #include "LandscapeComponentMaterialOverride.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PrimitiveComponent -FallbackName=PrimitiveComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector4 -FallbackName=Vector4
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
 #include "WeightmapLayerAllocationInfo.h"
@@ -9,13 +9,13 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "LandscapeComponent.generated.h"
 
-class UMaterialInstanceConstant;
 class UMaterialInterface;
-class UMaterialInstanceDynamic;
 class UTexture2D;
+class UMaterialInstanceConstant;
+class UMaterialInstanceDynamic;
 class ULandscapeHeightfieldCollisionComponent;
-class ULandscapeLODStreamingProxy;
 class ULandscapeLayerInfoObject;
+class ULandscapeLODStreamingProxy;
 
 UCLASS(MinimalAPI, ClassGroup=Custom, Within=LandscapeProxy, meta=(BlueprintSpawnableComponent))
 class ULandscapeComponent : public UPrimitiveComponent {

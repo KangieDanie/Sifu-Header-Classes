@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimCurveParam -FallbackName=AnimCurveParam
 #include "AnimNode_SkeletalControlBase.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimCurveParam -FallbackName=AnimCurveParam
 #include "ReferenceBoneFrame.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AnimationCore -ObjectName=Axis -FallbackName=Axis
 #include "AnimNode_TwistCorrectiveNode.generated.h"

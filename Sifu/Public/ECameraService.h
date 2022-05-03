@@ -16,11 +16,9 @@ enum class ECameraService {
     CameraCollisionSideService,
     MirrorCursorMeleeService,
     SleepingService,
-    FirstLockService,
-    LockOnTarget = 0xC,
+    LockOnTarget,
     LockFollowing,
     LockFraimingContainer,
-    LastLockService = 0xE,
     Count,
     Invalid,
 };

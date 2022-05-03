@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NetOrderStructAttackEnv.h"
 #include "HitDescription.h"
+#include "NetOrderStructAttackEnv.h"
 #include "NetOrderStructParried.generated.h"
 
 USTRUCT(BlueprintType)

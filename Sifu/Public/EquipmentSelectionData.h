@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 #include "EquipmentSelectionData.generated.h"
 
-class USkeletalMesh;
 class UBaseWeaponData;
+class USkeletalMesh;
 
 UCLASS()
 class SIFU_API UEquipmentSelectionData : public UDataAsset {

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "OrderDB.h"
 #include "AvailabilityLayerContainer.h"
+#include "OrderDB.h"
 #include "OrderDeflectedDB.generated.h"
 
 class UOrderServiceActivationConditions;

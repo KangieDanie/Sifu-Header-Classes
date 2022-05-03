@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "VectorParameterNameAndCurves.h"
+#include "ColorParameterNameAndCurves.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneSection -FallbackName=MovieSceneSection
 #include "BoolParameterNameAndCurve.h"
 #include "ScalarParameterNameAndCurve.h"
 #include "Vector2DParameterNameAndCurves.h"
-#include "VectorParameterNameAndCurves.h"
-#include "ColorParameterNameAndCurves.h"
 #include "TransformParameterNameAndCurves.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FrameNumber -FallbackName=FrameNumber
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector

@@ -3,9 +3,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraShakeBase -FallbackName=CameraShakeBase
 #include "SequenceCameraShake.generated.h"
 
-class USequenceCameraShakeCameraStandIn;
 class UCameraAnimationSequence;
 class USequenceCameraShakeSequencePlayer;
+class USequenceCameraShakeCameraStandIn;
 
 UCLASS(EditInlineNew)
 class TEMPLATESEQUENCE_API USequenceCameraShake : public UCameraShakeBase {

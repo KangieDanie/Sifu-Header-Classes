@@ -3,10 +3,10 @@
 #include "AkAssetDataSwitchContainer.h"
 #include "AkAudioEventData.generated.h"
 
-class UAkGroupValue;
-class UAkTrigger;
 class UAkAudioEvent;
 class UAkAuxBus;
+class UAkGroupValue;
+class UAkTrigger;
 
 UCLASS(BlueprintType)
 class AKAUDIO_API UAkAudioEventData : public UAkAssetDataSwitchContainer {

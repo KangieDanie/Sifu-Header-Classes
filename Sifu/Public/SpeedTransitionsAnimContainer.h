@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CardinalAnimContainer.h"
 #include "CardinalChangementAnimContainer.h"
+#include "CardinalAnimContainer.h"
 #include "OrientedRotationAnimContainer.h"
 #include "SpeedTransitionsAnimContainer.generated.h"
 

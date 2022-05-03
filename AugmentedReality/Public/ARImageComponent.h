@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ARImageUpdatePayload.h"
 #include "ARComponent.h"
+#include "ARImageUpdatePayload.h"
 #include "EImageComponentDebugMode.h"
 #include "ARImageComponent.generated.h"
 

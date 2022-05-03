@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "RailForMovable.generated.h"
 
-class UBoxComponent;
 class USplineComponent;
+class UBoxComponent;
 
 UCLASS()
 class SIFU_API ARailForMovable : public AActor {

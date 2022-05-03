@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AttributeBasedFloat.h"
-#include "EGameplayEffectMagnitudeCalculation.h"
-#include "ScalableFloat.h"
-#include "CustomCalculationBasedFloat.h"
 #include "SetByCallerFloat.h"
+#include "EGameplayEffectMagnitudeCalculation.h"
+#include "CustomCalculationBasedFloat.h"
+#include "ScalableFloat.h"
+#include "AttributeBasedFloat.h"
 #include "GameplayEffectModifierMagnitude.generated.h"
 
 USTRUCT(BlueprintType)

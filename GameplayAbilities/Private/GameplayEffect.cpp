@@ -4,7 +4,6 @@ UGameplayEffect::UGameplayEffect() {
     this->DurationPolicy = EGameplayEffectDurationType::Instant;
     this->bExecutePeriodicEffectOnApplication = true;
     this->PeriodicInhibitionPolicy = EGameplayEffectPeriodInhibitionRemovedPolicy::NeverReset;
-    this->bApplyOverTime = false;
     this->bDenyOverflowApplication = false;
     this->bClearStackOnOverflow = false;
     this->bRequireModifierSuccessToTriggerCues = true;

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ERigBoneType.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "RigElement.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
+#include "ERigBoneType.h"
 #include "RigBone.generated.h"
 
 USTRUCT(BlueprintType)

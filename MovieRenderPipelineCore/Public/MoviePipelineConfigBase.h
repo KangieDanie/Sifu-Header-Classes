@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "MoviePipelineConfigBase.generated.h"
 
-class UMoviePipelineSetting;
 class UMoviePipelineConfigBase;
+class UMoviePipelineSetting;
 
 UCLASS(Abstract, BlueprintType)
 class MOVIERENDERPIPELINECORE_API UMoviePipelineConfigBase : public UObject {

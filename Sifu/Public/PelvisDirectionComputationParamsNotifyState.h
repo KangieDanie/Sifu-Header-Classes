@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PelvisDirectionComputationParams.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyState -FallbackName=AnimNotifyState
+#include "PelvisDirectionComputationParams.h"
 #include "PelvisDirectionComputationParamsNotifyState.generated.h"
 
 UCLASS(CollapseCategories, EditInlineNew)

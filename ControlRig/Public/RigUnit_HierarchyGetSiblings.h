@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "RigUnit_HierarchyBase.h"
-#include "CachedRigElement.h"
 #include "RigElementKey.h"
+#include "CachedRigElement.h"
 #include "RigElementKeyCollection.h"
 #include "RigUnit_HierarchyGetSiblings.generated.h"
 

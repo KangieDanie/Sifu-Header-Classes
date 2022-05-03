@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "OrderDB.h"
-#include "FallOnSlopeConfiguration.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CollisionProfileName -FallbackName=CollisionProfileName
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "FallOnSlopeConfiguration.h"
 #include "ERagdollMeshOrientation.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "OrderFallOnSlopeDB.generated.h"
 
 class UAkRtpc;
-class UPhysicsAsset;
 class UAnimSequence;
-class UObject;
+class UPhysicsAsset;
 class UPhysicalMaterial;
+class UObject;
 
 UCLASS()
 class SIFU_API UOrderFallOnSlopeDB : public UOrderDB {

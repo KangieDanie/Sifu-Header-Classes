@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OrderService.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EMovementMode -FallbackName=EMovementMode
+#include "OrderService.h"
 #include "MovementModeOrderService.generated.h"
 
 UCLASS(EditInlineNew)

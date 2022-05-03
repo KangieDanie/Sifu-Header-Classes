@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "RigUnitMutable.h"
 #include "CachedRigElement.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "RigUnitMutable.h"
 #include "EBoneGetterSetterMode.h"
 #include "RigUnit_SetBoneTranslation.generated.h"
 

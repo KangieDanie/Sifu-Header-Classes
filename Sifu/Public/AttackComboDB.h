@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AlternativeAttackComboDB.h"
 #include "MainAttackComboDB.h"
+#include "AlternativeAttackComboDB.h"
 #include "AttackComboDB.generated.h"
 
 USTRUCT(BlueprintType)

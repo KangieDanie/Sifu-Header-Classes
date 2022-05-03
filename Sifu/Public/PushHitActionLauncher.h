@@ -4,8 +4,8 @@
 #include "HitActionLauncher.h"
 #include "PushHitActionLauncher.generated.h"
 
-class UPushConfiguration;
 class UNavigationQueryFilter;
+class UPushConfiguration;
 
 UCLASS(Abstract, EditInlineNew)
 class SIFU_API UPushHitActionLauncher : public UHitActionLauncher {

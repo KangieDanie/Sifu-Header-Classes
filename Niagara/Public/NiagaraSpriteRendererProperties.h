@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "NiagaraRendererProperties.h"
 #include "ENiagaraSpriteFacingMode.h"
 #include "ENiagaraSpriteAlignment.h"
 #include "ENiagaraRendererSourceDataMode.h"
-#include "NiagaraRendererProperties.h"
 #include "NiagaraUserParameterBinding.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 #include "ENiagaraSortMode.h"

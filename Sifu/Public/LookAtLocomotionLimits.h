@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "LookAtLimits.h"
 #include "ESpeedState.h"
 #include "EMoveStatus.h"
+#include "LookAtLimits.h"
 #include "LookAtLocomotionLimits.generated.h"
 
 USTRUCT(BlueprintType)

@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
-#include "EDynamicTextureMask_DrawType.h"
-#include "EDynamicTextureMask_DrawShape.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "EDynamicTextureMask_PositionBakingType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ETextureRenderTargetFormat -FallbackName=ETextureRenderTargetFormat
+#include "EDynamicTextureMask_DrawShape.h"
+#include "EDynamicTextureMask_PositionBakingType.h"
+#include "EDynamicTextureMask_DrawType.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 #include "SCDynamicTextureMask.generated.h"
 
-class ASCPositionBakeSceneCapture;
-class UTextureRenderTarget2D;
 class UTexture;
+class ASCPositionBakeSceneCapture;
 class UDynamicTextureMaskDB;
+class UTextureRenderTarget2D;
 class UMeshComponent;
 class UMaterialInstanceDynamic;
 

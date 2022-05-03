@@ -4,8 +4,8 @@
 #include "WaitCancelDelegateDelegate.h"
 #include "AbilityTask_WaitCancel.generated.h"
 
-class UGameplayAbility;
 class UAbilityTask_WaitCancel;
+class UGameplayAbility;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitCancel : public UAbilityTask {

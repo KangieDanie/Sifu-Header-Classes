@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnControllerCaptureBeginEventDelegate.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
-#include "OnMouseCaptureEndEventDelegate.h"
-#include "SynthKnobStyle.h"
-#include "OnMouseCaptureBeginEventDelegate.h"
-#include "OnControllerCaptureEndEventDelegate.h"
 #include "OnFloatValueChangedEventDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
+#include "SynthKnobStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
+#include "OnControllerCaptureBeginEventDelegate.h"
+#include "OnMouseCaptureBeginEventDelegate.h"
+#include "OnMouseCaptureEndEventDelegate.h"
+#include "OnControllerCaptureEndEventDelegate.h"
 #include "SynthKnob.generated.h"
 
 UCLASS()

@@ -27,6 +27,10 @@ float UGameOptionTypeHelper::BPF_GetValueClamped(EGameOptionTypes _eInOption, fl
     return 0.0f;
 }
 
+int32 UGameOptionTypeHelper::BPF_GetValueAsInt(EGameOptionTypes _eInOption) {
+    return 0;
+}
+
 bool UGameOptionTypeHelper::BPF_GetValueAsBool(EGameOptionTypes _eInOption) {
     return false;
 }

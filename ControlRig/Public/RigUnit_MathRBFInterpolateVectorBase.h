@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RigUnit_MathRBFInterpolateBase.h"
-#include "ERBFVectorDistanceType.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "ERBFKernelType.h"
+#include "RigUnit_MathRBFInterpolateBase.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 #include "RigUnit_MathRBFInterpolateVectorWorkData.h"
+#include "ERBFVectorDistanceType.h"
 #include "RigUnit_MathRBFInterpolateVectorBase.generated.h"
 
 USTRUCT()

@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ECharacterGender -FallbackName=ECharacterGender
+#include "EGameDifficulty.h"
 #include "SaveAdditionalInfos.generated.h"
 
 USTRUCT(BlueprintType)
@@ -15,6 +16,9 @@ public:
     
     UPROPERTY(BlueprintReadOnly, SaveGame)
     FName m_MapTag;
+    
+    UPROPERTY(BlueprintReadOnly, SaveGame)
+    EGameDifficulty m_eDifficulty;
     
     SIFU_API FSaveAdditionalInfos();
 };

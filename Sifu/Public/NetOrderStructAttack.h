@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "NetOrderStruct.h"
-#include "AttackDataRow.h"
 #include "AttackRequest.h"
+#include "AttackDataRow.h"
 #include "NetOrderStructAttack.generated.h"
 
 USTRUCT(BlueprintType)

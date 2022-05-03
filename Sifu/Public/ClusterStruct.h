@@ -3,8 +3,8 @@
 #include "Templates/SubclassOf.h"
 #include "ClusterStruct.generated.h"
 
-class UStaticMeshComponent;
 class AThrowableActor;
+class UStaticMeshComponent;
 
 USTRUCT(BlueprintType)
 struct FClusterStruct {

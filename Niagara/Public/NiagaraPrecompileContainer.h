@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "NiagaraPrecompileContainer.generated.h"
 
-class UNiagaraScript;
 class UNiagaraSystem;
+class UNiagaraScript;
 
 UCLASS()
 class NIAGARA_API UNiagaraPrecompileContainer : public UObject {

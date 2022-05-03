@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-#include "ImpactResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "HittedAnimContainer.h"
 #include "HitAnimsPerDataTableContainer.h"
 #include "HitRequest.h"
-#include "HittedAnimContainer.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "ImpactResult.h"
 #include "HitAnimRequest.generated.h"
 
-class AFightingCharacter;
 class UAnimSequence;
+class AFightingCharacter;
 
 UCLASS(Blueprintable)
 class SIFU_API UHitAnimRequest : public UObject {

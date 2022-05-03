@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CombinationInput.h"
 #include "GenericInputData.h"
+#include "CombinationInput.h"
 #include "CombinationInputData.generated.h"
 
 UCLASS()

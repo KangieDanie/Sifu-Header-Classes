@@ -3,8 +3,8 @@
 #include "AkCommonInitializationSettingsWithSampleRate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "AkPlatformInitialisationSettingsBase.h"
-#include "AkCommunicationSettingsWithSystemInitialization.h"
 #include "AkWinGDKAdvancedInitializationSettings.h"
+#include "AkCommunicationSettingsWithSystemInitialization.h"
 #include "AkWinGDKInitializationSettings.generated.h"
 
 UCLASS(DefaultConfig, Config=Game)

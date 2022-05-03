@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "BaseActorTargetConditionInstance.h"
 #include "BaseActorTargetCondition.h"
 #include "EConditionGroupOperators.h"
+#include "BaseActorTargetConditionInstance.h"
 #include "GroupTargetCondition.generated.h"
 
 UCLASS()

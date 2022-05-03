@@ -1,15 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EPassiveTicketBehaviorAginstJoker.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Int32Range -FallbackName=Int32Range
 #include "ESCAICombatRoles.h"
 #include "FAttackTicketBehavior.h"
-#include "SCAITicketEnum.h"
+#include "AITicketCooldowns.h"
 #include "TimerAndOffset.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Int32Range -FallbackName=Int32Range
+#include "SCAITicketEnum.h"
+#include "EPassiveTicketBehaviorAginstJoker.h"
 #include "AttackTicketConfig.generated.h"
 
 USTRUCT(BlueprintType)
-struct FAttackTicketConfig {
+struct SIFU_API FAttackTicketConfig {
     GENERATED_BODY()
 public:
     UPROPERTY(Config, EditAnywhere)
@@ -28,7 +29,16 @@ public:
     int32 m_iCount;
     
     UPROPERTY(Config, EditAnywhere)
-    FTimerAndOffset m_Cooldowns[3];
+    FTimerAndOffset m_Cooldowns[4];
+    
+    UPROPERTY(Config, EditAnywhere)
+    bool m_bUsePerDifficultyCounters;
+    
+    UPROPERTY(Config, EditAnywhere)
+    int32 m_iCountPerDifficulty[3];
+    
+    UPROPERTY(Config, EditAnywhere)
+    FAITicketCooldowns m_CooldownsPerDifficulty[3];
     
     UPROPERTY(Config, EditAnywhere)
     float m_fCooldownOffsetOnSynchedFires;
@@ -66,6 +76,6 @@ public:
     UPROPERTY(Config, EditAnywhere)
     FSCAITicketEnum m_FallbackTicket;
     
-    SIFU_API FAttackTicketConfig();
+    FAttackTicketConfig();
 };
 

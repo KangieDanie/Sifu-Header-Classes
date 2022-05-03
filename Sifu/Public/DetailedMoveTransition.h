@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ETransitionRotationDirection.h"
-#include "ETransitionRotation.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
 #include "ESpeedState.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ESCCardinalPoints -FallbackName=ESCCardinalPoints
-//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
+#include "ETransitionRotationDirection.h"
+#include "ETransitionRotation.h"
 #include "EMoveTransitionType.h"
 #include "DetailedMoveTransition.generated.h"
 

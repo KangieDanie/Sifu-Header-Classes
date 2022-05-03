@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AbilityTask.h"
-#include "EWaitAttributeChangeComparison.h"
 #include "WaitAttributeChangeRatioThresholdDelegateDelegate.h"
 #include "GameplayAttribute.h"
+#include "EWaitAttributeChangeComparison.h"
 #include "AbilityTask_WaitAttributeChangeRatioThreshold.generated.h"
 
-class UAbilitySystemComponent;
-class UAbilityTask_WaitAttributeChangeRatioThreshold;
-class UGameplayAbility;
 class AActor;
+class UAbilityTask_WaitAttributeChangeRatioThreshold;
+class UAbilitySystemComponent;
+class UGameplayAbility;
 
 UCLASS()
 class GAMEPLAYABILITIES_API UAbilityTask_WaitAttributeChangeRatioThreshold : public UAbilityTask {

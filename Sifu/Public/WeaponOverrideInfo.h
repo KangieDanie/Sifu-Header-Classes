@@ -2,15 +2,15 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 #include "BaseWeaponOverrideInfo.h"
-#include "ESCAICombatRoles.h"
 #include "ComboOverride.h"
+#include "ESCAICombatRoles.h"
 #include "EAIWuguanTicketEvaluation.h"
 #include "LocomotionPaceSelector.h"
 #include "WeaponOverrideInfo.generated.h"
 
+class UBaseMovementDB;
 class UAIContextualDefense;
 class UAvoidAbility;
-class UBaseMovementDB;
 
 USTRUCT(BlueprintType)
 struct FWeaponOverrideInfo : public FBaseWeaponOverrideInfo {

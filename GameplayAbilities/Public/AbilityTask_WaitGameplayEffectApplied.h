@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "AbilityTask.h"
-#include "GameplayEffectSpec.h"
 #include "ActiveGameplayEffectHandle.h"
+#include "GameplayEffectSpec.h"
 #include "AbilityTask_WaitGameplayEffectApplied.generated.h"
 
 class UAbilitySystemComponent;

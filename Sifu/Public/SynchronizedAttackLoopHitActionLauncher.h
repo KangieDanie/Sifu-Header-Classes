@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HitDescription.h"
-#include "SynchronizedAttackHitActionLauncher.h"
-#include "EditableOrderType.h"
 #include "OverridingHitBox.h"
-#include "WeaponAnimInfo.h"
+#include "SynchronizedAttackHitActionLauncher.h"
 #include "AnimSyncContainer.h"
+#include "EditableOrderType.h"
+#include "HitDescription.h"
+#include "WeaponAnimInfo.h"
 #include "SynchronizedAttackLoopHitActionLauncher.generated.h"
 
 class AFightingCharacter;

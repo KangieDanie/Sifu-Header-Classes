@@ -3,13 +3,13 @@
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 #include "EMagicLeapARPinType.h"
-#include "MagicLeapARPinState.h"
 #include "EMagicLeapAutoPinType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+#include "MagicLeapARPinState.h"
 #include "MagicLeapARPinComponent.generated.h"
 
-class UMagicLeapARPinSaveGame;
 class USphereComponent;
+class UMagicLeapARPinSaveGame;
 class AActor;
 
 UCLASS(BlueprintType, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

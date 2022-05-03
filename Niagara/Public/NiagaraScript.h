@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NiagaraBoundParameter.h"
-#include "ENiagaraScriptUsage.h"
+#include "NiagaraScriptExecutionParameterStore.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=NiagaraShader -ObjectName=NiagaraScriptBase -FallbackName=NiagaraScriptBase
+#include "NiagaraVMExecutableDataId.h"
+#include "ENiagaraScriptUsage.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "NiagaraParameterStore.h"
-#include "NiagaraScriptExecutionParameterStore.h"
-#include "NiagaraVMExecutableDataId.h"
+#include "NiagaraBoundParameter.h"
 #include "NiagaraVMExecutableData.h"
 #include "NiagaraScriptDataInterfaceInfo.h"
 #include "NiagaraScript.generated.h"

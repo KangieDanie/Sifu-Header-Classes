@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NiagaraParameterStore.h"
 #include "NiagaraScriptExecutionPaddingInfo.h"
+#include "NiagaraParameterStore.h"
 #include "NiagaraScriptExecutionParameterStore.generated.h"
 
 USTRUCT(BlueprintType)

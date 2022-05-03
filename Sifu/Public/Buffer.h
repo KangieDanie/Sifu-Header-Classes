@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "Buffer.generated.h"
 
-class UObject;
 class AActor;
+class UObject;
 
 USTRUCT(BlueprintType)
 struct SIFU_API FBuffer {

@@ -1,9 +1,9 @@
 #include "AkGameplayStatics.h"
 
-class UObject;
 class AActor;
 class UAkAuxBus;
 class UAkAudioBank;
+class UObject;
 class UAkAudioEvent;
 class UAkComponent;
 class UAkSwitchValue;

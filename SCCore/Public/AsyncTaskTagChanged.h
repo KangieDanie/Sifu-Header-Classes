@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnTagChangedDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintAsyncActionBase -FallbackName=BlueprintAsyncActionBase
-#include "OnTagUpdateDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "OnTagChangedDelegate.h"
+#include "OnTagUpdateDelegate.h"
 #include "AsyncTaskTagChanged.generated.h"
 
 class UAsyncTaskTagChanged;

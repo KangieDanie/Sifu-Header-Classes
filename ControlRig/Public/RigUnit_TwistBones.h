@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RigUnit_TwistBones_WorkData.h"
 #include "RigUnit_HighlevelBaseMutable.h"
-#include "EControlRigAnimEasingType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
+#include "EControlRigAnimEasingType.h"
+#include "RigUnit_TwistBones_WorkData.h"
 #include "RigUnit_TwistBones.generated.h"
 
 USTRUCT()

@@ -1,11 +1,11 @@
 #include "SCUserWidget.h"
 
+class USocialManager;
 class UStatsComponent;
 class UWidgetData;
 class UThePlainesGameInstance;
 class UWidgetAnimation;
 class UPanelWidget;
-class USocialManager;
 class USocialComponent;
 class ASCPlayerController;
 class UMenuWidget;

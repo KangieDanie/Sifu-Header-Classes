@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EPostProcessAnimDebugRole.h"
 #include "PostProcessAnimInstance.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-#include "EPostProcessAnimDebugRole.h"
 #include "EditorPreviewPostProcessAnimInstance.generated.h"
 
 class UAnimSequence;

@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EDragPivot.h"
+#include "OnDragDropMulticastDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "EDragPivot.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=PointerEvent -FallbackName=PointerEvent
-#include "OnDragDropMulticastDelegate.h"
 #include "DragDropOperation.generated.h"
 
 class UWidget;

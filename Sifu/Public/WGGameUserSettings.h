@@ -4,7 +4,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=DLSSBlueprint -ObjectName=UDLSSMode -FallbackName=UDLSSMode
 #include "WGGameUserSettings.generated.h"
 
-UCLASS()
+UCLASS(Config=User)
 class SIFU_API UWGGameUserSettings : public UGameUserSettings {
     GENERATED_BODY()
 public:

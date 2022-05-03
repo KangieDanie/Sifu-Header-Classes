@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "HitActionLauncher.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "HitActionLauncher.h"
 #include "AbilityHitActionLauncher.generated.h"
 
 UCLASS(EditInlineNew)

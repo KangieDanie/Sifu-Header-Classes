@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "InteractionObjectComponent.h"
-#include "InputAction.h"
 #include "InteractionObjectComponent.h"
+#include "InputAction.h"
 #include "MovableInteractionComponent.generated.h"
 
 UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

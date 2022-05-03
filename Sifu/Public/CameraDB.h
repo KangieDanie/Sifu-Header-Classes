@@ -2,20 +2,20 @@
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CollisionResponseContainer -FallbackName=CollisionResponseContainer
 #include "CameraSafePointPlacement.h"
-#include "CameraLookAtServiceBehaviorConfig.h"
 #include "CameraLookAtServiceBehaviorTime.h"
+#include "CameraLookAtServiceBehaviorConfig.h"
 #include "CameraSafePointConditionalPlacement.h"
 #include "CameraRepulsionConfig.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ECollisionChannel -FallbackName=ECollisionChannel
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCCollisionResponseBuilder -FallbackName=SCCollisionResponseBuilder
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CollisionResponseContainer -FallbackName=CollisionResponseContainer
 #include "CameraDB.generated.h"
 
-class UBehaviorTree;
-class UAbstractCameraData;
-class UCurveFloat;
 class UCameraTransitionInfo;
+class UCurveFloat;
+class UAbstractCameraData;
+class UBehaviorTree;
 class UAnimNotify;
 
 UCLASS(BlueprintType)
@@ -264,6 +264,9 @@ public:
     
     UPROPERTY(EditAnywhere)
     float m_fMeleeAngleToUseCamForwardDirToTargetToChangeMirror;
+    
+    UPROPERTY(EditAnywhere)
+    UCurveFloat* m_AnimDrivenRotationWeightByMixerWeight;
     
     UPROPERTY(EditAnywhere)
     UCurveFloat* m_AnimDrivenWeightForCollisionDistance;

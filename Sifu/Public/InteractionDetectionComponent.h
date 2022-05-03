@@ -1,12 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Templates/SubclassOf.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
-#include "InteractionHintInfo.h"
 #include "BaseActorTargetConditionInstance.h"
+#include "InteractionHintInfo.h"
 #include "InteractionDetectionComponent.generated.h"
 
-class UInteractionObjectComponent;
 class AActor;
+class UInteractionObjectComponent;
 
 UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class SIFU_API UInteractionDetectionComponent : public UActorComponent {
@@ -62,6 +63,12 @@ public:
     
     UFUNCTION(BlueprintPure)
     UInteractionObjectComponent* BPF_GetCurrentInteractiveComponent() const;
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_DisableInteractionWithObjects(TSubclassOf<AActor> _actorToDisable);
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_AllowInteractionWithObjects(TSubclassOf<AActor> _actorToEnable);
     
 };
 

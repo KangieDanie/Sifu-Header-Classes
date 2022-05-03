@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "OrderDB.h"
-#include "FidgetDBDescription.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCUserDefinedEnumHandler -FallbackName=SCUserDefinedEnumHandler
+#include "FidgetDBDescription.h"
 #include "EditableOrderType.h"
 #include "OrderFidgetDB.generated.h"
 

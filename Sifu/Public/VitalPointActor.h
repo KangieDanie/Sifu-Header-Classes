@@ -4,9 +4,9 @@
 #include "VitalPointDataDefinition.h"
 #include "VitalPointActor.generated.h"
 
+class AActor;
 class AVitalPointActor;
 class AAimingBillboardActor;
-class AActor;
 
 UCLASS()
 class SIFU_API AVitalPointActor : public ASCActor {

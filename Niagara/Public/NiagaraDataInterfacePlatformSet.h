@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NiagaraDataInterface.h"
 #include "NiagaraPlatformSet.h"
+#include "NiagaraDataInterface.h"
 #include "NiagaraDataInterfacePlatformSet.generated.h"
 
 UCLASS(EditInlineNew)

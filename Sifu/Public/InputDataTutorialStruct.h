@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "InputAction.h"
-#include "EInputDataTutorialDisplayConstraints.h"
 #include "EControllerIconAxisTypes.h"
+#include "EInputDataTutorialDisplayConstraints.h"
 #include "InputDataTutorialStruct.generated.h"
 
 class UGenericInputData;

@@ -3,14 +3,14 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=EMouseCursor -FallbackName=EMouseCursor
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-#include "EUIInputModes.h"
 #include "ECycleDirection.h"
+#include "EUIInputModes.h"
 #include "UIHelper.generated.h"
 
 class UTextBlock;
+class ULocalPlayer;
 class UWidget;
 class UUserWidget;
-class ULocalPlayer;
 class UPanelWidget;
 class UButtonUserWidget;
 class UWidgetAnimation;

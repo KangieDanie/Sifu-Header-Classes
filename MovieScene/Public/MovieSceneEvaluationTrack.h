@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
+#include "MovieSceneTrackImplementationPtr.h"
 #include "EEvaluationMethod.h"
 #include "MovieSceneEvalTemplatePtr.h"
-#include "MovieSceneTrackImplementationPtr.h"
 #include "MovieSceneEvaluationTrack.generated.h"
 
 class UMovieSceneTrack;

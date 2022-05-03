@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EReplayKeyTypeFlag.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
 #include "OnTimeDilationChangedSignatureDelegate.h"
-#include "EReplayKeyTypeFlag.h"
 #include "ReplayTimelineController.generated.h"
 
 class UReplayKey;
@@ -30,6 +30,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void BPF_ResetTransitionContext();
+    
+    UFUNCTION(BlueprintCallable)
+    void BPF_ResetModel();
     
     UFUNCTION(BlueprintPure)
     UReplayKey* BPF_GetCurrentKeyOfType(EReplayKeyTypeFlag _eTypeFlag) const;

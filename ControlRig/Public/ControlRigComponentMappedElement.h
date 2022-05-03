@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ComponentReference -FallbackName=ComponentReference
+#include "ERigElementType.h"
 #include "EControlRigComponentSpace.h"
 #include "EControlRigComponentMapDirection.h"
-#include "ERigElementType.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 #include "ControlRigComponentMappedElement.generated.h"
 

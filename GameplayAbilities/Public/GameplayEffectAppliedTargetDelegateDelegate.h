@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "GameplayEffectSpecHandle.h"
 #include "ActiveGameplayEffectHandle.h"
+#include "GameplayEffectSpecHandle.h"
 #include "GameplayEffectAppliedTargetDelegateDelegate.generated.h"
 
 class AActor;

@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
-#include "PropertyReaction.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=InheritedDataAsset -FallbackName=InheritedDataAsset
-#include "PushPropertyReaction.h"
-#include "AttackPropertyResistanceMatrixByFightingState.h"
-#include "StructureBrokenReaction.h"
 #include "SuperDizzyReaction.h"
+#include "AttackPropertyResistanceMatrixByFightingState.h"
+#include "PropertyReaction.h"
 #include "DizzyReaction.h"
+#include "StructureBrokenReaction.h"
+#include "PushPropertyReaction.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
 #include "AttackPropertiesResistanceDB.generated.h"
 
 UCLASS(BlueprintType)

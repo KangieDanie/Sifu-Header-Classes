@@ -9,6 +9,9 @@ void UReplayTimelineController::BPF_SaveKeys() {
 void UReplayTimelineController::BPF_ResetTransitionContext() {
 }
 
+void UReplayTimelineController::BPF_ResetModel() {
+}
+
 UReplayKey* UReplayTimelineController::BPF_GetCurrentKeyOfType(EReplayKeyTypeFlag _eTypeFlag) const {
     return NULL;
 }

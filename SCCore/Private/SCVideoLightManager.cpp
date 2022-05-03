@@ -2,9 +2,9 @@
 
 class UMediaTexture;
 class UMediaSource;
+class UCurveLinearColor;
 class UMaterialInterface;
 class ULocalLightComponent;
-class UCurveLinearColor;
 
 void USCVideoLightManager::PreCache(UMediaTexture* MediaTex, UMediaSource* MediaSource, UMaterialInterface* SamplerMaterialBase) {
 }

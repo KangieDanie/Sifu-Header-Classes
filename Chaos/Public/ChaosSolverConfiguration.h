@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SolverCollisionFilterSettings.h"
 #include "EClusterUnionMethod.h"
+#include "SolverCollisionFilterSettings.h"
 #include "SolverBreakingFilterSettings.h"
 #include "SolverTrailingFilterSettings.h"
 #include "ChaosSolverConfiguration.generated.h"

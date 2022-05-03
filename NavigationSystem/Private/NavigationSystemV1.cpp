@@ -1,12 +1,12 @@
 #include "NavigationSystemV1.h"
 #include "Templates/SubclassOf.h"
 
+class AActor;
 class UObject;
 class AController;
-class AActor;
-class ANavMeshBoundsVolume;
 class ANavigationData;
 class UNavigationQueryFilter;
+class ANavMeshBoundsVolume;
 class UNavArea;
 class UNavigationSystemV1;
 class UNavigationPath;

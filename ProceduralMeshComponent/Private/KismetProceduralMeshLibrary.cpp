@@ -1,7 +1,7 @@
 #include "KismetProceduralMeshLibrary.h"
 
-class UProceduralMeshComponent;
 class UMaterialInterface;
+class UProceduralMeshComponent;
 class UStaticMesh;
 class UStaticMeshComponent;
 

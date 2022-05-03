@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "ReplayKeyWidgetVisualKey.h"
 #include "ReplayKeyWidgetVisualData.h"
+#include "ReplayKeyWidgetVisualKey.h"
 #include "ReplayKeyWidgetVisualsDB.generated.h"
 
 UCLASS(BlueprintType)

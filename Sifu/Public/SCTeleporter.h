@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 #include "SCTeleporter.generated.h"
 
-class UBoxComponent;
 class USceneComponent;
+class UBoxComponent;
 
 UCLASS()
 class SIFU_API ASCTeleporter : public AActor {

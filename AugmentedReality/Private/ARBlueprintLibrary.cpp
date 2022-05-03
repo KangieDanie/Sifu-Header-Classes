@@ -5,17 +5,17 @@ class USceneComponent;
 class UARSessionConfig;
 class UARPin;
 class UARTrackedGeometry;
-class UARTextureCameraDepth;
-class UARTexture;
-class UTexture2D;
-class UARLightEstimate;
 class UARTextureCameraImage;
-class UObject;
-class UARPlaneGeometry;
+class UARTexture;
+class UARLightEstimate;
+class UARTextureCameraDepth;
 class UARTrackedPose;
 class UARTrackedPoint;
+class UARPlaneGeometry;
 class UARTrackedImage;
 class UAREnvironmentCaptureProbe;
+class UObject;
+class UTexture2D;
 class UARCandidateImage;
 
 void UARBlueprintLibrary::UnpinComponent(USceneComponent* ComponentToUnpin) {

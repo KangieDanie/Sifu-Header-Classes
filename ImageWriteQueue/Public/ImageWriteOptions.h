@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnImageWriteCompleteDelegate.h"
 #include "EDesiredImageFormat.h"
+#include "OnImageWriteCompleteDelegate.h"
 #include "ImageWriteOptions.generated.h"
 
 USTRUCT(BlueprintType)

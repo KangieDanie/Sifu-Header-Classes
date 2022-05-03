@@ -4,8 +4,6 @@ UArchetypeAsset::UArchetypeAsset() {
     this->m_bIsBoss = false;
     this->m_bForceTargetWidgetDisplay = false;
     this->m_bDismissDeathForTakedown = false;
-    this->m_fHealth = 300.00f;
-    this->m_fStructure = 150.00f;
     this->m_bInfiniteStructure = false;
     this->m_fGrabbableStructureRatio = 0.50f;
     this->m_bCanBeSuperDizzy = true;
@@ -24,12 +22,18 @@ UArchetypeAsset::UArchetypeAsset() {
     this->m_uiResilience = 0;
     this->m_uiResilienceBonusFromAttack = 0;
     this->m_fAbandonTicketTimeout = 3.00f;
+    this->m_AttackPropertyResistanceDBPerDifficulty[0] = NULL;
+    this->m_AttackPropertyResistanceDBPerDifficulty[1] = NULL;
+    this->m_AttackPropertyResistanceDBPerDifficulty[2] = NULL;
     this->m_AttackPropertyResistanceDB = NULL;
     this->m_iXPBonus = 1000;
     this->m_bBreakWeaponOnDeath = false;
     this->m_MovementDB = NULL;
     this->m_bLowStructureOnSpawn = false;
     this->m_GuardRecoveryRateByLife = NULL;
+    this->m_GuardRecoveryRateByLifePerDifficulty[0] = NULL;
+    this->m_GuardRecoveryRateByLifePerDifficulty[1] = NULL;
+    this->m_GuardRecoveryRateByLifePerDifficulty[2] = NULL;
     this->m_bCanDefend = true;
     this->m_fParriedDuration = 60.00f;
     this->m_fStructureBrokenParriedDuration = 60.00f;
@@ -42,6 +46,7 @@ UArchetypeAsset::UArchetypeAsset() {
     this->m_bCanAttack = true;
     this->m_bDropAnyWeaponAtStart = false;
     this->m_WeaponToEquipAtStart = NULL;
+    this->m_bCanUseReactionActions = true;
     this->m_fFarFromEnemyDistThresold = 100.00f;
     this->m_NavigationQueryFilter = NULL;
     this->m_uiHelpSignalTriggers = 63;
@@ -67,5 +72,13 @@ UArchetypeAsset::UArchetypeAsset() {
     this->m_FidgetDBs[3] = NULL;
     this->m_FidgetDBs[4] = NULL;
     this->m_bCanBeSpared = false;
+    this->m_fHealth = 300.00f;
+    this->m_fHealthMultiplier[0] = 1.00f;
+    this->m_fHealthMultiplier[1] = 1.00f;
+    this->m_fHealthMultiplier[2] = 1.00f;
+    this->m_fStructure = 150.00f;
+    this->m_fStructureMultiplier[0] = 1.00f;
+    this->m_fStructureMultiplier[1] = 1.00f;
+    this->m_fStructureMultiplier[2] = 1.00f;
 }
 

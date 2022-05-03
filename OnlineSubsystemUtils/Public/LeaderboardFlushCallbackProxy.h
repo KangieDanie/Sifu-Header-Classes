@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnLeaderboardFlushedDelegate.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
+#include "OnLeaderboardFlushedDelegate.h"
 #include "LeaderboardFlushCallbackProxy.generated.h"
 
-class APlayerController;
 class ULeaderboardFlushCallbackProxy;
+class APlayerController;
 
 UCLASS(BlueprintType, MinimalAPI)
 class ULeaderboardFlushCallbackProxy : public UObject {

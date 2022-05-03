@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EInputMappingForceController.h"
 #include "WidgetData.h"
+#include "EInputMappingForceController.h"
 #include "InputMappingProfileData.h"
 #include "InputMappingWidgetData.generated.h"
 

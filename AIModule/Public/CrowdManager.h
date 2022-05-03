@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CrowdAvoidanceSamplingPattern.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=CrowdManagerBase -FallbackName=CrowdManagerBase
 #include "CrowdAvoidanceConfig.h"
+#include "CrowdAvoidanceSamplingPattern.h"
 #include "CrowdManager.generated.h"
 
 class ANavigationData;

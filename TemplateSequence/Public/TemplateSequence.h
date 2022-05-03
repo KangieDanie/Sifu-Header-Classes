@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "TemplateSequence.generated.h"
 
-class AActor;
 class UMovieScene;
+class AActor;
 
 UCLASS()
 class TEMPLATESEQUENCE_API UTemplateSequence : public UMovieSceneSequence {

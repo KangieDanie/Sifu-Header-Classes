@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "DeathStandupAnimationFromAnimation.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=AnimContainer -FallbackName=AnimContainer
+#include "DeathStandupAnimationFromAnimation.h"
 #include "DeathStandupAnimations.generated.h"
 
 USTRUCT(BlueprintType)

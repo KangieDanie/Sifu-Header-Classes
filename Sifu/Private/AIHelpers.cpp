@@ -1,9 +1,9 @@
 #include "AIHelpers.h"
 
-class APawn;
-class AAISpawner;
-class UAIFightingComponent;
 class AFightingCharacter;
+class UAIFightingComponent;
+class AAISpawner;
+class APawn;
 class UObject;
 class AActor;
 

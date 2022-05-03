@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SCAnimNotifyState.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
-#include "ImpactResult.h"
 #include "HitRequest.h"
+#include "SCAnimNotifyState.h"
+#include "ImpactResult.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "DefenseNotifyState.generated.h"
 
 UCLASS(CollapseCategories, EditInlineNew)

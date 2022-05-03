@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EquipmentStruct.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=ECharacterGender -FallbackName=ECharacterGender
+#include "EquipmentStruct.h"
 #include "GearUpdateStruct.generated.h"
 
 class UBaseWeaponData;

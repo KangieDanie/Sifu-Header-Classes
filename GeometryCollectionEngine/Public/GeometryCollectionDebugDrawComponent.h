@@ -3,8 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
 #include "GeometryCollectionDebugDrawComponent.generated.h"
 
-class AGeometryCollectionRenderLevelSetActor;
 class AGeometryCollectionDebugDrawActor;
+class AGeometryCollectionRenderLevelSetActor;
 
 UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class GEOMETRYCOLLECTIONENGINE_API UGeometryCollectionDebugDrawComponent : public UActorComponent {

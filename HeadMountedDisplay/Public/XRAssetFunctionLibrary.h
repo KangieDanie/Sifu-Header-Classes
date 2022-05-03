@@ -5,8 +5,8 @@
 #include "XRDeviceId.h"
 #include "XRAssetFunctionLibrary.generated.h"
 
-class UPrimitiveComponent;
 class AActor;
+class UPrimitiveComponent;
 
 UCLASS(BlueprintType)
 class UXRAssetFunctionLibrary : public UBlueprintFunctionLibrary {

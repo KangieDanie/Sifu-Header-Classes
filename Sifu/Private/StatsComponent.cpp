@@ -1,11 +1,11 @@
 #include "StatsComponent.h"
 
 class AActor;
-class UCharacterProgressionDB;
+class UTexture2D;
 class AFightingCharacter;
 class UEffectData;
 class UCharacterProgressionUnlockDB;
-class UTexture2D;
+class UCharacterProgressionDB;
 
 void UStatsComponent::OnStatsChangedCallback() {
 }
@@ -45,6 +45,9 @@ void UStatsComponent::BPF_SetStat(ECharacterStat _eStat, int32 _iValue) {
 }
 
 void UStatsComponent::BPF_SetCharacterAge(int32 _iAge) {
+}
+
+void UStatsComponent::BPF_ResetStat(ECharacterStat _eStat) {
 }
 
 void UStatsComponent::BPF_ResetDeathCounter(AActor* _actorGivingCharge) {
@@ -118,6 +121,10 @@ float UStatsComponent::BPF_GetFocusPointsRefillBonus(FSCUserDefinedEnumHandler _
     return 0.0f;
 }
 
+ECharacterStat UStatsComponent::BPF_GetCharacterStatFromAttribute(const FGameplayAttribute& _attribute) const {
+    return ECharacterStat::SpareStatPoints;
+}
+
 UCharacterProgressionDB* UStatsComponent::BPF_GetCharacterProgressionDB() {
     return NULL;
 }
@@ -178,10 +185,13 @@ void UStatsComponent::BPF_AddAttackXP(const FName& _attackName, int32 _iXP, bool
 
 
 
+
 UStatsComponent::UStatsComponent() {
     this->m_StatsDB = NULL;
     this->m_eWeightCategory = EWeightCategory::None;
     this->m_iMaxAge = 70;
+    this->m_bUsePendant = true;
+    this->m_bAllowDeathCounterDecrement = true;
     this->m_fAIPendingAttackXCancelDelay = 10.00f;
     this->m_CharacterProgressionDB = NULL;
     this->m_weaponData = NULL;

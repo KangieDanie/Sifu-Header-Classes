@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PendingAttackXP.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
+#include "PendingAttackXP.h"
 #include "EPendingttackXPType.h"
 #include "FOpponentAttackXPHelper.generated.h"
 

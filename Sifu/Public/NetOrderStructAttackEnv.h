@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "NetOrderStructSnapAnim.h"
 #include "HitBox.h"
 #include "EOrderType.h"
+#include "NetOrderStructSnapAnim.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
 #include "NetOrderStructAttackEnv.generated.h"

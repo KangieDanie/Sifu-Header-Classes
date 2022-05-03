@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=FastArraySerializerItem -FallbackName=FastArraySerializerItem
-#include "GameplayEffectSpec.h"
 #include "PredictionKey.h"
+#include "GameplayEffectSpec.h"
 #include "ActiveGameplayEffect.generated.h"
 
 USTRUCT(BlueprintType)

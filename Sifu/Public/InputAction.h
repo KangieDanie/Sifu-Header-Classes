@@ -198,6 +198,10 @@ enum class InputAction : uint8 {
     Redo,
     CharacterSettings,
     ResetRoll,
+    MenuOptions,
+    MenuLeft,
+    MenuRight,
+    TutorialInput,
     Count,
     None,
 };

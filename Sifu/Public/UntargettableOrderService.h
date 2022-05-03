@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OrderService.h"
 #include "DisabledTargetInfos.h"
+#include "OrderService.h"
 #include "UntargettableOrderService.generated.h"
 
 UCLASS(EditInlineNew)

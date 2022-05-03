@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EQuadrantTypes.h"
-#include "EquipmentCategoryInfos.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-#include "ControllerIcons.h"
 #include "IconTextures.h"
-#include "EIconStyle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
+#include "EquipmentCategoryInfos.h"
 #include "EGameModeTypes.h"
-#include "EAvoidType.h"
+#include "EIconStyle.h"
+#include "ControllerIcons.h"
+#include "EQuadrantTypes.h"
 #include "ControllerKeyIcons.h"
 #include "ControllerAxisIcons.h"
 #include "EParrySide.h"
+#include "EAvoidType.h"
 #include "MenuDB.generated.h"
 
 class UAkAudioEvent;

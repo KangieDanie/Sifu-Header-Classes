@@ -3,8 +3,8 @@
 #include "MoviePipelineExecutorBase.h"
 #include "MoviePipelineLinearExecutorBase.generated.h"
 
-class UMoviePipelineQueue;
 class UMoviePipeline;
+class UMoviePipelineQueue;
 
 UCLASS(Abstract)
 class MOVIERENDERPIPELINECORE_API UMoviePipelineLinearExecutorBase : public UMoviePipelineExecutorBase {

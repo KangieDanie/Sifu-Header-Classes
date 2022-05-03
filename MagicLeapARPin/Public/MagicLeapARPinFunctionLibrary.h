@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "MagicLeapContentBindingFoundDelegateDelegate.h"
 #include "EMagicLeapPassableWorldError.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
-#include "MagicLeapContentBindingFoundDelegateDelegate.h"
 #include "MagicLeapARPinUpdatedDelegateDelegate.h"
 #include "MagicLeapARPinQuery.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid

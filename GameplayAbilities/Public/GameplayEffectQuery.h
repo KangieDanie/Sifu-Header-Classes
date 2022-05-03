@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagQuery -FallbackName=GameplayTagQuery
 #include "ActiveGameplayEffectQueryCustomMatch_DynamicDelegate.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagQuery -FallbackName=GameplayTagQuery
 #include "GameplayAttribute.h"
 #include "GameplayEffectQuery.generated.h"
 
-class UGameplayEffect;
 class UObject;
+class UGameplayEffect;
 
 USTRUCT(BlueprintType)
 struct GAMEPLAYABILITIES_API FGameplayEffectQuery {

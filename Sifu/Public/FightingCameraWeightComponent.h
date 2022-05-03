@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EGlobalBehaviors.h"
 #include "FixedCameraWeightComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SCCore -ObjectName=SCPoolableActorComponent -FallbackName=SCPoolableActorComponent
 #include "StateWeight.h"
+#include "EGlobalBehaviors.h"
 #include "FightingCameraWeightComponent.generated.h"
 
 UCLASS(ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

@@ -1,43 +1,43 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Templates/SubclassOf.h"
-#include "AttributeDefaults.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTasksComponent -FallbackName=GameplayTasksComponent
-#include "GameplayAbilityTargetDataHandle.h"
-#include "GameplayEventData.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagAssetInterface -FallbackName=GameplayTagAssetInterface
-#include "ActiveGameplayEffectsContainer.h"
-#include "AbilitySystemReplicationProxyInterface.h"
-#include "GameplayAbilitySpecContainer.h"
-#include "ServerAbilityRPCBatch.h"
-#include "GameplayAbilityRepAnimMontage.h"
-#include "GameplayAbilityLocalAnimMontage.h"
-#include "ActiveGameplayCueContainer.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Vector_NetQuantize100 -FallbackName=Vector_NetQuantize100
-#include "MinimalReplicationTagCountMap.h"
-#include "ReplicatedPredictionKeyMap.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-#include "GameplayEffectQuery.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTasks -ObjectName=GameplayTasksComponent -FallbackName=GameplayTasksComponent
+#include "GameplayAttribute.h"
 #include "ActiveGameplayEffectHandle.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagAssetInterface -FallbackName=GameplayTagAssetInterface
+#include "AbilitySystemReplicationProxyInterface.h"
+#include "AttributeDefaults.h"
+#include "GameplayAbilitySpecContainer.h"
 #include "GameplayAbilitySpecHandle.h"
+#include "GameplayAbilityLocalAnimMontage.h"
+#include "GameplayAbilityRepAnimMontage.h"
+#include "ActiveGameplayEffectsContainer.h"
+#include "MinimalReplicationTagCountMap.h"
+#include "ActiveGameplayCueContainer.h"
+#include "ReplicatedPredictionKeyMap.h"
+#include "GameplayAbilityActivationInfo.h"
+#include "GameplayEffectQuery.h"
 #include "PredictionKey.h"
+#include "GameplayEventData.h"
+#include "GameplayAbilityTargetDataHandle.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "EAbilityGenericReplicatedEvent.h"
-#include "GameplayAbilityActivationInfo.h"
-#include "GameplayCueParameters.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Vector_NetQuantize100 -FallbackName=Vector_NetQuantize100
 #include "GameplayEffectContextHandle.h"
+#include "ServerAbilityRPCBatch.h"
+#include "GameplayCueParameters.h"
 #include "GameplayEffectSpecForRPC.h"
 #include "GameplayEffectSpecHandle.h"
-#include "GameplayAttribute.h"
 #include "AbilitySystemComponent.generated.h"
 
 class AActor;
-class UAttributeSet;
-class AGameplayAbilityTargetActor;
-class UGameplayAbility;
-class UAnimMontage;
-class UGameplayEffect;
 class UAbilitySystemComponent;
+class AGameplayAbilityTargetActor;
+class UAttributeSet;
+class UGameplayAbility;
+class UGameplayEffect;
+class UAnimMontage;
 class UDataTable;
 
 UCLASS(EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

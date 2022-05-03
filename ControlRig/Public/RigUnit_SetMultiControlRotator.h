@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "CachedRigElement.h"
 #include "RigUnitMutable.h"
 #include "RigUnit_SetMultiControlRotator_Entry.h"
+#include "CachedRigElement.h"
 #include "RigUnit_SetMultiControlRotator.generated.h"
 
 USTRUCT()
